@@ -1,0 +1,509 @@
+// BiG World Fixpack Apply Patches WeiDU Script
+// adapted from Leonardo Watson's original Windows batch script
+//
+// Unlike other mods that patch game files directly, this script instead
+//   patches mods' pre-installation files and WeiDU scripts, so you must
+//   extract all of the mods' files to the game folder, and then run this
+//   script, before running the setup-modname.exe's to install the mods
+// Note that some mods are packaged on Windows as self-extracting exe's,
+//   and such mods must also be extracted before running this Fixpack; such
+//   exe's can be unpacked like zip archives using the free tool "7zip"
+//
+// This script iterates over all mod folders in the current game directory
+//
+// For each mod folder, this script looks inside the "BiG World Fixpack"
+//   directory in the main game folder; if a Fixpack subfolder with the
+//   same name as the mod folder is found, this script processes all files
+//   and folders found inside that Fixpack subfolder and performs actions
+//   for each file or folder that matches one of the following names:
+//
+//       *.patch         =>  apply this patch (assumed to be a "diff" patch)
+//                           all patches are applied in the main game folder,
+//                           so all patch files should contain a relative path
+//
+//       _delete         =>  delete all files listed in this file, e.g.:
+//                           path\to\file-to-delete
+//                           (paths are relative to the target mod folder)
+//
+//       _rename         =>  like _delete but a line in this file should
+//                           have the format:
+//                           path\to\original-filename\tnew-filename
+//                           (paths are relative to the target mod folder)
+//                           (\t means insert a literal TAB here)
+//
+//       _copy/          =>  recursively copy all contents to target mod folder
+//
+//       _target         =>  the first line of this file, if present in the
+//                           Fixpack top-level subfolder, will be used as the
+//                           the target folder path for the contents of _copy/
+//
+//       _depends/       =>  process subdirs for which a matching mod is present
+//
+//       _depends_not/   =>  process subdirs for which a matching mod is not present
+//
+//
+// The script can be run multiple times; it will record in the BWP_Fixpack.installed
+// file the mod folders that it has patched, and will skip those folders when re-run
+//
+// Contribution from AstroBryGuy:  Added CRLF->LF translation script for OSX and Linux.
+// The patch utility on Linux/OSX expects lines to end only with line feed (LF). Windows uses
+// carriage-return line-feed (CRLF). patch tries to be smart and automatically converts the
+// .patch files to LF, stripping out the CR. However, a mod's files will still use CRLF, so
+// patch will fail. This adds a call to a shell script that pre-processes the file to be patched,
+// changing CRLF to LF.
+
+BACKUP ~BWP_Fixpack/backup~ // not the same folder as the one containing Fixpack patches
+AUTHOR ~agb1 on shsforums.net, gibberlings3.net or forums.beamdog.com~
+
+VERSION ~v2.6~
+
+ALWAYS
+	// special folders and marker file
+	OUTER_TEXT_SPRINT FIXPACK ~BiG_World_Fixpack~ // Fixpack's own folder containing patches, without spaces
+	OUTER_TEXT_SPRINT INSTALL_MARKER ~BWP_Fixpack.installed~ // to be created by this script (name chosen for backwards compatibility)
+
+	// special folder names to match in Fixpack sub-folders
+	OUTER_TEXT_SPRINT COPY_DIR ~_copy~ // exact match
+	OUTER_TEXT_SPRINT DEPENDS_DIR ~_depends~ // exact match
+	OUTER_TEXT_SPRINT DEPENDS_NOT_DIR ~_depends_not~ // exact match
+
+	// special files names to match in Fixpack sub-folders
+	OUTER_TEXT_SPRINT TARGET_FILE ~_target~ // exact match
+	OUTER_TEXT_SPRINT DEL_FILE ~_delete~ // exact match
+	OUTER_TEXT_SPRINT REN_FILE ~_rename~ // exact match
+	OUTER_TEXT_SPRINT PATCH_FILES ~^.*\.patch$~ // regex
+
+	// platform specific syntax and utilities
+	ACTION_IF (~%WEIDU_OS%~ STR_EQ ~win32~) THEN BEGIN
+		AT_NOW ~move "BiG World Fixpack" "%FIXPACK%"~ // rename Fixpack folder to remove spaces (packaged folder name has spaces for backwards compatibility)
+		AT_EXIT ~move "%FIXPACK%" "BiG World Fixpack"~ // restore Fixpack folder name
+		OUTER_TEXT_SPRINT os_slash ~\~
+		OUTER_TEXT_SPRINT os_quote ~"~
+		OUTER_TEXT_SPRINT DISPLAY_FILE_CMD ~type~
+		OUTER_TEXT_SPRINT PATCH_CMD ~%FIXPACK%\_utils\patch.exe -p0 -f --verbose --no-backup-if-mismatch --ignore-whitespace~
+		OUTER_TEXT_SPRINT TEE_CMD ~%FIXPACK%\_utils\tee.exe -a "_ApplyPatches_verbose.log"~
+	END ELSE BEGIN
+		AT_NOW ~mv 'BiG World Fixpack' '%FIXPACK%'~ // rename Fixpack folder to remove spaces (packaged folder name has spaces for backwards compatibility)
+		AT_EXIT ~mv '%FIXPACK%' 'BiG World Fixpack'~ // restore Fixpack folder name
+		OUTER_TEXT_SPRINT os_slash ~/~
+		OUTER_TEXT_SPRINT os_quote ~'~
+		OUTER_TEXT_SPRINT DISPLAY_FILE_CMD ~cat~
+		OUTER_TEXT_SPRINT PATCH_CMD ~patch -p0 -f --verbose --no-backup-if-mismatch --ignore-whitespace~
+		OUTER_TEXT_SPRINT TEE_CMD ~tee -a '_ApplyPatches_verbose.log'~
+	END
+
+	// last special folder
+	OUTER_TEXT_SPRINT MESSAGES ~%FIXPACK%%os_slash%_messages~ // contains text messages for display
+
+	DEFINE_ACTION_FUNCTION ~show_message~
+	STR_VAR
+		msg_file_path = ~~
+	BEGIN
+		ACTION_IF INTERACTIVE THEN BEGIN
+			PRINT ~~
+			AT_NOW ~%DISPLAY_FILE_CMD% %msg_file_path%~
+			PRINT ~~
+			ACTION_IF (NOT DIRECTORY_EXISTS "BiG World Installpack\Big World Smoothpack") THEN BEGIN
+				PRINT ~Press any key to continue...~
+				ACTION_READLN ~pause~
+			END
+		END
+	END
+
+	DEFINE_ACTION_FUNCTION ~checks~
+	BEGIN
+		ACTION_IF (NOT DIRECTORY_EXISTS ~%MESSAGES%~) THEN BEGIN
+			PRINT "%WNL%%WNL%" ^
+                  "Can't locate the directory '%MESSAGES%'.%WNL%" ^
+			      "Make sure the Fixpack folder resides in the current directory.%WNL%" ^
+			      "The latest WeiDU (from www.weidu.org/~thebigg) is also required.%WNL%" ^
+			      "%WNL%%WNL%" ^
+			      "Das Verzeichnis '%MESSAGES%' konnnte nicht gefunden werden.%WNL%" ^
+			      "Es ist fÅr die Installation zwingend erforderlich%WNL%" ^
+			      "und muss im aktuellen Verzeichnis vorhanden sein.%WNL%" ^
+			      "%WNL%%WNL%" ^
+			      "Ne trouve pas le repertoire '%MESSAGES%'.%WNL%" ^
+			      "Assurez-vous qu'il se trouve dans le repertoire actuel.%WNL%" ^
+			      "%WNL%%WNL%" ^
+			      "No se puede localizar el directorio '%MESSAGES%'.%WNL%" ^
+			      "Es necesario para la instalacion y debe estar en el directorio actual.%WNL%%WNL%"
+			PRINT ~Press any key to continue...~
+			ACTION_READLN ~pause~
+			FAIL ~Missing Required 'BiG World Fixpack' Folder~
+		END
+
+		ACTION_IF (NOT FILE_EXISTS ~%INSTALL_MARKER%~) THEN BEGIN // create empty installation marker file
+<<<<<<<< .../BiG_World_Fixpack-inlined/%INSTALL_MARKER%
+>>>>>>>>
+			COPY ~.../BiG_World_Fixpack-inlined/%INSTALL_MARKER%~ ~%INSTALL_MARKER%~
+		END
+	END
+
+	DEFINE_ACTION_FUNCTION ~process_mod_folders~
+	BEGIN
+		GET_DIRECTORY_ARRAY ~fixpack_folder_array~ ~%FIXPACK%~ ~^.*[^\.]$~ // get list of subfolders in the Fixpack folder (exclude /. and /..)
+		ACTION_PHP_EACH ~fixpack_folder_array~ AS index => folder BEGIN
+			//PRINT ~Checking Fixpack subfolder: %folder%~
+			LAF FILE_OF_FILESPEC // trim leading ./
+				STR_VAR
+					filespec = EVAL ~%folder%~
+				RET
+					fixpack_folder_name = file
+			END
+			OUTER_TEXT_SPRINT ~target_mod_folder~ ~%fixpack_folder_name%~
+			OUTER_TEXT_SPRINT ~fixpack_subfolder~ ~%FIXPACK%/%fixpack_folder_name%~
+
+			SILENT // suppress "copying 1 file..." and BWP_Fixpack.installed log messages
+			OUTER_SET skip = 0
+			ACTION_IF (~%fixpack_folder_name%~ STRING_CONTAINS_REGEXP ~^_~ == 0) THEN BEGIN
+				//PRINT ~Skipping "%folder%" because it has a "_" prefix...~
+				OUTER_SET skip = 1
+			END ELSE ACTION_IF (~%folder%~ STRING_CONTAINS_REGEXP ~ ~ == 0) THEN BEGIN
+				//PRINT ~Skipping "%folder%" because it contains a space in the path...~
+				OUTER_SET skip = 1
+			END ELSE ACTION_IF (FILE_CONTAINS_EVALUATED (~%INSTALL_MARKER%~ ~Processed '%fixpack_folder_name%'~)) THEN BEGIN
+				PRINT ~Skipping "%fixpack_folder_name%" because it was already patched (according to "%INSTALL_MARKER%")...~
+				OUTER_SET skip = 1
+			END ELSE ACTION_IF (NOT DIRECTORY_EXISTS ~%target_mod_folder%~) THEN BEGIN
+				OUTER_SET skip = 1 // skip patches for which there is no matching target folder ...
+				// ... but also check if Fixpack subfolder specifies an alternate target folder
+				ACTION_IF (FILE_EXISTS ~%fixpack_subfolder%/_alternate_folder_names~) THEN BEGIN
+					COPY - ~%fixpack_subfolder%/_alternate_folder_names~ ~%FIXPACK%/tmpfile~ // fake copy
+						COUNT_2DA_ROWS 1 num_folder_names // 1 column
+						PATCH_IF (num_folder_names > 0) THEN BEGIN
+							FOR (i = 0; i < num_folder_names; ++i) BEGIN
+								READ_2DA_ENTRY i 0 1 alt_folder
+								PATCH_IF (DIRECTORY_EXISTS ~%alt_folder%~) THEN BEGIN
+									PATCH_PRINT ~Fixpack subfolder "%fixpack_subfolder%" specifies "%alt_folder%" as target folder for patching...~
+									TEXT_SPRINT ~target_mod_folder~ ~%alt_folder%~
+									SET skip = 0 // we found an alternate target folder, so we do not need to skip
+									SET i = num_folder_names // can only have one target, so end loop after match
+								END
+							END
+						END
+					BUT_ONLY
+				END
+			END
+			// check for invalid target folder names
+			ACTION_IF (skip == 0) THEN BEGIN
+				ACTION_FOR_EACH reserved IN ~data~ ~lang~ ~Manuals~ ~movies~ ~mpsave~ ~music~ ~override~ ~save~ ~scripts~ ~%MOD_FOLDER%~ ~%FIXPACK%~ BEGIN
+					ACTION_IF (~%reserved%~ STR_EQ ~%target_mod_folder%~) THEN BEGIN
+						OUTER_SET skip = 1
+					END
+				END
+				// compare VERSION in WeiDU tp2 patches vs. VERSION in the local tp2 file
+				ACTION_BASH_FOR ~%fixpack_subfolder%~ ~^.*\.tp2\.patch$~ BEGIN
+					//PRINT ~%BASH_FOR_FILESPEC%~
+					OUTER_SPRINT tgtfile ~~ // reset variables for each patch file we check
+					OUTER_SPRINT oldvers ~~
+					OUTER_SPRINT nowvers ~~
+					ACTION_IF (skip == 0) THEN BEGIN // this is a loop - stop checking patches for this mod if we already found a reason to skip and the user made a decision 
+						COPY - ~%BASH_FOR_FILESPEC%~ ~%FIXPACK%/tmpfile~ // fake copy
+							REPLACE_EVALUATE ~--- \(.*\.tp2\)[%TAB%]~ BEGIN
+								TEXT_SPRINT oldvers ~~ // start of a new patch, so clear version variable to avoid spillover from a previous patch in the same file
+								TEXT_SPRINT tgtfile ~%MATCH1%~ // save the target file (with full path) while looking for a following VERSION line
+							END ~~ // ~~ required but no effect
+							REPLACE_EVALUATE ~~~~~[ -]\([ %TAB%]*VERSION[ %TAB%]*[~"%@]?[^%WNL%%LNL%]*[0-9]*[%"~]?\)[ %TAB%]*\(\/[\/*][^%WNL%%LNL%]*\)?~~~~~ BEGIN
+								TEXT_SPRINT oldvers ~%MATCH1%~ // found a pre-patch VERSION line (a patch line prefixed with ' ' or '-' is original, '+' is changed)
+							END ~~ // ~~ required but no effect
+							SET startpos = INDEX(CASE_SENSITIVE EXACT_MATCH ~VERSION~ ~%oldvers%~)
+							SET endpos = RINDEX(CASE_SENSITIVE EVALUATE_REGEXP ~~~~~[~"%%"~]~~~~~ ~%oldvers%~)
+							PATCH_IF (startpos >= 0 AND endpos > 0) BEGIN
+								LPF SUBSTRING INT_VAR start = startpos length = endpos + 1 STR_VAR string = EVAL ~%oldvers%~ RET oldvers = substring END
+							END	
+							PATCH_IF (~%tgtfile%~ STRING_COMPARE ~~) THEN BEGIN // if we found a target file...
+								PATCH_IF (NOT FILE_EXISTS ~%tgtfile%~) THEN BEGIN // warn if that target file doesn't exist ...
+									PATCH_PRINT ~WARNING: file "%tgtfile%" does not exist (this is the file targeted for patching in "%BASH_FOR_FILE%" in "Big World Fixpack/%fixpack_folder_name%").  This might mean you did not extract all of the files of the mod, or it might mean that the patches for this mod were made for a different version of the mod than the version that you are using (you would see this message if the version you are using moved or renamed the tp2 file).~
+									PATCH_PRINT ~Do you want to try to apply other patches for this mod anyway?  If a target file is different from the original file that was used to create a patch, the patch might fail completely (making no changes) or it might fail partially (making some changes) or it might succeed with "fuzz" (if all of the lines to change are still in the file, but some other lines were added in between).  If partial patching occurs, the mod might fail to install or manifest other problems later.  If in doubt, please visit one of the modding forums and ask for help.~
+									PATCH_PRINT ~[Enter Y if you want to try patching anyway, anything else to skip patching this mod.]~
+									PATCH_READLN answer
+									PATCH_IF (~%answer%~ STR_EQ ~Y~) THEN BEGIN // if user input does match y or Y
+										SET skip = 2 // don't skip -- this will be changed to zero after the loop
+									END ELSE BEGIN
+										SET skip = 1 // user did NOT choose to try patching anyway - we will skip this mod
+										PATCH_WARN ~Skipping patches in "BiG World Fixpack/%fixpack_folder_name%" (target file not found)...~
+									END
+								END ELSE BEGIN // if the target file exists, read the VERSION from the target file
+									INNER_ACTION BEGIN
+										COPY - ~%tgtfile%~ ~%FIXPACK%/tmpfile2~ // fake copy
+											INNER_PATCH ~%LNL%%WNL%~ BEGIN // order matters here
+												READ_BYTE 0x0 lnl // get Linux new line byte representation
+												READ_BYTE 0x1 wnl // get Windows new line byte representation
+											END
+											SET filesize = SIZE_OF_FILE ~%tgtfile%~
+											FOR (i = 0; i < filesize; ++i) BEGIN
+												SET eol = 0
+												FOR (j = i; !eol && j < filesize; ++j) BEGIN // search for next newline
+													READ_BYTE j byte
+													PATCH_IF (byte == lnl OR byte == wnl) BEGIN SET eol = 1 END // found end of line - break out of j loop
+												END
+												SET len = (j - i - 1) // j is after newline; i is at the start of the line -- if the first line is 3 chars long, j is 3 (4th byte), i is 0
+												READ_ASCII i line ( len )
+												PATCH_IF (~%line%~ STRING_CONTAINS_REGEXP ~~~~~^[ %TAB%]*VERSION[^%WNL%%LNL%]*~~~~~ == 0) BEGIN
+													SET startpos = INDEX(CASE_SENSITIVE EXACT_MATCH ~VERSION~ ~%line%~)
+													SET endpos = RINDEX(CASE_SENSITIVE EVALUATE_REGEXP ~~~~~[~"%%"~]~~~~~ ~%line%~)
+													PATCH_IF (startpos >= 0 AND endpos > 0) BEGIN
+														LPF SUBSTRING INT_VAR start = startpos length = endpos + 1 STR_VAR string = EVAL ~%line%~ RET line = substring END
+													END
+													TEXT_SPRINT nowvers ~%line%~
+												END
+												WHILE (eol AND j < filesize) BEGIN // check for more than one newline at end of line
+													READ_BYTE j byte
+													PATCH_IF (byte == lnl OR byte == wnl) BEGIN SET j = j + 1 END // skip another newline
+													ELSE BEGIN SET eol = 0 END // else done
+												END
+												SET i = j - 1 // continue to next line, skipping newline(s)
+											END
+										BUT_ONLY
+									END
+									PATCH_IF (~%oldvers%~ STRING_EQUAL ~%nowvers%~) THEN BEGIN // expected version matches version in target file (also could be missing from both target and patch)
+										// allow the patch to proceed
+										SET warnprompt = 0
+									END ELSE PATCH_IF (~%oldvers%~ STRING_EQUAL ~~) THEN BEGIN // our patch does not expect a VERSION, but the target file has a VERSION
+										PATCH_PRINT ~WARNING: File "%tgtfile%" contains '%nowvers%' (expected no VERSION line)!  This is the file targeted for patching in "%BASH_FOR_FILE%" in "Big World Fixpack/%fixpack_folder_name%".  This might mean that the patches for this mod were made for a different version of the mod than the one that you are using, or this might mean that the mod was already patched and then removed from the list in the "%INSTALL_MARKER%" file without restoring the original pre-patched files.~
+										SET warnprompt = 1
+									END ELSE PATCH_IF (~%nowvers%~ STRING_EQUAL ~~) THEN BEGIN // our patch expects a VERSION, but the target file does not have a VERSION
+										PATCH_PRINT ~WARNING: File "%tgtfile%" does not contain a VERSION line (expected '%oldvers%')!  This is the file targeted for patching in "%BASH_FOR_FILE%" in "Big World Fixpack/%fixpack_folder_name%".  This might mean that the patches for this mod were made for a different version of the mod than the one that you are using.~
+										SET warnprompt = 1
+									END ELSE BEGIN // version mismatch
+										PATCH_PRINT ~WARNING: File "%tgtfile%" contains '%nowvers%' instead of expected '%oldvers%'!  This is the file targeted for patching in "%BASH_FOR_FILE%" in "Big World Fixpack/%fixpack_folder_name%".  This might mean that the patches for this mod were made for a different version of the mod than the one that you are using, or this might mean that the mod was already patched and then removed from the list in the "%INSTALL_MARKER%" file without restoring the original pre-patched files.~
+										SET warnprompt = 1
+									END
+									PATCH_IF (warnprompt) THEN BEGIN
+										PATCH_PRINT ~Do you want to try to apply the patch anyway?  If the target file is different from the original file that was used to create the patch, then the patch might fail completely (making no changes) or it might fail partially (making some changes) or it might succeed with 'fuzz' (if all of the lines to change are still in the file, but some other lines were added in between).  If partial patching occurs, the mod might fail to install or manifest other problems later.  If in doubt, please visit one of the modding forums and ask for help.~
+										PATCH_PRINT ~[Enter Y if you want to try patching anyway, anything else to skip patching this mod.]~
+										PATCH_READLN answer
+										PATCH_IF (~%answer%~ STR_EQ ~Y~) THEN BEGIN // if user input does match y or Y
+											SET skip = 2 // don't skip -- will be changed to zero after the loop
+										END ELSE BEGIN
+											SET skip = 1 // user did NOT choose to try patching anyway - we will skip this mod
+											PATCH_WARN ~Skipping patches in "BiG World Fixpack/%fixpack_folder_name%" (version mismatch)...~
+										END
+									END
+								END // end of skip prompts
+							END // end of found matches for both
+						BUT_ONLY // end of fake COPY (to read a tp2 patch file)
+					END // end of continue checking only if skip is still zero
+				END // end of checking tp2 patch files
+				ACTION_IF (skip == 2) THEN BEGIN // user was prompted and decided to patch anyway
+					OUTER_SET skip = 0
+				END
+			END
+			VERBOSE // done with all pre-patch validation checks
+			ACTION_IF (skip == 0) THEN BEGIN // do the patching for this Fixpack subfolder
+				LAF ~process_fixpack_subfolder~ STR_VAR target_folder = EVAL ~%target_mod_folder%~ source_folder = EVAL ~%fixpack_subfolder%~ END
+				LAF ~process_nested_subfolders~ INT_VAR if_present = 1 STR_VAR dir_with_subdirs = EVAL ~%fixpack_subfolder%/%DEPENDS_DIR%~ original_target_folder = EVAL ~%target_mod_folder%~ END
+				LAF ~process_nested_subfolders~ INT_VAR if_present = 0 STR_VAR dir_with_subdirs = EVAL ~%fixpack_subfolder%/%DEPENDS_NOT_DIR%~ original_target_folder = EVAL ~%target_mod_folder%~ END
+				APPEND_OUTER + ~%INSTALL_MARKER%~ ~Processed '%fixpack_folder_name%'~ UNLESS EVAL ~Processed '%fixpack_folder_name%'~ // record original fixpack subfolder name, not target folder
+			END
+		END
+	END
+
+	DEFINE_ACTION_FUNCTION ~process_nested_subfolders~
+		INT_VAR
+			if_present = 1
+		STR_VAR
+			dir_with_subdirs = ~~
+			original_target_folder = ~~
+	BEGIN
+		ACTION_IF (DIRECTORY_EXISTS ~%dir_with_subdirs%~) THEN BEGIN
+			GET_DIRECTORY_ARRAY EVAL ~subfolder_array_%dir_with_subdirs%~ ~%dir_with_subdirs%~ ~^.*$~ // subdirs inside this directory
+			ACTION_PHP_EACH ~subfolder_array_%dir_with_subdirs%~ AS index => folder BEGIN
+				ACTION_IF (~%folder%~ STRING_MATCHES_REGEXP ~^.*/\.\.?$~ != 0) THEN BEGIN // exclude /. and /..
+					LAF FILE_OF_FILESPEC // trim leading ./
+						STR_VAR
+							filespec = EVAL ~%folder%~
+						RET
+							mod_folder = file
+					END
+					ACTION_IF (DIRECTORY_EXISTS ~%mod_folder%~ == %if_present%) THEN BEGIN // a mod folder matching the dependency subdir was (not?) found
+						LAF ~process_fixpack_subfolder~
+							STR_VAR
+								target_folder = EVAL ~%original_target_folder%~
+								source_folder = EVAL ~%dir_with_subdirs%/%mod_folder%~
+						END
+					END
+				END
+			END
+		END
+	END
+
+	DEFINE_ACTION_FUNCTION ~process_fixpack_subfolder~
+		STR_VAR
+			target_folder = ~~
+			source_folder = ~~
+	BEGIN
+		PRINT ~processing fixes from Fixpack folder "%source_folder%"~
+
+		ACTION_IF (DIRECTORY_EXISTS ~%source_folder%/%COPY_DIR%~) THEN BEGIN
+			PRINT ~copying files ...~
+			OUTER_SPRINT ~copy_target_folder~ ~%target_folder%~
+			// look for TARGET_FILE which can override target directory for _copy
+			ACTION_IF (FILE_EXISTS ~%source_folder%/%TARGET_FILE%~) THEN BEGIN
+				SILENT // suppress "copying 1 file..." log message
+				COPY - ~%source_folder%/%TARGET_FILE%~ ~%FIXPACK%/tmpfile~ // fake copy
+					PATCH_IF !(~%WEIDU_OS%~ STR_EQ ~win32~) BEGIN  // fix the path on Mac & Linux
+						REPLACE_TEXTUALLY EXACT_MATCH ~\~ ~/~
+					END
+					READ_2DA_ENTRY 0 0 1 copy_target_folder // top-level mod directory name
+				BUT_ONLY
+				VERBOSE
+				ACTION_IF (NOT DIRECTORY_EXISTS ~%copy_target_folder%~) THEN BEGIN
+					MKDIR ~%copy_target_folder%~ // if the target folder doesn't exist, create it 
+				END
+			END
+			LAF ~recursive_deep_copy~ INT_VAR second_pass = 0 STR_VAR current_dir = EVAL ~%source_folder%/%COPY_DIR%~ target_dir = EVAL ~%copy_target_folder%~ END
+			LAF ~recursive_deep_copy~ INT_VAR second_pass = 1 STR_VAR current_dir = EVAL ~%source_folder%/%COPY_DIR%~ target_dir = EVAL ~%copy_target_folder%~ END
+		END
+
+		ACTION_IF (FILE_EXISTS ~%source_folder%/%DEL_FILE%~) THEN BEGIN
+			SILENT // suppress "copying 1 file..." log message
+			COPY - ~%source_folder%/%DEL_FILE%~ ~%FIXPACK%/tmpfile~ // fake copy
+				PATCH_IF !(~%WEIDU_OS%~ STR_EQ ~win32~) BEGIN  // fix paths on Mac & Linux
+					REPLACE_TEXTUALLY EXACT_MATCH ~\~ ~/~
+				END
+				COUNT_2DA_ROWS 1 num_files // 1 column
+				PATCH_IF (num_files > 0) THEN BEGIN
+					PATCH_PRINT ~deleting files ...~
+					FOR (i = 0; i < num_files; ++i) BEGIN
+						READ_2DA_ENTRY i 0 1 file_to_delete
+						INNER_ACTION BEGIN
+							PRINT "- DELETE ~%target_folder%/%file_to_delete%~"
+							ACTION_IF (DIRECTORY_EXISTS ~%target_folder%/%file_to_delete%~ OR FILE_EXISTS ~%target_folder%/%file_to_delete%~) THEN BEGIN
+								ACTION_TRY
+									DELETE ~%target_folder%/%file_to_delete%~
+								WITH
+									~Unix.Unix_error(20, "stat", ".*")~
+									BEGIN
+										PRINT "Encountered an error (file/folder not found) while attempting to delete '%target_folder%/%file_to_delete%'.  This might occur if the file name or path contains special characters.  Trying system-specific command instead of WeiDU's built-in delete command..."
+										ACTION_IF (~%WEIDU_OS%~ STR_EQ ~win32~) THEN BEGIN // windows delete (works for files and folders)
+											AT_NOW ~DEL /F /Q "%target_folder%/%file_to_delete%"~
+										END ELSE BEGIN // Unix or OSX delete (works for files and folders)
+											AT_NOW ~rm -vrf '%target_folder%/%file_to_delete%'~
+										END
+									END
+									DEFAULT
+										WARN "Encountered an unexpected error while attempting to delete '%target_folder%/%file_to_delete%'. Please report this error to the BiG World Fixpack maintainers. Skipping this file (feel free to delete it manually, if you can, after this patching script is done)..."
+								END
+							END ELSE BEGIN
+								PRINT ~No file or folder at deletion path. Skipping deletion.~
+							END
+						END
+					END
+				END
+			BUT_ONLY
+			VERBOSE
+		END
+		
+		ACTION_IF (FILE_EXISTS ~%source_folder%/%REN_FILE%~) THEN BEGIN
+			SILENT // suppress "copying 1 file..." log message
+			COPY - ~%source_folder%/%REN_FILE%~ ~%FIXPACK%/tmpfile~ // fake copy
+				PATCH_IF !(~%WEIDU_OS%~ STR_EQ ~win32~) BEGIN  // fix paths on Mac & Linux
+					REPLACE_TEXTUALLY EXACT_MATCH ~\~ ~/~
+				END
+				COUNT_2DA_ROWS 2 num_files // 2 columns
+				PATCH_IF (num_files > 0) THEN BEGIN
+					PATCH_PRINT ~renaming files ...~
+					FOR (i = 0; i < num_files; ++i) BEGIN
+						READ_2DA_ENTRY i 0 2 file_to_rename
+						READ_2DA_ENTRY i 1 2 new_filename
+						INNER_ACTION BEGIN
+							LAF DIRECTORY_OF_FILESPEC // get leading path
+								STR_VAR
+									filespec = EVAL ~%target_folder%/%file_to_rename%~
+								RET
+									destpath = directory
+							END
+							PRINT "> MOVE ~%target_folder%/%file_to_rename%~ ~%destpath%/%new_filename%~"
+							ACTION_IF (FILE_EXISTS ~%target_folder%/%file_to_rename%~ AND DIRECTORY_EXISTS ~%destpath%~) THEN BEGIN
+								MOVE ~%target_folder%/%file_to_rename%~ ~%destpath%/%new_filename%~
+							END ELSE BEGIN
+								PRINT ~Source file or target path invalid. Skipping.~
+							END
+						END
+					END
+				END
+			BUT_ONLY
+			VERBOSE
+		END
+
+		// apply patches
+		GET_FILE_ARRAY EVAL ~patchfiles_array_%source_folder%~ ~%source_folder%~ ~%PATCH_FILES%~
+		ACTION_PHP_EACH ~patchfiles_array_%source_folder%~ AS ind => file BEGIN
+			ACTION_IF !(~%WEIDU_OS%~ STR_EQ ~win32~) THEN BEGIN
+				AT_NOW ~./BiG_World_Fixpack/_utils/trans_crlf.sh %file%~
+			END
+			PRINT "! %PATCH_CMD% < %os_quote%%file%%os_quote% | %TEE_CMD%"
+			AT_NOW ~%PATCH_CMD% < %os_quote%%file%%os_quote% | %TEE_CMD%~
+		END
+	END
+
+	DEFINE_ACTION_FUNCTION ~recursive_deep_copy~ // will skip empty directories
+		INT_VAR
+			second_pass = 0
+		STR_VAR
+			current_dir = ~~
+			target_dir = ~~
+	BEGIN
+		//PRINT ~... RDC %second_pass% %current_dir% >>> %target_dir% ...~
+		
+		OUTER_TEXT_SPRINT file_arr ~%current_dir%_files~
+		OUTER_TEXT_SPRINT folder_arr ~%current_dir%_folders~
+		
+		ACTION_IF (NOT DIRECTORY_EXISTS ~%target_dir%~) THEN BEGIN
+			//PRINT "+ MKDIR ~%target_dir%~"
+			MKDIR ~%target_dir%~
+		END
+		
+		GET_FILE_ARRAY EVAL ~%file_arr%~ ~%current_dir%~ ~^.+$~
+		GET_DIRECTORY_ARRAY EVAL ~%folder_arr%~ ~%current_dir%~ ~^.+$~
+		
+		ACTION_IF (second_pass == 1) THEN BEGIN
+			ACTION_PHP_EACH ~%file_arr%~ AS ind => file_full_path BEGIN
+				//PRINT "+ COPY_LARGE ~%file_full_path%~ ~%target_dir%~"
+				ACTION_TRY
+					COPY_LARGE + ~%file_full_path%~ ~%target_dir%~
+				WITH
+					~Unix.Unix_error(20, "stat", ".*")~
+					BEGIN
+						PRINT "Encountered an error (file/folder not found) while attempting to copy '%file_full_path%' to '%target_dir%'.  This might occur if the file name or path contains special characters.  Trying system-specific command instead of WeiDU's built-in copy command..."
+						ACTION_IF (~%WEIDU_OS%~ STR_EQ ~win32~) THEN BEGIN // windows copy
+							AT_NOW ~COPY /Y /B "%file_full_path%" "%target_dir%"~
+						END ELSE BEGIN // Unix or OSX copy
+							AT_NOW ~cp -vf '%file_full_path%' '%target_dir%'~
+						END
+					END
+					DEFAULT
+						WARN "Encountered an unexpected error while attempting to copy '%file_full_path%' to '%target_dir%'. Please report this error to the BiG World Fixpack maintainers. Skipping this file (feel free to copy it manually, if you can, after this patching script is done)..."
+				END
+			END
+		END
+
+		ACTION_PHP_EACH ~%folder_arr%~ AS ind => subdir_full_path BEGIN
+			ACTION_IF (~%subdir_full_path%~ STRING_MATCHES_REGEXP ~^.*/\.\.?$~ != 0) BEGIN // exclude /. and /..
+				LAF FILE_OF_FILESPEC // trim leading path
+					STR_VAR
+						filespec = EVAL ~%subdir_full_path%~
+					RET
+						folder_name = file
+				END
+				
+				ACTION_IF (NOT DIRECTORY_EXISTS ~%target_dir%/%folder_name%~) THEN BEGIN
+					//PRINT "++ MKDIR ~%target_dir%/%folder_name%~"
+					MKDIR ~%target_dir%/%folder_name%~
+				END
+				
+				LAF ~recursive_deep_copy~ INT_VAR second_pass = second_pass STR_VAR current_dir = EVAL ~%subdir_full_path%~ target_dir = EVAL ~%target_dir%/%folder_name%~ END
+			END
+		END
+	END
+END // ALWAYS
+
+BEGIN ~Apply Patches To Unpacked Mod Folders In Current Directory~ INSTALL_BY_DEFAULT NO_LOG_RECORD
+
+LAUNCH_ACTION_FUNCTION ~checks~ END
+LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%header.txt%os_quote%~ END
+LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%start.txt%os_quote%~ END
+LAUNCH_ACTION_FUNCTION ~process_mod_folders~ END
+LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%end.txt%os_quote%~ END
+
