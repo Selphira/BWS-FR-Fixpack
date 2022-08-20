@@ -1,5 +1,5 @@
 --- EET\tbl\compatibility.tbl
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BigWorldSetupFR\\OverwriteFiles\\BG2EE\\BiG World Fixpack\\EET\\compatibility.tbl"
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\EET\\compatibility.tbl"
 @@ -4,6 +4,7 @@ BWS-URL 0            //dummy entry from Big World Setup
  DLCMERGER 0          //DLC Merger
  BGEETEXTPACK 0       //RUS BG1
