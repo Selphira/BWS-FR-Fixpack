@@ -18,3 +18,8 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   
 - Tweak Antlogoy v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
+
+##### Traductions et corrections d'orthographe
+
+- RelieveWizardSlayer.tp2 v1.7
+  - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"

@@ -1,0 +1,57 @@
+/* ===================== *
+ * Relieve Wizard Slayer *
+ * ===================== */
+@101 = ~Relieve Wizard Slayer~
+@102 = ~TUEUR DE MAGICIENS : Ce guerrier se spécialise dans la traque des lanceurs de sorts profanes. Dans ce but, il conditionne son corps à résister à la magie et développe des techniques d'attaque pouvant perturber l'incantation des sorts profanes. Cet apprentissage rigoureux oblige le Tueur de magiciens à renoncer à l'utilisation du moindre objet magique, exception faite des armes, armures et potions de soins. De plus, il se doit de rester complètement dévoué à sa cause et ne peut se diriger vers d'autres professions.
+
+Avantages :
+-  Débute avec 10 % de Résistance à la magie
+-  Gain de 2 % de Résistance à la magie supplémentaires par niveau d'expérience
+-  Reçoit le talent passif "Perturbation Magique" au premier niveau
+-  Reçoit la capacité spéciale "Brise-Magie" au premier niveau, puis tous les 8 niveaux
+
+
+Désavantages :
+-  Ne peut pas utiliser d'objets magiques autres qu'armures, armes, potions de soins et de tout équipement offrant une résistance à la magie et/ou aux dégâts magiques autorisé à un combattant.
+-  Ne peut pas se jumeler
+
+
+ Perturbation Magique :
+Quand un Tueur de magiciens réussit à toucher un lanceur de sorts profanes, la cible se voit infliger une probabilité cumulative de rater ses incantations. Durant les 3 prochains rounds, la victime aura 10 % de chance d'échouer dans le lancement d'un sort profane, plus 1 % par niveau d'expérience du Tueur de magiciens. Ce talent passif opère en permanence.
+
+ Brise-Magie :
+Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses armes de manière à briser les défenses magiques des lanceurs de sorts profanes. Pour la durée du round où cette capacité est activée, chaque fois que le Tueur de magiciens réussit à toucher sa cible, une de ses protections de combat et une de ses protections particulières sont détruites. Cependant, la résistance magique naturelle du Tueur de magiciens est alors temporairement neutralisée, le rendant vulnérable à la magie pendant les 2 prochains rounds. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
+
+@103 = ~WIZARD SLAYER: This warrior specializes in hunting down wielders of arcane magic. To that end, <PRO_HESHE> conditions <PRO_HISHER> body to resist magic and learns techniques that can disrupt spellcasting. The Wizard Slayer must remain fully devoted to <PRO_HISHER> cause and cannot pursue additional professions.
+
+ Advantages:
+-  Gains 20% magic resistance at level 1.
+-  Gains additional 2% bonus to magic resistance per level.
+-  Gains the Nullify Magic ability at level 1 and additional uses at levels 10 and 20.
+-  Gains the Protect ability at level 1 and additional uses at levels 10 and 20
+
+Nullify Magic:
+Upon activation, the wizard slayer nullifies arcane magic in a 30ft area around <PRO_HIMHER>. Any arcane spellcasters caught in the area of effect will experience 100% spell failure for 5 rounds. This effect bypasses magic resistance and can't be saved against.
+
+Protect Allies:
+
+For the next 5 rounds the Wizard Slayer sacrifices 20% of <PRO_HISHER> magic resistance and applies it to <PRO_HISHER> party.
+
+Disadvantages:
+
+-  The Wizard Slayer discipline requires dedication and as a result they cannot dual class
+-  The arduous training Wizard Slayers go through takes its toll and results in -2 Constitution
+-  Devotion to mage hunting limits this warrior's martial training and <PRO_HESHE> can only achieve mastery (3 slots) in any weapon
+– May not use any magic items apart from weapons, armor and and equipment that provides Magic Resistance and/or Magic Damage Resistance that is allowed to a Fighter.~
+@104 = ~WIZARD SLAYER: This warrior has been specially trained by <PRO_HISHER> sect to excel in hunting and combating spellcasters of all kinds.
+
+Advantages:
+– Each successful hit bestows a 10% cumulative chance of spell failure on the target.
+– +1% Magic Resistance per level through level 19.
+– Alternating +5% and +1% Magic Resistance from level 20 onwards.
+
+Disadvantages:
+– May not use any magic items apart from weapons, armor and and equipment that provides Magic Resistance and/or Magic Damage Resistance that is allowed to a Fighter.~
+@201 = ~When asked about his past, VALYGAR is silent for a long time and his face becomes grim. He explains briefly that he is the last of the Corthala noble line, a family that was once one of the wealthiest in Amn. The Corthalas have always been cursed with magical ability, however, and Valygar spits the words with great derision. Every Corthala who has used their magical talents has become obsessed with them and ultimately come to a grievous end. His mother was the most recent victim, although the fighter does not elaborate on the point. Valygar intends to fulfill his family's oath to find and destroy their ancestor, Lavok, and then he intends to let his cursed bloodline die out once and for all.~
+@202 = ~Bring me Valygar, the wizard slayer.~
+// EoF
