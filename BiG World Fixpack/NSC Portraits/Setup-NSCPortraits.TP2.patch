@@ -1,0 +1,16 @@
+--- Setup-NSCPortraits.TP2	
++++ "b/e:\\Jeux modd\303\251s\\Baldur's Gate 2\\BigWorldSetupFR\\OverwriteFiles\\BWP\\Setup-NSCPortraits.TP2"	
+@@ -551,7 +551,12 @@ COPY - ~NSC Portraits/tbl/re.tbl~  ~NSC Portraits/tbl/re.tbl~
+   END
+ 
+ BEGIN ~Portraits for BG1 Romantic Encounters~ 
+-REQUIRE_COMPONENT ~setup-bg1re.tp2~ ~0~ ~You haven't installed BG1 Romantic Encounters, skipping this component~ 
++REQUIRE_PREDICATE ((MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~100~)
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~101~)
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~102~)
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~103~)
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~104~)
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~105~)) ~You haven't installed BG1 Romantic Encounters, skipping this component~ 
+ DESIGNATED 1780
+ 
+ OUTER_SPRINT ~folder~ ~REBG1~

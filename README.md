@@ -5,14 +5,26 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 ##### Corrections de bugs
 
-- Tweak Antlogoy v15
+- Item Upgrade v45
+  - Des traductions manquantes dans le fichier itemupgrade/languages/french/lolwot.tra empêchaient le mod de s'installer en français.
+
+- Stratagems v34.3
+  - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
+
+- Tweak Anthology v15
   - La version EE n'était pas correctement détectée pour les composants 4050 et 4080
+
+- Wheels of Prophecy v8.5
+  - Certains fichiers de traduction étaient encodés en windows-1252 et non en ISO-8859-1, provoquant des crashs du jeu
 
 #### Corrections de compatibilité
 
 - EET v13.4
   - Compatibilité avec CorrectFrBG1EE
-  
+
+- Gerri's BGT NPC Portraits v3.1
+  - Le composant "Portraits for BG1 Romantic Encounters" se basait sur le composant 0 de "BG1 Romantics Encounters" qui n'existe plus et est remplacé par les composants 100 à 105.
+
 - IEP Extended Banters v5.8
   - Compatibilité avec BG1NPC, le composant 25 est devenu le 100
 
