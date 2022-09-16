@@ -14,9 +14,6 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Tweak Anthology v15
   - La version EE n'était pas correctement détectée pour les composants 4050 et 4080
 
-- Wheels of Prophecy v8.5
-  - L'encodage des fichiers de traduction provoquait des crashs du jeu, ils ont été convertis en utf-8
-
 #### Corrections de compatibilité
 
 - EET v13.4
