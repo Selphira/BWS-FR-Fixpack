@@ -5,9 +5,6 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 ##### Corrections de bugs
 
-- Item Upgrade v45
-  - Des traductions manquantes dans le fichier itemupgrade/languages/french/lolwot.tra empêchaient le mod de s'installer en français.
-
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
 
