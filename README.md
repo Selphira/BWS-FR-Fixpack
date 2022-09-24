@@ -8,6 +8,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
 
+- SubtleDoctor's Random Tweak v1.5.6
+  - Le composant 4020 modifiait les fichiers itm et non les fichiers cre
+
 - Tweak Anthology v15
   - La version EE n'était pas correctement détectée pour les composants 4050 et 4080
 
