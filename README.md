@@ -3,7 +3,7 @@
 BWS-FR Fixpack est une compilation de correctifs destinés au BWS-FR.  
 Il est basé sur le fonctionnement du EE-Mod-Fixpack.  
 
-##### Corrections de bugs
+#### Corrections de bugs
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
@@ -31,7 +31,11 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Tweak Antlogoy v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
 
-##### Traductions et corrections d'orthographe
+#### Traductions et corrections d'orthographe
 
 - RelieveWizardSlayer.tp2 v1.7
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"
+
+#### Patchs repris et adaptés du BiG World Fixpack
+
+- Homeward bound v8

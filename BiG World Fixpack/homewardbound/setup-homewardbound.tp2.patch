@@ -1,0 +1,11 @@
+--- homewardbound\setup-homewardbound.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\homewardbound\\setup-homewardbound.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~homewardbound/backup~
+ AUTHOR ~berelinde - berelinde@gmail.com~
+ 
+ README ~homewardbound/readme-homewardbound.txt~ 
+-VERSION ~v8 - 01 August, 2019~ 
++VERSION ~v8 - 01 August, 2019 BWS-FR Fix~
+ 
+ ALWAYS
+ 	ACTION_DEFINE_ARRAY b_reload BEGIN
