@@ -1,0 +1,21 @@
+--- Severian\Setup-Severian.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\Severian\\Setup-Severian.tp2"
+@@ -35,6 +35,8 @@ ALWAYS
+ 	END
+ END
+ 
++VERSION ~v0.3.2 BWS-FR Fix~
++
+ LANGUAGE ~Francais~
+ 	 ~french~
+ 	 ~Severian/Translations/French/Setup.tra~
+@@ -309,7 +311,8 @@ SAY AREA_DUNGEON ~~ [#SDungeo]
+ SAY AREA_FOREST ~~ [#SForest]
+ SAY AREA_DAY ~~ [#SDay]
+ SAY AREA_NIGHT ~~ [#SNight]
+-WRITE_BYTE  0x246 ~%PISTEUR%~
++WRITE_SHORT 0x244 0
++WRITE_SHORT 0x246 0x4000 + ~%PISTEUR%~
+ 
+ 
+ // Compilation des fichiers dialogues de Severian (SoA)
