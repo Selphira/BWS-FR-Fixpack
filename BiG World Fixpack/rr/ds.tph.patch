@@ -1,0 +1,11 @@
+--- rr\lib\ds\ds.tph	Sat May 19 23:21:37 2018
++++ C:\BWP Patchstudio\patched files\rr\lib\ds\ds.tph	Thu Jun 14 07:56:26 2018
+@@ -354,7 +354,7 @@
+     END
+   END
+
+-  SORT_ARRAY_INDICES auxil NUMERICALLY
++//  SORT_ARRAY_INDICES auxil NUMERICALLY
+
+   // insert or delete data
+   local_delta=0
