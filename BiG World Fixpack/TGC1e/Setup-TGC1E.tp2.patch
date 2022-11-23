@@ -1,0 +1,10 @@
+--- TGC1e\Setup-TGC1E.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\TGC1e\\Setup-TGC1E - Copie.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~TGC1E/Backup~
+ AUTHOR ~Baronius, blackwyrmlair.net~
+-VERSION ~v1.9~
++VERSION ~v1.9 BWS-FR Fix~
+ README ~TGC1E/Readme/readme-%LANGUAGE%.html~ ~TGC1E/Readme/readme.html~
+ 
+ DEFINE_ACTION_MACRO ~TGC1E_INIT~ BEGIN
