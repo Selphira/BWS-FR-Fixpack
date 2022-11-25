@@ -1,0 +1,11 @@
+--- atweaks\baf\fey\rr#sdrya.baf
++++ "b/E:\\GOG\\Baldur's Gate II - Enhanced Edition - Test\\atweaks\\baf\\fey\\rr#sdrya.baf"	
+@@ -808,7 +808,7 @@ IF
+ 	ActionListEmpty()
+ 	!GlobalTimerNotExpired("RR#Cast","LOCALS")
+ 	HaveSpellRES("rr#fchrm") // Charm Person (Dryad and Hamadryad)
+-	See(EigthNearestEnemyOfType([0.HUMANOID]))
++	See(EighthNearestEnemyOfType([0.HUMANOID]))
+ 	!Class(LastSeenBy(Myself),MONK)
+         !Kit(LastSeenBy(Myself),INQUISITOR)
+         !Kit(LastSeenBy(Myself),CAVALIER)

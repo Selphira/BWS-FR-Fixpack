@@ -8,6 +8,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Edwin Romance v3.0
   - Traduction manquante empêchant le mod de s'installer.
 
+- Severian v0.3.2
+  - SOD n'était pas correctement détecté
+
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
 
@@ -15,6 +18,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - La version EE n'était pas correctement détectée pour les composants 4050 et 4080
 
 #### Corrections de compatibilité
+
+- aTweaks v4.53
+  - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
 - EET v13.4
   - Compatibilité avec CorrectFrBG1EE

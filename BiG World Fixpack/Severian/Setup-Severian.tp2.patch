@@ -1,5 +1,5 @@
 --- Severian\Setup-Severian.tp2
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\Severian\\Setup-Severian.tp2"
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\Severian\\Setup-Severian - Copie.tp2"	
 @@ -35,6 +35,8 @@ ALWAYS
  	END
  END
@@ -9,6 +9,15 @@
  LANGUAGE ~Francais~
  	 ~french~
  	 ~Severian/Translations/French/Setup.tra~
+@@ -262,7 +264,7 @@ SAY @101
+ SAY @102
+ SAY @103
+ 
+-ACTION_IF GAME_IS ~BGEE SOD BG2EE IWDEE EET~ THEN BEGIN
++ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ OR GAME_INCLUDES ~sod~ THEN BEGIN
+ 	LAF fl#add_kit_ee STR_VAR kit_name = PISTEUR END
+ END
+ 
 @@ -309,7 +311,8 @@ SAY AREA_DUNGEON ~~ [#SDungeo]
  SAY AREA_FOREST ~~ [#SForest]
  SAY AREA_DAY ~~ [#SDay]
