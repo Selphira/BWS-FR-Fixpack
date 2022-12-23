@@ -5,6 +5,10 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- Item Revision v4beta10sd16
+  - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
+    Ex: DWCHAN02, DWPLAT01, ISHCHA
+
 - Severian v0.3.2
   - SOD n'était pas correctement détecté
   
@@ -34,6 +38,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - IEP Extended Banters v5.8
   - Compatibilité avec BG1NPC, le composant 25 est devenu le 100
+
+- Item Revision v4beta10sd16
+  - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).
 
 - RelieveWizardSlayer.tp2 v1.7
   - Compatibilité avec "Wizard Slayer Rebalancing", le tp2 et le numéro du composant étaient incorrects
