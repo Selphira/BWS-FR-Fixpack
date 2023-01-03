@@ -1,15 +1,15 @@
---- cdtweaks\\setup-cdtweaks.tp2
+--- cdtweaks\setup-cdtweaks.tp2
 +++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\cdtweaks\\setup-cdtweaks.tp2"	
-@@ -11,7 +11,7 @@ ALWAYS
+@@ -12,7 +12,7 @@ ALWAYS
    
  END
  
--VERSION ~v15~
-+VERSION ~v15 BWS-FR Fix~
+-VERSION ~v16~
++VERSION ~v16 BWS-FR Fix~
  
  README ~cdtweaks/languages/%LANGUAGE%/readme-cdtweaks.html~ ~cdtweaks/readme-cdtweaks.html~
  
-@@ -3849,11 +3849,13 @@ END
+@@ -3850,11 +3850,13 @@ END
  
  // add portrait change opcodes to edwin transform spells
  COPY_EXISTING ~spin662.spl~ ~override~ // return to edwin
@@ -23,21 +23,3 @@
    LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 1 timing = 1 STR_VAR resource = royo4l END // large portrait
    LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 0 timing = 1 STR_VAR resource = royo4m END // small portrait
  
-@@ -13977,7 +13979,7 @@ COPY_EXISTING_REGEXP GLOB ~^_?jahei.*\.cre$~ ~override~
- ACTION_IF FILE_EXISTS_IN_GAME misc5x.itm BEGIN
- 
-   COPY_EXISTING ~misc5x.itm~ ~override~ // harper pin
--    PATCH_IF GAME_IS enhanced_edition BEGIN
-+    PATCH_IF enhanced_edition BEGIN
-       WRITE_LONG 0x1e 0 // nukes all flags since 319 is in effect; shouldn't have any anyway
-     END ELSE BEGIN
-       READ_BYTE  0x1e "use1"
-@@ -14301,7 +14303,7 @@ END ELSE BEGIN // tutu, bgt, bgee
-   
-   COMPILE ~cdtweaks/dlg/p#khalid.d~ EVALUATE_BUFFER
- 
--  ACTION_IF GAME_IS enhanced_edition BEGIN
-+  ACTION_IF enhanced_edition BEGIN
-   
-     COPY_EXISTING ~%KHALID_BCS%.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
