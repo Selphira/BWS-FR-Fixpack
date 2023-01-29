@@ -59,6 +59,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Patchs repris et adaptés du BiG World Fixpack
 
+- Animal Companions v1.6
 - Homeward bound v8
 - Rogue Rebalancing v4.92
 - Severian v0.3.2
