@@ -1,0 +1,88 @@
+--- Hanna\Hanna.TP2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\Hanna\\Hanna.TP2"	
+@@ -5,7 +5,7 @@ AUTHOR ~drizzt905@hotmail.com~
+ // There are several changes to use new features of WeiDU
+ 
+ // Version displayed in the WeiDU.log
+-VERSION ~v2.5~
++VERSION ~v2.5 BWS-FR Fix~
+ 
+ README ~Hanna/Readme_Hanna.doc~
+ 
+@@ -291,8 +291,7 @@ COMPILE ~HANNA/BAF/estrol0.baf~
+ 
+ 
+ COMPILE ~HANNA/BAF/zru4.baf~
+-APPEND ~ANIMATE.IDS~
+-~0xE060 IC_LICH~
++APPEND ~ANIMATE.IDS~ ~0xE060 IC_LICH~ UNLESS ~0xE060~
+ COPY ~HANNA/bam/MLICA1.BAM~ ~override/MLICA1.BAM~
+ COPY ~HANNA/bam/MLICA1E.BAM~ ~override/MLICA1E.BAM~
+ COPY ~HANNA/bam/MLICA2.BAM~ ~override/MLICA2.BAM~
+@@ -420,6 +419,29 @@ COPY ~HANNA/cre/hangi1.cre~ ~override/hangi1.cre~
+ SAY NAME1 @101
+ SAY NAME2 @101
+ 
++/* Throne of Bhaal transition */
++
++ACTION_IF GAME_IS ~eet~ BEGIN
++  INCLUDE ~EET/other/EET_functions.tph~
++  LAF ~EET_NPC_TRANSITION~
++    INT_VAR
++      type = 2
++      default_ToB = 1
++    STR_VAR
++      dv = "Hanna"
++      override_SoA = "Hanna"
++      override_ToB = "Hanna25"
++      dialog_ToB = "Hanna25"
++      cre_ToB = "hanna25"
++      traFile = EVAL "hanna/translations/%LANGUAGE%/HannaTob.tra"
++      string = "@0"
++      stringPosDV = "HaerDalis"
++      SummonedVar = "HannaSummoned"
++  END
++END ELSE BEGIN
++  COMPILE ~hanna/d/HannaTob.D~
++END
++
+ //0==[[=Extras=>
+ 
+ BEGIN @102
+@@ -527,8 +549,7 @@ BEGIN @134
+ EXTEND_TOP ~ar2013.bcs~ ~HANNA/baf/HAESQ02.baf~
+ COMPILE ~HANNA/BAF/HAESQ01.baf~
+ 
+-APPEND ~ANIMATE.IDS~
+-~0xE060 IC_LICH~
++APPEND ~ANIMATE.IDS~ ~0xE060 IC_LICH~ UNLESS ~0xE060~
+ COPY ~HANNA/bam/MLICA1.BAM~ ~override/MLICA1.BAM~
+ COPY ~HANNA/bam/MLICA1E.BAM~ ~override/MLICA1E.BAM~
+ COPY ~HANNA/bam/MLICA2.BAM~ ~override/MLICA2.BAM~
+@@ -557,26 +578,3 @@ COPY ~HANNA/CRE/HAESQ01.CRE~ ~override/HAESQ01.CRE~
+    SAY NAME1 @135
+    SAY NAME2 @135
+ 
+-
+-/* Throne of Bhaal transition */
+-
+-ACTION_IF GAME_IS ~eet~ BEGIN
+-  INCLUDE ~EET/other/EET_functions.tph~
+-  LAF ~EET_NPC_TRANSITION~
+-    INT_VAR
+-      type = 2
+-      default_ToB = 1
+-    STR_VAR
+-      dv = "Hanna"
+-      override_SoA = "Hanna"
+-      override_ToB = "Hanna25"
+-      dialog_ToB = "Hanna25"
+-      cre_ToB = "hanna25"
+-      traFile = EVAL "hanna/translations/%LANGUAGE%/HannaTob.tra"
+-      string = "@0" 
+-      stringPosDV = "HaerDalis"
+-      SummonedVar = "HannaSummoned"
+-  END
+-END ELSE BEGIN
+-  COMPILE ~hanna/d/HannaTob.D~ 
+-END
