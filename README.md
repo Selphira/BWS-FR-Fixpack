@@ -8,6 +8,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Expanded Thief Stronghold v3.0.0
   - Correction de la référence d'une créature dans certaines conditions. (merci [@TotoR115] (https://github.com/TotoR115) : https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
 
+- Gavin NPC v14
+  - Correction de la vérification d'une variable (merci [@AngelGryph] (https://github.com/AngelGryph) : https://github.com/Gibberlings3/Gavin_BG/commit/a85c8c8fd9d67eb46fc81faa6dfd86098013747b)
+
 - Hanna NPC v2.5
   - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
   - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.

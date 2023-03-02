@@ -1,0 +1,11 @@
+--- gavin\gavin.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\gavin\\gavin.tp2"	
+@@ -22,7 +22,7 @@ AUTHOR ~www.gibberlings3.net~ //berelinde@gmail.com
+ /* enable all error messages; nothing suppressed. comment this out for release version */
+ //MODDER
+ 
+-VERSION ~14~ 180312
++VERSION ~14 BWS-FR Fix~ 180312
+ 
+ /* launch the readme file immediately. */
+ README ~gavin/readme-gavin.html~
