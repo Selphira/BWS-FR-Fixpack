@@ -6,7 +6,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 #### Corrections de bugs
 
 - Expanded Thief Stronghold v3.0.0
-  - Correction de la référence d'une créature dans certaines conditions. (https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
+  - Correction de la référence d'une créature dans certaines conditions. (merci [@TotoR115] (https://github.com/TotoR115) : https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
 
 - Hanna NPC v2.5
   - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
@@ -24,9 +24,11 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
-  - Correction de divers appels à la fonction RandomNum() (merci [@supasillyass] (https://github.com/supasillyass))
+  - Correction de divers appels à la fonction RandomNum() (merci [@supasillyass] (https://github.com/supasillyass) et [@Ychap] (https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/44)
   - Correction du lancement du sort "BURNING_MAN_KEENING" qui était lancé en boucle (merci [@mleduque] (https://github.com/mleduque))
-  - Correction de typo avec les capacités de haut niveau innées (merci [@Ychap] (https://github.com/Ychap))
+  - Correction de typo avec les capacités de haut niveau innées (merci [@Ychap] (https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/48)
+  - Correction d'un texte erroné de Château-Suif dans EET (merci [@Ychap] (https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/49)
+  - Correction d'un texte erroné sur l'écran de TotSC dans EET (merci [@Ychap] (https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/50)
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm
@@ -81,8 +83,8 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"
 
 - Stratagems v34.3
-  - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator] (https://github.com/Krabator))
-  - Mise à jour de la traduction des sorts (merci [@Jazira33] (https://github.com/Jazira33))
+  - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator] (https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
+  - Mise à jour de la traduction des sorts (merci [@Jazira33] (https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
 
 - XanFrenchMini
   - 2 répliques anglaises n'étaient pas supprimées par le composant @0 
