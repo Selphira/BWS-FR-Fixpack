@@ -103,10 +103,12 @@ ALWAYS
 			PRINT ~~
 			AT_NOW ~%DISPLAY_FILE_CMD% %msg_file_path%~
 			PRINT ~~
+			/*
 			ACTION_IF (NOT DIRECTORY_EXISTS "BiG World Installpack\Big World Smoothpack") THEN BEGIN
 				PRINT ~Press any key to continue...~
 				ACTION_READLN ~pause~
 			END
+			*/
 		END
 	END
 

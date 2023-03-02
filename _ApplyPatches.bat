@@ -37,4 +37,4 @@ IF NOT EXIST "BiG World Fixpack" IF NOT EXIST "BiG_World_Fixpack" pause
 
 weidu --nogame --no-exit-pause --logapp --log _ApplyPatches.debug _ApplyPatches.tp2
 
-IF NOT EXIST "BiG World Installpack\BiG World Smoothpack" pause
+:: IF NOT EXIST "BiG World Installpack\BiG World Smoothpack" pause
