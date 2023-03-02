@@ -1,0 +1,30 @@
+--- gbthfkp\dialogs\tsglt1.d
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\gbthfkp\\tsglt1.d"	
+@@ -70,13 +70,13 @@ END
+ 
+ IF ~~ THEN BEGIN 13
+   SAY #32115 /* ~Now, would you like to discuss the patterns your thieves will assume this week? They are operating at a low level of risk right now, just covering the quota. ~ */
+-  IF ~Global("JamesLathan","GLOBAL",0) !Dead("Lathen")~ THEN REPLY #62163 /* ~Leave it as it is, then.~ */ DO ~EraseJournalEntry(45237)~ UNSOLVED_JOURNAL #55539 /* ~Thieves' Guild Stronghold: A stable of thieves.
++  IF ~Global("JamesLathan","GLOBAL",0) !Dead("shthlt02")~ THEN REPLY #62163 /* ~Leave it as it is, then.~ */ DO ~EraseJournalEntry(45237)~ UNSOLVED_JOURNAL #55539 /* ~Thieves' Guild Stronghold: A stable of thieves.
+ 
+ Jariel has informed me of my duties as guildmaster. I am to assign the activities of my thieves on a weekly basis, judging the risks accordingly. When the results are in, I may take a profit from their actions. I must also pay the guild quotamaster when he comes, conveniently about the same time as my thieves will be done. If I do not pay him on time, the guild will be shut down. The Shadow Thieves do not support guild offshoots that cannot provide adequate profit.~ */ GOTO 14
+   IF ~~ THEN REPLY #32170 /* ~I will make changes.~ */ DO ~EraseJournalEntry(45237)~ UNSOLVED_JOURNAL #55539 /* ~Thieves' Guild Stronghold: A stable of thieves.
+ 
+ Jariel has informed me of my duties as guildmaster. I am to assign the activities of my thieves on a weekly basis, judging the risks accordingly. When the results are in, I may take a profit from their actions. I must also pay the guild quotamaster when he comes, conveniently about the same time as my thieves will be done. If I do not pay him on time, the guild will be shut down. The Shadow Thieves do not support guild offshoots that cannot provide adequate profit.~ */ GOTO 15
+-  IF ~OR(2) Global("JamesLathan","GLOBAL",1) Dead("Lathen")~ THEN REPLY #62163 /* ~Leave it as it is, then.~ */ DO ~EraseJournalEntry(45237)~ UNSOLVED_JOURNAL #55539 /* ~Thieves' Guild Stronghold: A stable of thieves.
++  IF ~OR(2) Global("JamesLathan","GLOBAL",1) Dead("shthlt02")~ THEN REPLY #62163 /* ~Leave it as it is, then.~ */ DO ~EraseJournalEntry(45237)~ UNSOLVED_JOURNAL #55539 /* ~Thieves' Guild Stronghold: A stable of thieves.
+ 
+ Jariel has informed me of my duties as guildmaster. I am to assign the activities of my thieves on a weekly basis, judging the risks accordingly. When the results are in, I may take a profit from their actions. I must also pay the guild quotamaster when he comes, conveniently about the same time as my thieves will be done. If I do not pay him on time, the guild will be shut down. The Shadow Thieves do not support guild offshoots that cannot provide adequate profit.~ */ GOTO 200
+ END
+@@ -1141,9 +1141,9 @@ END
+ 
+ IF ~~ THEN BEGIN 196
+   SAY #32791 /* ~You can now choose to do one of two things. Your thieves can continue with the same instructions they already have, or you can choose to change their focus.~ */
+-  IF ~Global("JamesLathan","GLOBAL",0) !Dead("Lathen")~ THEN REPLY #62161 /* ~I will leave them as they are. No need to change anything.~ */ GOTO 14
++  IF ~Global("JamesLathan","GLOBAL",0) !Dead("shthlt02")~ THEN REPLY #62161 /* ~I will leave them as they are. No need to change anything.~ */ GOTO 14
+   IF ~~ THEN REPLY #32793 /* ~I will modify their instructions.~ */ GOTO 15
+-  IF ~OR(2) Global("JamesLathan","GLOBAL",1) Dead("Lathen")~ THEN REPLY #62161 /* ~I will leave them as they are. No need to change anything.~ */ GOTO 200
++  IF ~OR(2) Global("JamesLathan","GLOBAL",1) Dead("shthlt02")~ THEN REPLY #62161 /* ~I will leave them as they are. No need to change anything.~ */ GOTO 200
+ END
+ 
+ IF ~~ THEN BEGIN 197

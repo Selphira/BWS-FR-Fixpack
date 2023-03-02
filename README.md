@@ -5,6 +5,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- Expanded Thief Stronghold v3.0.0
+  - Correction de la référence d'une créature dans certaines conditions. (https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
+
 - Hanna NPC v2.5
   - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
   - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.
