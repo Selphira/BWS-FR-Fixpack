@@ -16,7 +16,10 @@
 @2000  = ~Choix des classes/caracteristiques/kits des PNJ~
 @2001  = ~Ceci va prendre quelques instants, veuillez patienter...~
 @2002  = ~Ce tome ne fonctionne pas pour les personnages avec classes jumelées~
-@2006  = ~Ne changer que les scores de caractéristiques~
+@2003  = ~~
+@2004  = ~Modifier la classe, le kit, les caractéristiques et monter de niveau niveau à partir de 0~
+@2005  = ~Modifier le kit et les caractéristiques~
+@2006  = ~Ne modifier que les caractéristiques~
 @2007  = ~Mémoriser des sorts~
 @2008  = ~Apprendre des sorts~
 @2009  = ~Utiliser cet objet depuis un emplacement rapide pour apprendre jusqu'à deux sorts par niveau. Vous pouvez le jeter après usage.~
@@ -36,17 +39,18 @@ Si vous avez aussi un autre tome spécifique pour resélectionner les compétenc
 @2019  = ~Choisir cette classe~
 @2020  = ~Choisir une autre classe~
 //
-@2030  = ~Changer de classe ?~
-@2031  = ~Devenir un guerrier~
-@2032  = ~Devenir un rôdeur~
-@2033  = ~Devenir un paladin~
-@2034  = ~Devenir un clerc~
-@2035  = ~Devenir un druide~
-@2036  = ~Devenir un chaman~
-@2037  = ~Devenir un voleur~
-@2038  = ~Devenir un barde~
-@2039  = ~Devenir un mage~
-@2040  = ~Devenir un ensorceleur~
+@2029  = ~Changer de classe ?~
+@2030  = ~Devenir un guerrier~
+@2031  = ~Devenir un rôdeur~
+@2032  = ~Devenir un paladin~
+@2033  = ~Devenir un clerc~
+@2034  = ~Devenir un druide~
+@2035  = ~Devenir un chaman~
+@2036  = ~Devenir un voleur~
+@2037  = ~Devenir un barde~
+@2038  = ~Devenir un mage~
+@2039  = ~Devenir un ensorceleur~
+@2040  = ~Devenir un moine~
 @2041  = ~Devenir un guerrier/mage~
 @2042  = ~Devenir un guerrier/voleur~
 @2043  = ~Devenir un guerrier/clerc~
@@ -54,7 +58,7 @@ Si vous avez aussi un autre tome spécifique pour resélectionner les compétenc
 @2045  = ~Devenir un rôdeur/clerc~
 @2046  = ~Devenir un clerc/voleur~
 @2047  = ~Devenir un clerc/mage~
-@2048  = ~Devenir un voleur/mage~
+@2048  = ~Devenir un mage/voleur~
 @2049  = ~Devenir un guerrier/mage/voleur~
 @2050  = ~Devenir un guerrier/mage/clerc~
 //

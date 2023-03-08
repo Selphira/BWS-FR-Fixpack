@@ -78,7 +78,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Traductions et corrections d'orthographe
 
-- NPCs Enhanced... um, for Everyone! v5.9.1
+- NPCs Enhanced... um, for Everyone! v5.9.6
   - Ajout et adaptation de la traduction effectuée par [mickabouille](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=12954) pour la version 5.6 : https://github.com/mleduque/NPC_EE
 
 - Olvyn Tweaks
