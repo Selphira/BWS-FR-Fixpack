@@ -1,0 +1,17 @@
+// Do not edit manually. This file is generated automatically by handle-charsets. Your changes will be lost.
+
+@1 = ~L'amulette de protection +1 n'est pas unique~
+@2 = ~L'anneau de protection +2 et la cape de protection +2 ne sont pas uniques~
+@3 = ~Les Bottes de rapidité ne sont pas uniques~
+@4 = ~Artefacts uniques : composant principal~
+@5 = ~Application stricte de la description des objets~
+@6 = ~Application etendue (encore plus d'objets magiques non dupliques)~
+
+
+@30 = ~Ce composant est uniquement disponible pour un jeu de la saga BG~
+@31 = ~Ce composant n'est pas disponible pour TuTu~
+@32 = ~Ce composant doit etre installe avant le composant principal~
+
+@100 = ~Supprimer les marchands bonus~
+@101 = ~Moins d'objets magiques~
+@200 = ~Ce composant est uniquement disponible pour BG2~
