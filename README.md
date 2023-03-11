@@ -21,6 +21,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Severian v0.3.2
   - SOD n'était pas correctement détecté
+  - Mise à jour de la librairie fl#add_kit_ee afin que le kit de Severian s'installe correctement
   
 - Refinements v4.35
   - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
