@@ -103,6 +103,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Animal Companions v1.6
 - Homeward bound v8
+- Lolfixer v19022016
 - Rogue Rebalancing v4.92
 - Severian v0.3.2
 - The Grey Clan Episode I: In Candlelight v1.9
