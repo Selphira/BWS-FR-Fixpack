@@ -60,9 +60,6 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Gerri's BGT NPC Portraits v3.1
   - Le composant "Portraits for BG1 Romantic Encounters" se basait sur le composant 0 de "BG1 Romantics Encounters" qui n'existe plus et est remplacé par les composants 100 à 105.
 
-- IEP Extended Banters v5.8
-  - Compatibilité avec BG1NPC, le composant 25 est devenu le 100
-
 - Item Revision v4beta10sd16
   - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).
 
