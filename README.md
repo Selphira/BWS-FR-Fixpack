@@ -5,6 +5,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- Divine Remix v8.1 (TotoR115)
+  - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
+
 - Expanded Thief Stronghold v3.0.0
   - Correction de la référence d'une créature dans certaines conditions. (merci [@TotoR115](https://github.com/TotoR115) : https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
 
