@@ -82,6 +82,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
     La description de la capacité "Démonstration Martiale" a été diminuée.
   - Compatibilité avec Iwdification (merci [@CamDawg](https://github.com/CamDawg) : https://github.com/FredrikLindgren/rr/pull/11)
 
+- Stratagems v34.3
+  - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
+
 - Tweak Antlogoy v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
 
