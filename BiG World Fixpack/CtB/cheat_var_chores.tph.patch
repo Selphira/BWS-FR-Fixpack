@@ -1,0 +1,11 @@
+--- CtB\lib\cheat_var_chores.tph
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\CtB\\cheat_var_chores.tph"	
+@@ -1,7 +1,7 @@
+ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+ 	COPY_EXISTING ~bgee.lua~ ~override/bgee.lua~
+ 	REPLACE_TEXTUALLY
+-~{"BD0010", "Test"},~
++~{"BD0010", "Ducal Palace City Exterior"},~
+ ~--CtB Chores Areas
+ 
+ 	{"AR3500", "Candlekeep"},

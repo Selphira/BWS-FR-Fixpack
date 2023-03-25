@@ -61,6 +61,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
+- Check the Bodies v3.0
+  - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
+
 - EET v13.4
   - Compatibilité avec CorrectFrBG1EE
   - Compatibilité avec EE Fixpack
