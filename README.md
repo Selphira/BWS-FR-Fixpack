@@ -63,6 +63,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Check the Bodies v3.0
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
+  - Compatibilité avec EET en déplaçant la zone du Cercle Druidique pour qu'il ne chevauche plus la zone de Bois Manteau (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/SpellholdStudios/Check_the_Bodies/pull/17)
 
 - EET v13.4
   - Compatibilité avec CorrectFrBG1EE
