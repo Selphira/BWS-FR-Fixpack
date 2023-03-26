@@ -1,0 +1,11 @@
+--- CtB\setup-ctb.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\CtB\\setup-ctb.tp2"	
+@@ -5,7 +5,7 @@ SUPPORT ~http://www.shsforums.net or https://github.com/SpellholdStudios~ NO_IF_
+ 
+ README ~ctb/text/ctb-readme-%LANGUAGE%.html~ ~ctb/text/ctb-readme-readme-english.html~
+ 
+-VERSION ~3.0~
++VERSION ~3.0 BWS-FR Fix~
+ 
+ AUTO_TRA ~CtB/Language/%s~
+ 
