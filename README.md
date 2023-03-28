@@ -61,6 +61,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
+- BG1 Unfinished Business v16.4
+  - Compatibilité avec EET : Correction d'un dialogue avecv Arkion (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Pocket-Plane-Group/bg1ub/pull/2)
+
 - Check the Bodies v3.0
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
   - Compatibilité avec EET en déplaçant la zone du Cercle Druidique pour qu'il ne chevauche plus la zone de Bois Manteau (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/SpellholdStudios/Check_the_Bodies/pull/17)
