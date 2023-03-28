@@ -5,6 +5,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- BG1 Unfinished Business v16.4
+  - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
+
 - Divine Remix v8.1 (TotoR115)
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
 
