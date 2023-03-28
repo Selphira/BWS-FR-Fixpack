@@ -31,9 +31,8 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Made in heaven: Encounters & Quests
   - Le composant @103 "Lycanthropes revises (EXPERIMENTAL)" copiait toutes les créatures !
 
-- Severian v0.3.2
+- Severian v0.3.3
   - SOD n'était pas correctement détecté
-  - Mise à jour de la librairie fl#add_kit_ee afin que le kit de Severian s'installe correctement
   
 - Refinements v4.35
   - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
@@ -131,5 +130,5 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Homeward bound v8
 - Lolfixer v19022016
 - Rogue Rebalancing v4.92
-- Severian v0.3.2
+- Severian v0.3.3
 - The Grey Clan Episode I: In Candlelight v1.9
