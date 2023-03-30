@@ -4,8 +4,8 @@
  BACKUP ~weidu_external/backup/npc_ee~
  AUTHOR ~SubtleD~
  
--VERSION ~5.9.6~
-+VERSION ~5.9.6 BWS-FR Fix~
+-VERSION ~5.9.9~
++VERSION ~5.9.9 BWS-FR Fix~
  //README ~npc_ee/readme-NPC_EE.html~
  
  ALWAYS
