@@ -9,3 +9,12 @@
  ~--CtB Areas
  
  	{"AR3520", "Stormhorns"},
+@@ -114,7 +114,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+ 	{"CB3667", "East Hlondeth: House Extaminos L0_7"},
+ 	{"CB3668", "East Hlondeth: House Extaminos L0_8"},
+ 		
+-	{"BD0010", "Test"},
++	{"BD0010", "Ducal Palace City Exterior"},
+ ~
+ 
+ END

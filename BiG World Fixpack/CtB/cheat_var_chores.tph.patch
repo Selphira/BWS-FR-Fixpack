@@ -9,3 +9,12 @@
  ~--CtB Chores Areas
  
  	{"AR3500", "Candlekeep"},
+@@ -18,7 +18,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+ 	{"AR3512", "Cutscene: Minsk"},
+ 	{"AR3513", "Cutscene: Sarevok"},
+ 		
+-	{"BD0010", "Test"},
++	{"BD0010", "Ducal Palace City Exterior"},
+ ~
+ 
+ END
