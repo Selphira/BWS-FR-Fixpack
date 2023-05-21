@@ -30,6 +30,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Traductions et corrections d'orthographe
 
+- Geomantic Sorcerer
+  - Le fichier de traduction setup.tra était encodé en ansi et non en utf8.
+
 - RelieveWizardSlayer.tp2 v1.7
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"
 
