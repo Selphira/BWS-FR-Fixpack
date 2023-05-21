@@ -1,0 +1,11 @@
+--- item_rev\lib\compatibility.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\item_rev\\lib\\compatibility.tpa"
+@@ -47,7 +47,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~dw#nodispel.mrk~ BEGIN
+   OUTER_SET comp_nodispel=0  END
+ 
+ // aTweaks - Expanded Tepmle Services
+-ACTION_IF MOD_IS_INSTALLED ~atweaks/setup-atweaks.tp2~ 600 BEGIN
++ACTION_IF MOD_IS_INSTALLED ~atweaks/setup-atweaks.tp2~ 510 BEGIN
+   OUTER_SET comp_atweaks_temples=1  END ELSE BEGIN
+   OUTER_SET comp_atweaks_temples=0  END
+ 

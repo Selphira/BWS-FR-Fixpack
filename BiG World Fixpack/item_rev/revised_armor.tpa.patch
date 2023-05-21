@@ -1,0 +1,13 @@
+--- item_rev\components\revised_armor.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\item_rev\\components\\revised_armor.tpa"
+@@ -92,9 +92,9 @@ ACTION_PHP_EACH armor AS ind => res BEGIN
+             xres=value
+             GET_OFFSET_ARRAY effects ITM_V10_GEN_EFFECTS
+             FOR (opcode=86;opcode<90;++opcode) BEGIN
++			  exists=0
+               PHP_EACH effects AS i => r BEGIN // check if the resistance opcode already exists
+                 READ_SHORT r op
+-                exists=0
+                 PATCH_IF op=opcode BEGIN
+                   WRITE_LONG r+4 (THIS+value)>100 ? 100 : (THIS+value) // don't go over 100
+                   exists=1
