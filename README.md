@@ -15,7 +15,10 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   
 - IEP Extended Banters v5.8
   - Compatibilité avec BG1NPC, le composant 25 est devenu le 100
-  
+
+- RelieveWizardSlayer.tp2 v1.7
+  - Compatibilité avec "Wizard Slayer Rebalancing", le tp2 et le numéro du composant étaient incorrects
+
 - Tweak Antlogoy v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
 

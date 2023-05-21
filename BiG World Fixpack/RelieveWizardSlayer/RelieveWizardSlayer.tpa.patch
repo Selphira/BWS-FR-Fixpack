@@ -1,0 +1,11 @@
+--- RelieveWizardSlayer\Components\RelieveWizardSlayer.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\RelieveWizardSlayer\\RelieveWizardSlayer.tpa"	
+@@ -28,7 +28,7 @@ WRITE_BYTE 0x2f (THIS BAND 0b11111101)
+ COPY_EXISTING ~POTN35.itm~ ~override~                            //Potion of Magic Shielding
+ WRITE_BYTE 0x2f (THIS BAND 0b11111101)
+ 
+-ACTION_IF (MOD_IS_INSTALLED ~wsr/setup-wsr.tp2~ ~0~) BEGIN
++ACTION_IF (MOD_IS_INSTALLED ~wsr/wsr.tp2~ ~100~) BEGIN
+ 
+ ACTION_IF (FILE_EXISTS_IN_GAME ~clastext.2da~) BEGIN
+   COPY_EXISTING ~clastext.2da~ ~override~

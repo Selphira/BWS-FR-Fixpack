@@ -1,5 +1,13 @@
 --- RelieveWizardSlayer\RelieveWizardSlayer.tp2
 +++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\RelieveWizardSlayer\\RelieveWizardSlayer.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~RelieveWizardSlayer/Backup~
+ AUTHOR ~Raduziel~
+-VERSION ~1.7~
++VERSION ~1.7 BWS-FR Fix~
+ 
+ LANGUAGE ~English~
+ 		 ~RelieveWizardSlayer/Tra/English~
 @@ -11,6 +11,11 @@ LANGUAGE ~Russkiy (Perevod: Saigon1983)~
           ~Russian~
  		 ~RelieveWizardSlayer/Tra/Russian/Setup.tra~
