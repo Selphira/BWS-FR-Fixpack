@@ -1,0 +1,11 @@
+--- gbthfkp\gbthfkp.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\gbthfkp\\gbthfkp.tp2"	
+@@ -2,7 +2,7 @@ BACKUP  ~weidu_external/backup/gbthfkp~
+ //AUTHOR ~g_blucher@yahoo.com~
+ SUPPORT ~Spellhold Studios at http://www.shsforums.net/forum/127-mod-resurrections/~
+ 
+-VERSION ~v3.0.0~
++VERSION ~v3.0.0 BWS-FR Fix~
+ 
+ README ~gbthfkp/readme/expanded_thief_stronghold-readme-english.html~
+ 
