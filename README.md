@@ -1,6 +1,6 @@
-# BWP-FR Fixpack
+# BWS-FR Fixpack
 
-BWP-FR Fixpack est une compilation de correctifs destinés au BWS-FR.  
+BWS-FR Fixpack est une compilation de correctifs destinés au BWS-FR.  
 Il est basé sur le fonctionnement du EE-Mod-Fixpack.  
 
 #### Corrections de compatibilité
