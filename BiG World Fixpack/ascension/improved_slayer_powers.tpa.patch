@@ -1,4 +1,4 @@
---- ascension\improved_slayer_powers.tpa
+--- ascension\powers\improved_slayer_powers.tpa
 +++ "b/E:\\GOG\\Baldur's Gate II - Enhanced Edition\\ascension\\powers\\improved_slayer_powers.tpa"	
 @@ -37,7 +37,7 @@ DEFINE_ACTION_FUNCTION slayer_powers_main BEGIN
     ACTION_FOR_EACH number IN 2 3 4 BEGIN
