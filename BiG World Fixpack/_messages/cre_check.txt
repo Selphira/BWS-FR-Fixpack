@@ -1,5 +1,5 @@
 
 
-Ensuite, les offsets mis à zéro dans tous les fichiers cre seront remplacés.
+Ensuite, les offsets mis à zero dans tous les fichiers cre seront remplaces.
 
 

@@ -1,5 +1,5 @@
-Installation précédente du Fixpack détectée !
-Ce Fixpack ne peut pas être installé plusieurs fois.
-Si vous êtes certain de ne pas l'avoir exécuté auparavant, essayez de rechercher un fichier
-BWP_Fixpack.installed dans le répertoire actuel et supprimez-le.
+Installation precedente du Fixpack detectee !
+Ce Fixpack ne peut pas etre installe plusieurs fois.
+Si vous etes certain de ne pas l'avoir execute auparavant, essayez de rechercher un fichier
+BWP_Fixpack.installed dans le repertoire actuel et supprimez-le.
 

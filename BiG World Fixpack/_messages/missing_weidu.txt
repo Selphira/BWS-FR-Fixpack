@@ -1,5 +1,5 @@
-Impossible de trouver "WeiDU.exe" dans le répertoire actuel.
-Le BWS-FR Fixpack contient un composant optionnel qui nécessite
-le fichier WeiDU.exe. Il sera ignoré si vous choisissez de poursuivre l'installation.
-Fermez maintenant cette fenêtre et placez un WeiDU.exe dans le répertoire courant,
-si vous voulez exécuter le composant optionnel.
+Impossible de trouver "WeiDU.exe" dans le repertoire actuel.
+Le BWS-FR Fixpack contient un composant optionnel qui necessite
+le fichier WeiDU.exe. Il sera ignore si vous choisissez de poursuivre l'installation.
+Fermez maintenant cette fenetre et placez un WeiDU.exe dans le repertoire courant,
+si vous voulez executer le composant optionnel.
