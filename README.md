@@ -5,6 +5,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- BG1 Mini Quests and Encounters v25.6
+  - Correction du tooltip des créatures WAGHOUL.CRE et WAFARM.CRE (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG_Quests_And_Encounters/pull/25)
+
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
