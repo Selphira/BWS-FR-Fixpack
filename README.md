@@ -95,6 +95,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
   - Mise à jour de la traduction des sorts (merci [@Jazira33](https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
 
+- SubtleDoctor's Random Tweak v1.6
+  - Mise à jour de la traduction (merci [@mleduque]https://github.com/mleduque) : https://github.com/subtledoctor/d5_Random_Tweaks/pull/10)
+
 - Unique Artifacts v7.11
   - Ajout de la traduction
 
