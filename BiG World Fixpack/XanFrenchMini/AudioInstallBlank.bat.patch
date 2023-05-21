@@ -1,0 +1,12 @@
+--- XanFrenchMini\AudioInstallBlank.bat
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\XanFrenchMini\\AudioInstallBlank.bat"	
+@@ -9,4 +9,6 @@ del override\O#XAN045.wav
+ del override\O#XAN046.wav
+ del override\O#XAN047.wav
+ del override\O#XAN048.wav
+-del override\O#XAN049.wav
+\ No newline at end of file
++del override\O#XAN049.wav
++del override\O#XAN001.wav
++del override\O#XAN002.wav
+\ No newline at end of file
