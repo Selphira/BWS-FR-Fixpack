@@ -15,7 +15,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - La version EE n'était pas correctement détectée pour les composants 4050 et 4080
 
 - Wheels of Prophecy v8.5
-  - Certains fichiers de traduction étaient encodés en windows-1252 et non en ISO-8859-1, provoquant des crashs du jeu
+  - L'encodage des fichiers de traduction provoquait des crashs du jeu, ils ont été convertis en utf-8
 
 #### Corrections de compatibilité
 
