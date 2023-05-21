@@ -1,0 +1,11 @@
+--- bg1ub\setup-bg1ub.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\bg1ub\\setup-bg1ub.tp2"	
+@@ -6,7 +6,7 @@ SUPPORT "http://forums.pocketplane.net/index.php/board,79.0.html"
+ 
+ // MODDER
+ 
+-VERSION ~v16.4~
++VERSION ~v16.4 BWS-FR Fix~
+ README ~bg1ub/README.bg1ub.english.html~
+ 
+ // Giant List of ALLOW_MISSING

@@ -1,0 +1,11 @@
+--- bg1ub\abPrismEmeralds\abitrp.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\bg1ub\\abitrp.baf"	
+@@ -17,7 +17,7 @@ IF
+ THEN
+   RESPONSE #100
+     SetGlobal("abgf_BrokeInto","GLOBAL",1)
+-    ActionOverride("Prism",Dialogue([PC])
++    ActionOverride("Prism",Dialogue([PC]))
+ END
+ 
+ IF
