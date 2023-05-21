@@ -1,0 +1,10 @@
+--- AnimalCompanions\files3\UBRPET.d	Wed Apr 06 02:30:50 2016
++++ C:\BWP Patchstudio\patched files\AnimalCompanions\files3\UBRPET.d	Wed Jun 13 18:46:05 2018
+@@ -103,6 +103,6 @@
+ 
+ SAY @35
+ 
+-IF ~~ DO ~DestroySelf(5)~ EXIT
++IF ~~ DO ~DestroySelf()~ EXIT
+ 
+ END
