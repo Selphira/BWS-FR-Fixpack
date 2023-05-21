@@ -1,0 +1,14 @@
+--- RelieveWizardSlayer\RelieveWizardSlayer.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\RelieveWizardSlayer\\RelieveWizardSlayer.tp2"	
+@@ -11,6 +11,11 @@ LANGUAGE ~Russkiy (Perevod: Saigon1983)~
+          ~Russian~
+ 		 ~RelieveWizardSlayer/Tra/Russian/Setup.tra~
+ 		 ~RelieveWizardSlayer/Tra/Russian/IHateUndead.tra~
++
++LANGUAGE ~French~
++         ~French~
++		 ~RelieveWizardSlayer/Tra/French/Setup.tra~
++		 ~RelieveWizardSlayer/Tra/French/RelieveWizardSlayer.tra~
+ 		 
+ //__________________________________________________________________________________
+ //__________________________________________________________________________________
