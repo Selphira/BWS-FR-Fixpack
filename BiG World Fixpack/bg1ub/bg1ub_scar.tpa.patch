@@ -1,0 +1,12 @@
+--- bg1ub\scar\bg1ub_scar.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\bg1ub\\bg1ub_scar.tpa"	
+@@ -1,6 +1,9 @@
+ ///// Scar and the Sashenstar's Daughter               \\\\\
+ /////        - Scar Quest Extention(s)                 \\\\\
+ 
++ACTION_IF !GAME_IS ~bgee~ THEN BEGIN
++	COMPILE EVALUATE_BUFFER ~bg1ub/scar/ubscar_classic.d~ USING ~bg1ub/tra/%LANGUAGE%/ubscar.tra~
++END
+ COMPILE EVALUATE_BUFFER ~bg1ub/scar/ubscar.d~
+ ACTION_IF !GAME_IS ~bgee~ THEN BEGIN
+ 	COMPILE EVALUATE_BUFFER ~bg1ub/scar/ubscar_fixes.d~
