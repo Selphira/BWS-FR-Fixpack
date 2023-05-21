@@ -159,6 +159,10 @@ ALWAYS
 			OUTER_SET skip = 0
 			ACTION_IF (~%fixpack_folder_name%~ STRING_CONTAINS_REGEXP ~^_~ == 0) THEN BEGIN
 				//PRINT ~Skipping "%folder%" because it has a "_" prefix...~
+				ACTION_IF (NOT ~%fixpack_folder_name%~ STRING_EQUAL ~_messages~ AND NOT ~%fixpack_folder_name%~ STRING_EQUAL ~_utils~) BEGIN
+					LAF ~recursive_deep_copy~ INT_VAR second_pass = 0 STR_VAR current_dir = EVAL ~%fixpack_subfolder%~ target_dir = ~.~ END
+					LAF ~recursive_deep_copy~ INT_VAR second_pass = 1 STR_VAR current_dir = EVAL ~%fixpack_subfolder%~ target_dir = ~.~ END
+				END
 				OUTER_SET skip = 1
 			END ELSE ACTION_IF (~%folder%~ STRING_CONTAINS_REGEXP ~ ~ == 0) THEN BEGIN
 				//PRINT ~Skipping "%folder%" because it contains a space in the path...~
