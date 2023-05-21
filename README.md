@@ -46,6 +46,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Item Revision v4beta10sd16
   - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).
 
+- Olvyn Tweaks
+  - La description des compétences d'arme n'était pas modifiée sous EET
+
 - RelieveWizardSlayer.tp2 v1.7
   - Compatibilité avec "Wizard Slayer Rebalancing", le tp2 et le numéro du composant étaient incorrects
 
@@ -60,6 +63,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - NPCs Enhanced... um, for Everyone! v5.9.1
   - Ajout et adaptation de la traduction effectuée par [mickabouille](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=12954) pour la version 5.6 : https://github.com/mleduque/NPC_EE
+
+- Olvyn Tweaks
+  - Corrections de caractères majuscules accentués qui fonctionnent sans problème avec EE
 
 - RelieveWizardSlayer.tp2 v1.7
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"

@@ -1,0 +1,18 @@
+--- METweaks\\METweaks.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\METweaks\\METweaks.tp2"	
+@@ -1,5 +1,6 @@
+ BACKUP ~METweaks/backup~
+ AUTHOR ~OlvynChuru~
++VERSION ~BWS-FR Fix~
+ 
+ ALWAYS
+ 
+@@ -2717,7 +2718,7 @@ ACTION_IF (GAME_IS ~bgee~) BEGIN
+ 	OUTER_SET me_two_handed_strref = 25044
+ 	OUTER_SET me_sword_and_shield_strref = 25045
+ 	OUTER_SET me_single_weapon_strref = 25046
+-END ELSE ACTION_IF (GAME_IS ~bg2ee~) BEGIN
++END ELSE ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ 	OUTER_SET me_two_weapon_strref = 34176
+ 	OUTER_SET me_two_handed_strref = 34150
+ 	OUTER_SET me_sword_and_shield_strref = 34173

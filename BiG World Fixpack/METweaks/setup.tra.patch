@@ -1,0 +1,20 @@
+--- METweaks\\tra\\french\\setup.tra
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\METweaks\\setup.tra"	
+@@ -81,7 +81,7 @@ Maître (3 emplacements) : Les pénalités du porteur des armes sont réduites a
+ Haut Maître (4 emplacements) : Le porteur des armes ne subit aucune pénalité lorsqu'il manie deux armes.
+ 
+ Grand Maître (5 emplacements) : Le porteur des armes ne subit aucune pénalité et bénéficie d'un bonus de +1 a la CA lorsqu'il manie deux armes.~
+-@61 = ~a DEUX MAINS : Ce style de combat permet au personnage d'utiliser une arme de mêlée a deux mains et de bénéficier de bonus spéciaux.
++@61 = ~À DEUX MAINS : Ce style de combat permet au personnage d'utiliser une arme de mêlée a deux mains et de bénéficier de bonus spéciaux.
+ 
+ Compétent (1 emplacement) : Le porteur de l'arme bénéficie d'un bonus de +2 aux jets de dégâts et d'un bonus de -1 au facteur de vitesse.
+ 
+@@ -92,7 +92,7 @@ Maître (3 emplacements) : Le porteur de l'arme bénéficie d'un bonus de +5 aux
+ Haut Maître (4 emplacements) : Le porteur de l'arme bénéficie d'un bonus de +6 aux jets de dégâts, d'un bonus de -4 au facteur de vitesse et de la possibilité de faire des coups critiques sur un jet de 18 à 20 lorsqu'il utilise une arme a deux mains.
+ 
+ Grand maître (5 emplacements) : Le porteur de l'arme bénéficie d'un bonus de +8 aux jets de dégâts, d'un bonus de -5 au facteur de vitesse et de la possibilité de faire des coups critiques sur un jet de 18 à 20 lorsqu'il utilise une arme a deux mains.~
+-@62 = ~ePeE ET BOUCLIER : N'importe qui peut prendre un bouclier et bénéficier de ses bonus de protection de base, mais en dépensant des emplacements pour ce style de combat, un aventurier peut maximiser les avantages reçus.
++@62 = ~ÉPÉE ET BOUCLIER : N'importe qui peut prendre un bouclier et bénéficier de ses bonus de protection de base, mais en dépensant des emplacements pour ce style de combat, un aventurier peut maximiser les avantages reçus.
+ 
+ Compétent (1 emplacement) : Le porteur du bouclier bénéficie d'un bonus de +1 a la CA contre toutes les armes, et d'un bonus supplémentaire de +2 a la CA contre les armes a projectiles.
+ 
