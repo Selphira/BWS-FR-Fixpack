@@ -18,6 +18,13 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
 
+- The Stone of Askavar v2.2
+  - SOAITM27.itm
+    - Correction du parameter2 de l'opcode 115 : 4 => 0
+  - SOAITM30.itm
+    - Correction du type de compétence : "Épée longue" => "Épée à deux mains"
+    - Correction du parameter2 de l'opcode 115 : 4 => 0
+
 #### Corrections de compatibilité
 
 - Ascension v2.0.17
