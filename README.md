@@ -5,11 +5,11 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
-- Edwin Romance v3.0
-  - Traduction manquante empêchant le mod de s'installer.
-
 - Severian v0.3.2
   - SOD n'était pas correctement détecté
+  
+- Refinements v4.35
+  - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
