@@ -1,0 +1,22 @@
+--- divine_remix\setup-divine_remix.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\divine_remix\\setup-divine_remix.tp2"	
+@@ -31,7 +31,7 @@ ALWAYS
+ 
+ END
+ 
+-VERSION  ~8.1~
++VERSION  ~8.1 BWS-FR Fix~
+ 
+ README   ~divine_remix/readme-divine_remix.html~
+ 
+@@ -2367,9 +2367,8 @@ COPY_EXISTING ~nmrnwr4.spl~ ~override/nmrnwr5.spl~ // +5% set snares
+ 
+ BEGIN @60000 DESIGNATED 600 // component 600
+ GROUP @10
+-REQUIRE_PREDICATE GAME_IS ~bgt tutu tutu_totsc tob soa bg2ee eet bgee~ @16
+ REQUIRE_COMPONENT ~Setup-divine_remix.tp2~ ~100~ @1
+-REQUIRE_COMPONENT ~Setup-divine_remix.tp2~ ~109~ @4
++REQUIRE_PREDICATE (GAME_IS ~bg2ee eet bgee~ OR (GAME_IS ~bgt tutu tutu_totsc tob soa~ AND MOD_IS_INSTALLED ~Setup-divine_remix.tp2~ ~109~)) @16
+ 
+ // find tempus kit in kitlist
+ COPY_EXISTING ~kitlist.2da~ ~override~
