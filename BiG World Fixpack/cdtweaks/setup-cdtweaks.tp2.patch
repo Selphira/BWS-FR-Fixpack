@@ -9,7 +9,21 @@
  
  README ~cdtweaks/languages/%LANGUAGE%/readme-cdtweaks.html~ ~cdtweaks/readme-cdtweaks.html~
  
-@@ -13977,7 +13977,7 @@ COPY_EXISTING_REGEXP GLOB ~^_?jahei.*\.cre$~ ~override~
+@@ -3849,11 +3849,13 @@ END
+ 
+ // add portrait change opcodes to edwin transform spells
+ COPY_EXISTING ~spin662.spl~ ~override~ // return to edwin
++  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 107 END
+   LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 1 timing = 1 STR_VAR resource = nedwinm END // large portrait
+   LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 0 timing = 1 STR_VAR resource = nedwins END // small portrait
+ 
+ // add portrait change opcodes to edwin transform spells
+ COPY_EXISTING ~spin916.spl~ ~override~ // change to edwina
++  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 107 END
+   LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 1 timing = 1 STR_VAR resource = royo4l END // large portrait
+   LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 0 timing = 1 STR_VAR resource = royo4m END // small portrait
+ 
+@@ -13977,7 +13979,7 @@ COPY_EXISTING_REGEXP GLOB ~^_?jahei.*\.cre$~ ~override~
  ACTION_IF FILE_EXISTS_IN_GAME misc5x.itm BEGIN
  
    COPY_EXISTING ~misc5x.itm~ ~override~ // harper pin
@@ -18,7 +32,7 @@
        WRITE_LONG 0x1e 0 // nukes all flags since 319 is in effect; shouldn't have any anyway
      END ELSE BEGIN
        READ_BYTE  0x1e "use1"
-@@ -14301,7 +14301,7 @@ END ELSE BEGIN // tutu, bgt, bgee
+@@ -14301,7 +14303,7 @@ END ELSE BEGIN // tutu, bgt, bgee
    
    COMPILE ~cdtweaks/dlg/p#khalid.d~ EVALUATE_BUFFER
  
