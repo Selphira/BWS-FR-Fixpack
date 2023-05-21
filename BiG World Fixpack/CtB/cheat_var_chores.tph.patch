@@ -5,7 +5,7 @@
  	COPY_EXISTING ~bgee.lua~ ~override/bgee.lua~
  	REPLACE_TEXTUALLY
 -~{"BD0010", "Test"},~
-+~{"BD0010", "Ducal Palace City Exterior"},~
++~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~
  ~--CtB Chores Areas
  
  	{"AR3500", "Candlekeep"},
@@ -14,7 +14,7 @@
  	{"AR3513", "Cutscene: Sarevok"},
  		
 -	{"BD0010", "Test"},
-+	{"BD0010", "Ducal Palace City Exterior"},
++	{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},
  ~
  
  END

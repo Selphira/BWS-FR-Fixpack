@@ -5,7 +5,7 @@
  	COPY_EXISTING ~bgee.lua~ ~override/bgee.lua~
  	REPLACE_TEXTUALLY
 -~{"BD0010", "Test"},~
-+~{"BD0010", "Ducal Palace City Exterior"},~
++~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~
  ~--CtB Areas
  
  	{"AR3520", "Stormhorns"},
@@ -14,7 +14,7 @@
  	{"CB3668", "East Hlondeth: House Extaminos L0_8"},
  		
 -	{"BD0010", "Test"},
-+	{"BD0010", "Ducal Palace City Exterior"},
++	{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},
  ~
  
  END
