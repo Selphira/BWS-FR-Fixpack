@@ -5,6 +5,10 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- Hanna NPC v2.5
+  - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
+  - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.
+
 - Item Revision v4beta10sd16
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
     Ex: DWCHAN02, DWPLAT01, ISHCHA
