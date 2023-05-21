@@ -33,6 +33,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
   - Correction d'un problème où les items rndtre01 et rndtre02 étaient remplacés par null.
   - Correction d'un problème où un item WIZARD_S.itm était ajouté dans certains magasins.
+  - Correction du prix demandé par Gaelan Bayle qui n'était pas mis à jour dans les textes à cause de l'espace insécable non géré.
   - Correction de divers appels à la fonction RandomNum() (merci [@supasillyass](https://github.com/supasillyass) et [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/44)
   - Correction du lancement du sort "BURNING_MAN_KEENING" qui était lancé en boucle (merci [@mleduque](https://github.com/mleduque))
   - Correction de typo avec les capacités de haut niveau innées (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/48)
