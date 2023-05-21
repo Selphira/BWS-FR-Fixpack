@@ -42,3 +42,4 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Homeward bound v8
 - Rogue Rebalancing v4.92
+- Severian v0.3.2
