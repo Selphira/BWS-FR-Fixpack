@@ -19,6 +19,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de compatibilité
 
+- Ascension v2.0.17
+  - Compatibilité avec EE Fixpack
+
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
