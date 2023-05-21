@@ -44,6 +44,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Correction d'un texte erroné sur l'écran de TotSC dans EET (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/50)
   - Correction du spawning de certains bandits (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/51)
   - Correction de la suppression excessive de certains effets (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/52)
+  - Correction du groupement dans le journal, d'une étape de la quête "L'île mystérieuse" (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/55)
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm
