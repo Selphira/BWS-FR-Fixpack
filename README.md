@@ -17,6 +17,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
+  - Correction de divers appels à la fonction RandomNum() (merci [@supasillyass] (https://github.com/supasillyass))
+  - Correction du lancement du sort "BURNING_MAN_KEENING" qui était lancé en boucle (merci [@mleduque] (https://github.com/mleduque))
+  - Correction de typo avec les capacités de haut niveau innées (merci [@Ychap] (https://github.com/Ychap))
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm
@@ -69,6 +72,10 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - RelieveWizardSlayer.tp2 v1.7
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"
+
+- Stratagems v34.3
+  - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator] (https://github.com/Krabator))
+  - Mise à jour de la traduction des sorts (merci [@Jazira33] (https://github.com/Jazira33))
 
 #### Patchs repris et adaptés du BiG World Fixpack
 
