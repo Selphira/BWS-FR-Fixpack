@@ -19,6 +19,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
     Ex: DWCHAN02, DWPLAT01, ISHCHA
 
+- Made in heaven: Encounters & Quests
+  - Le composant @103 "Lycanthropes revises (EXPERIMENTAL)" copiait toutes les créatures !
+
 - Severian v0.3.2
   - SOD n'était pas correctement détecté
   - Mise à jour de la librairie fl#add_kit_ee afin que le kit de Severian s'installe correctement

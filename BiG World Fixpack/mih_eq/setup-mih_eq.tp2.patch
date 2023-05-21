@@ -1,0 +1,11 @@
+--- mih_eq\setup-mih_eq.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\mih_eq\\setup-mih_eq.tp2"	
+@@ -5,7 +5,7 @@
+ BACKUP "weidu_external/backup/mih_eq"
+ 
+ AUTHOR "angel@pearlgates.net"
+-VERSION "v6"
++VERSION "v6 BWS-FR Fix"
+ 
+ //MODDER setup_tra none area_variables warn missing_extern warn missing_resref warn ict2_actions none missing_eval none overwriting_file none fun_args warn
+ 
