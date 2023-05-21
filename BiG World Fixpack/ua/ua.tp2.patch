@@ -1,0 +1,19 @@
+--- ua\ua.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\ua\\ua.tp2"	
+@@ -4,7 +4,7 @@ SUPPORT ~https://forums.bgforge.net/viewforum.php?f=30~
+ NO_IF_EVAL_BUG
+ AUTO_EVAL_STRINGS
+ //MODDER
+-VERSION ~v7.11~
++VERSION ~v7.11 BWS-FR Fix~
+ 
+ ALWAYS
+   CLEAR_EVERYTHING
+@@ -16,6 +16,7 @@ LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra_ee/english/setup-%WEIDU_OS%.tra~
+ LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~%MOD_FOLDER%/tra_ee/portuguese/setup-%WEIDU_OS%.tra~
+ LANGUAGE ~Russian~ ~russian~ ~%MOD_FOLDER%/tra_ee/russian/setup-%WEIDU_OS%.tra~
+ LANGUAGE ~Swedish~ ~swedish~ ~%MOD_FOLDER%/tra_ee/swedish/setup-%WEIDU_OS%.tra~
++LANGUAGE ~Francais~ ~french~ ~%MOD_FOLDER%/tra_ee/french/setup-%WEIDU_OS%.tra~
+ 
+ 
+ BEGIN @1  // +1

@@ -91,6 +91,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator] (https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
   - Mise à jour de la traduction des sorts (merci [@Jazira33] (https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
 
+- Unique Artifacts v7.11
+  - Ajout de la traduction
+
 - XanFrenchMini
   - 2 répliques anglaises n'étaient pas supprimées par le composant @0 
 
