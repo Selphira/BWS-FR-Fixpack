@@ -67,6 +67,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Rogue Rebalancing v4.92
   - La description du Maître-lames, couplée au composant "4250 - Changer les sequenceurs de sorts et les contingences en capacites speciales" de Stratagems, générait une description de plus de 4096 caractères, ce qui faisait crasher le jeu lorsque l'on tentait de sélectionner ce kit.
     La description de la capacité "Démonstration Martiale" a été diminuée.
+  - Compatibilité avec Iwdification (merci [@CamDawg] (https://github.com/CamDawg) : https://github.com/FredrikLindgren/rr/pull/11)
 
 - Tweak Antlogoy v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
