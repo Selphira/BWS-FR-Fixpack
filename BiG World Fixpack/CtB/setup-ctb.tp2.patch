@@ -9,3 +9,14 @@
  
  AUTO_TRA ~CtB/Language/%s~
  
+@@ -64,8 +64,8 @@ ALWAYS
+ 				"castilian" => "CP1252"
+ 				"spanish" => "CP1252"
+ 			END
+-			ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN wsetup script END
+-			ACTION_DEFINE_ARRAY charsetsNoConvertArray BEGIN wsetup-ee END
++			ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN script END
++			ACTION_DEFINE_ARRAY charsetsNoConvertArray BEGIN wsetup-ee wsetup END
+ 			LAF ~HANDLE_CHARSETS~
+ 				INT_VAR
+ 				infer_charsets = 0
