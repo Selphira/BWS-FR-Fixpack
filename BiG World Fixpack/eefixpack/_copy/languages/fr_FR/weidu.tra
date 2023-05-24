@@ -1,0 +1,13 @@
+// strings uesed only by the installer
+  @0 = ~Correctifs principaux~
+  @1 = ~Correctifs en version BETA~
+  @2 = ~Correctifs des textes~
+  @3 = ~DLC Merger est necessaire avant que des mods puissent etre installe sur ce jeu. Consultez le readme pour avoir plus d'informations ainsi que le lien pour telecharger DLC Merger.~  @4 = ~Aucun correctif n'a ete detecte pour votre jeu.~
+  @5 = ~Aucune correction des textes du jeu n'est disponible pour votre jeu dans votre langue.~
+  @6 = ~BGEE detecte.~
+  @7 = ~BGEE avec SoD detecte.~
+  @8 = ~BG2EE detecte.~
+  @9 = ~IWDEE detecte.~
+ @10 = ~PsTEE detecte.~
+ 
+// translators, feel free to put your weidu command prompt strings here (e.g. @-1000 et al)

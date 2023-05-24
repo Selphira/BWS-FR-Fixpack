@@ -1,0 +1,22 @@
+--- eefixpack\setup-eefixpack.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\eefixpack\\setup-eefixpack.tp2"	
+@@ -39,7 +39,7 @@ ALWAYS
+ 
+ END
+ 
+-VERSION ~Beta 1~
++VERSION ~Beta 1 BWS-FR Fix~
+ 
+ README ~eefixpack/languages/%LANGUAGE%/readme-eefixpack.html~ ~eefixpack/readme-eefixpack.html~
+ 
+@@ -55,6 +55,10 @@ LANGUAGE
+   ~Russian~
+   ~ru_ru~
+   ~eefixpack/languages/ru_ru/weidu.tra~
++LANGUAGE
++  ~French~
++  ~fr_FR~
++  ~eefixpack/languages/fr_FR/weidu.tra~
+ 
+ /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+ /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
