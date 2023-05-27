@@ -103,6 +103,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Traductions et corrections d'orthographe
 
+- BG1 NPC Project v30
+  - Correction d'une typo (merci [@Krabator](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=9392))
+
 - Check the Bodies v3.0
   - Correction de l'encodage du fichier wsetup.tra
 
