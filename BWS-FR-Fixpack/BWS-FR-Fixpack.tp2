@@ -52,14 +52,14 @@
 // patch will fail. This adds a call to a shell script that pre-processes the file to be patched,
 // changing CRLF to LF.
 
-BACKUP ~BWP_Fixpack/backup~ // not the same folder as the one containing Fixpack patches
+BACKUP ~weidu_external/backup/bws-fr-fixpack~
 AUTHOR ~agb1 on shsforums.net, gibberlings3.net or forums.beamdog.com~
 
-VERSION ~v2.6~
+VERSION ~v2.7~
 
 ALWAYS
 	// special folders and marker file
-	OUTER_TEXT_SPRINT FIXPACK ~BiG_World_Fixpack~ // Fixpack's own folder containing patches, without spaces
+	OUTER_TEXT_SPRINT FIXPACK ~BWS-FR-Fixpack~ // Fixpack's own folder containing patches, without spaces
 	OUTER_TEXT_SPRINT INSTALL_MARKER ~BWP_Fixpack.installed~ // to be created by this script (name chosen for backwards compatibility)
 
 	// special folder names to match in Fixpack sub-folders
@@ -75,16 +75,12 @@ ALWAYS
 
 	// platform specific syntax and utilities
 	ACTION_IF (~%WEIDU_OS%~ STR_EQ ~win32~) THEN BEGIN
-		AT_NOW ~move "BiG World Fixpack" "%FIXPACK%"~ // rename Fixpack folder to remove spaces (packaged folder name has spaces for backwards compatibility)
-		AT_EXIT ~move "%FIXPACK%" "BiG World Fixpack"~ // restore Fixpack folder name
 		OUTER_TEXT_SPRINT os_slash ~\~
 		OUTER_TEXT_SPRINT os_quote ~"~
 		OUTER_TEXT_SPRINT DISPLAY_FILE_CMD ~type~
 		OUTER_TEXT_SPRINT PATCH_CMD ~%FIXPACK%\_utils\patch.exe -p0 -f --verbose --no-backup-if-mismatch --ignore-whitespace~
 		OUTER_TEXT_SPRINT TEE_CMD ~%FIXPACK%\_utils\tee.exe -a "_ApplyPatches_verbose.log"~
 	END ELSE BEGIN
-		AT_NOW ~mv 'BiG World Fixpack' '%FIXPACK%'~ // rename Fixpack folder to remove spaces (packaged folder name has spaces for backwards compatibility)
-		AT_EXIT ~mv '%FIXPACK%' 'BiG World Fixpack'~ // restore Fixpack folder name
 		OUTER_TEXT_SPRINT os_slash ~/~
 		OUTER_TEXT_SPRINT os_quote ~'~
 		OUTER_TEXT_SPRINT DISPLAY_FILE_CMD ~cat~
@@ -103,12 +99,6 @@ ALWAYS
 			PRINT ~~
 			AT_NOW ~%DISPLAY_FILE_CMD% %msg_file_path%~
 			PRINT ~~
-			/*
-			ACTION_IF (NOT DIRECTORY_EXISTS "BiG World Installpack\Big World Smoothpack") THEN BEGIN
-				PRINT ~Press any key to continue...~
-				ACTION_READLN ~pause~
-			END
-			*/
 		END
 	END
 
@@ -505,7 +495,7 @@ ALWAYS
 	END
 END // ALWAYS
 
-BEGIN ~Application des patches sur les dossiers des mods contenus dans le dossier du jeu~ INSTALL_BY_DEFAULT NO_LOG_RECORD
+BEGIN ~Application des patches sur les mods contenus dans le dossier du jeu~ NO_LOG_RECORD
 
 LAUNCH_ACTION_FUNCTION ~checks~ END
 LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%header.txt%os_quote%~ END
