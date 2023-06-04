@@ -1,20 +1,22 @@
 --- CtB\lib\cheat_var_chores.tph
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\CtB\\cheat_var_chores.tph"	
-@@ -1,7 +1,7 @@
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\CtB\\lib\\cheat_var_chores.tph"	
+@@ -1,8 +1,9 @@
  ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
  	COPY_EXISTING ~bgee.lua~ ~override/bgee.lua~
  	REPLACE_TEXTUALLY
 -~{"BD0010", "Test"},~
+-~--CtB Chores Areas
 +~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},~
- ~--CtB Chores Areas
++~{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},
++	--CtB Chores Areas
  
  	{"AR3500", "Candlekeep"},
-@@ -18,7 +18,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
+ 	{"AR3501", "Candlekeep: Library L1"},
+@@ -18,7 +19,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bgee.lua~ BEGIN
  	{"AR3512", "Cutscene: Minsk"},
  	{"AR3513", "Cutscene: Sarevok"},
  		
 -	{"BD0010", "Test"},
-+	{"OH7200", "Hexxat - Bottom Right Quarter (Zakhara)"},
  ~
  
  END
