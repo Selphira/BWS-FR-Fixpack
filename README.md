@@ -131,9 +131,6 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Unique Artifacts v7.13
   - Ajout de la traduction
 
-- XanFrenchMini
-  - 2 répliques anglaises n'étaient pas supprimées par le composant @0 
-
 #### Patchs repris et adaptés du BiG World Fixpack
 
 - Animal Companions v1.6
