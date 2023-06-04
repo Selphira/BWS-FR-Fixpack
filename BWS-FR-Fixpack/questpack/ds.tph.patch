@@ -1,5 +1,5 @@
---- rr\lib\ds\ds.tph
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\rr\\lib\\ds\\ds.tph"	
+--- questpack\tp2\ds\ds.tph
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\questpack\\tp2\\ds\\ds.tph"	
 @@ -1,381 +1,902 @@
 -// Detectable Spells v3-20180512
 -//

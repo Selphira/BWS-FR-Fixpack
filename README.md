@@ -11,6 +11,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
+- Ding0's Quest Pack v3.5
+  - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
+
 - Divine Remix v8.1 (TotoR115)
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
 
@@ -36,6 +39,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   
 - Refinements v4.35
   - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
+
+- Rogue Rebalancing v4.92
+  - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
@@ -136,6 +142,5 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Animal Companions v1.6
 - Homeward bound v8
 - Lolfixer v19022016
-- Rogue Rebalancing v4.92
 - Severian v0.3.3
 - The Grey Clan Episode I: In Candlelight v1.9

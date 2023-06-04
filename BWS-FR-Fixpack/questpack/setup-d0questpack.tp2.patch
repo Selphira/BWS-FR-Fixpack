@@ -1,0 +1,11 @@
+--- setup-d0questpack.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\questpack\\setup-d0questpack.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~questpack/backup~
+ AUTHOR ~SimDing0 (http://forums.pocketplane.net/index.php/board,21.0.html)~
+ 
+-VERSION ~v3.5~
++VERSION ~v3.5 BWS-FR Fix~
+ README ~questpack/readme_%LANGUAGE%.html~ ~questpack/readme.html~
+ 
+ // SPECIFICS USED:
