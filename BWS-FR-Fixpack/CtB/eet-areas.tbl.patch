@@ -1,5 +1,5 @@
---- CtB\Worldmap\eet\eet-areas.tbl"
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\CtB\\eet-areas.tbl"	
+--- CtB\Worldmap\eet\eet-areas.tbl
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\CtB\\eet-areas.tbl"	
 @@ -11,7 +11,7 @@ AR3534      AR3534   AR3534     4      98       1488    2960   @CTB_778004  @CTB
  AR3540      AR3540   AR3540     4      10       1422    3028   @CTB_778005  @CTB_778105  N        //Academy of Kuldin
  AR3570      AR3570   AR3570     4      96        968    3013   @CTB_778006  @CTB_778106  N        //Secluded Meadow
