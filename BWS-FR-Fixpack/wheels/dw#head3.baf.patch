@@ -1,0 +1,11 @@
+--- wheels\heads\dw#head3.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\heads\\dw#head3.baf"	
+@@ -43,7 +43,7 @@ IF
+ 		Global("DMWWGrove","GLOBAL",2)
+ THEN
+ 	RESPONSE #100
+-		DisplayString(Myself,~This head is silent.~) 
++		DisplayString(Myself,@3180)
+ END
+ 
+ IF

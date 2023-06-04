@@ -1,0 +1,20 @@
+--- wheels\heads\itheads.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\heads\\itheads.baf"	
+@@ -37,7 +37,7 @@ IF
+ 		Global("DMWWGrove","GLOBAL",2)
+ THEN
+ 	RESPONSE #100
+-		DisplayString(Myself,~This head is silent.~) 
++		DisplayString(Myself,@3180)
+ END
+ 
+ IF
+@@ -46,7 +46,7 @@ IF
+ 	Global("DMWWGrove","GLOBAL",0)
+ THEN
+ 	RESPONSE #100
+-		DisplayString(Myself,~Some enchantment seems to be keeping you from approaching the head. You cannot immediately discern its source, though you sense that it is somewhere close by.~)
++		DisplayString(Myself,@3181)
+ END
+ 
+ IF

@@ -65,6 +65,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
     - Correction du type de compétence : "Épée longue" => "Épée à deux mains"
     - Correction du parameter2 de l'opcode 115 : 4 => 0
 
+- Wheels of Prophecy v8.5
+  - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
+
 #### Corrections de compatibilité
 
 - Ascension v2.0.17
@@ -136,6 +139,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 - Unique Artifacts v7.13
   - Ajout de la traduction
+
+- Wheels of Prophecy v8.5
+  - Trafication de 2 chaînes manquantes (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/78e395efe26eea6c3e94ea3c49da26970a8cf222)
 
 #### Patchs repris et adaptés du BiG World Fixpack
 

@@ -1,0 +1,10 @@
+--- wheels\setup-wheels.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\setup-wheels.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~weidu_external/backup/wheels~
+ SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=156~
+-VERSION ~v8.5~
++VERSION ~v8.5 BWS-FR Fix~
+ README ~wheels/readme-wheels.html~
+ AUTO_EVAL_STRINGS
+ AUTO_TRA ~weidu_external/lang/WHEELS/%s~

@@ -1,0 +1,13 @@
+--- wheels\lang\french\setup.tra
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\lang\\french\\setup.tra"	
+@@ -238,6 +238,10 @@ Ce journal contient essentiellement un m
+ @3172="Que votre chemin soit vertueux."
+ @3173="Nous vous voyons tel que Balthazar vous voit."
+ 
++// Heads comments
++@3180=~Cette tête reste silencieuse.~
++@3181=~Un enchantement vous empêche d'approcher la tête. Vous ne parvenez pas encore à en discerner la source, bien que vous la pressentiez à proximité.~
++
+ // WeiDU prompts
+ @-1000= "Le mod %TP2_FILE_NAME% contient"
+ @-1001= "composants optionnels distincts.

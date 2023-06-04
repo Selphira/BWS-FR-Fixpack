@@ -1,0 +1,10 @@
+--- wheels\misc\elminster.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\misc\\elminster.baf"	
+@@ -14,6 +14,7 @@ THEN
+ 		CreateCreatureObjectEffect("AMELM01","SPFLESHS",Player1)
+ 		SetGlobal("AMReturnOfElminster","GLOBAL",1)
+ 		SetGlobal("DMWWGroveRevealed","GLOBAL",1)
++		SetGlobal("fin_balth_checkpoint_passed","GLOBAL",1)
+ 		Wait(2)
+ 		EndCutSceneMode()
+ END

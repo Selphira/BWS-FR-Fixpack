@@ -1,0 +1,11 @@
+--- wheels\dialogues\balthadd.d
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\wheels\\dialogues\\balthadd.d"	
+@@ -702,7 +702,7 @@ END
+ 
+ IF ~~ THEN BEGIN stonefaces2
+ SAY @147
+-IF ~~ THEN DO ~ReallyForceSpell(Myself,DRYAD_TELEPORT)SetGlobal("DMWWGroveRevealed","GLOBAL",1)~ SOLVED_JOURNAL @1014 EXIT
++IF ~~ THEN DO ~ReallyForceSpell(Myself,DRYAD_TELEPORT)SetGlobal("DMWWGroveRevealed","GLOBAL",1)SetGlobal("fin_balth_checkpoint_passed","GLOBAL",1)~ SOLVED_JOURNAL @1014 EXIT
+ END
+ 
+ IF ~Global("HadBhaal25Dream5","GLOBAL",1)~ THEN BEGIN balthatheads1
