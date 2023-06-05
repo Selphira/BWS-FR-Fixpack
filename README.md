@@ -134,6 +134,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - SubtleDoctor's Random Tweak v1.6
   - Mise à jour de la traduction (merci [@mleduque]https://github.com/mleduque) : https://github.com/subtledoctor/d5_Random_Tweaks/pull/10)
 
+- Thalantyr Item Upgrade v4.2.5
+  - Corrections de la traduction
+
 - The Enhanced Edition Fixpack vBeta 1
   - Ajout de la traduction
 
