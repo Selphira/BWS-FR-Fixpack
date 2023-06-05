@@ -1,0 +1,26 @@
+--- mih_eq\shared\lore\general\spell_names.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\mih_eq\\shared\\lore\\general\\spell_names.tpa"	
+@@ -19,8 +19,21 @@ BEGIN
+   ACTION_GET_STRREF name_strref old_name
+   ACTION_GET_STRREF desc_strref old_desc
+ 
+-  OUTER_TEXT_SPRINT new_name ~%dev_name%'s %old_name%~
+-  OUTER_TEXT_SPRINT new_desc ~%dev_name%'s %old_desc%~
++  ACTION_IF ~%LANGUAGE%~ STRING_EQUAL ~french~ BEGIN
++    ACTION_IF (~%dev_name%~ STRING_MATCHES_REGEXP ~^[AEIOUY]~) == 0 BEGIN
++	  OUTER_TEXT_SPRINT new_name ~%old_name% d'%dev_name%~
++    END
++    ELSE BEGIN
++	  OUTER_TEXT_SPRINT new_name ~%old_name% de %dev_name%~
++    END
++    OUTER_INNER_PATCH_SAVE new_desc ~%old_desc%~ BEGIN
++      REPLACE_TEXTUALLY ~%old_name%~ ~%new_name%~
++    END
++  END
++  ELSE BEGIN
++	  OUTER_TEXT_SPRINT new_name ~%dev_name%'s %old_name%~
++	  OUTER_TEXT_SPRINT new_desc ~%dev_name%'s %old_desc%~
++  END
+ 
+   STRING_SET_EVALUATE name_strref ~%new_name%~ desc_strref ~%new_desc%~
+ 
