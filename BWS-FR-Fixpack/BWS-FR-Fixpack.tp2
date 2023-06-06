@@ -55,7 +55,7 @@
 BACKUP ~weidu_external/backup/bws-fr-fixpack~
 AUTHOR ~agb1 on shsforums.net, gibberlings3.net or forums.beamdog.com~
 
-VERSION ~v2.7~
+VERSION ~v3~
 
 ALWAYS
 	// special folders and marker file
