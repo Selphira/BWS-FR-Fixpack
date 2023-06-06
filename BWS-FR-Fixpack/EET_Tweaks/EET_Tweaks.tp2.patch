@@ -1,0 +1,21 @@
+--- EET_Tweaks\EET_Tweaks.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\EET_Tweaks\\EET_Tweaks.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~EET_Tweaks/backup~
+ AUTHOR ~K4thos (swit)~
+-VERSION ~1.12~
++VERSION ~1.12 BWS-FR Fix~
+ README ~EET_Tweaks/lang/%LANGUAGE%/readme-EET_Tweaks.html~ ~EET_Tweaks/readme-EET_Tweaks.html~
+ ASK_EVERY_COMPONENT
+ 
+@@ -20,6 +20,10 @@ LANGUAGE ~Czech~
+ 	~cs_CZ~
+ 	~EET_Tweaks/lang/cs_CZ/prompts.tra~
+ 	~EET_Tweaks/lang/cs_CZ/setup.tra~
++LANGUAGE ~Francais~
++	~fr_FR~
++	~EET_Tweaks/lang/fr_FR/prompts.tra~
++	~EET_Tweaks/lang/fr_FR/setup.tra~
+ 
+ /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+ /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

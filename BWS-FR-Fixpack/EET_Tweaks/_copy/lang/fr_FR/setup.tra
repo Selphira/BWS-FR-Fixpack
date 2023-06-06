@@ -1,0 +1,124 @@
+@900000 = ~PNJs cohérents~
+
+@900100 = ~Apparence d'Edwin~
+@900101 = ~BG1~
+@900102 = ~BG2~
+
+@900200 = ~Apparence d'Imoen~
+@900201 = ~BG1~
+@900202 = ~BG2~
+@900203 = ~SoD~
+
+@900300 = ~Apparence de Jaheira~
+@900301 = ~BG1~
+@900302 = ~BG2~
+
+@900400 = ~Apparence de Minsc~
+@900401 = ~BG1~
+@900402 = ~BG2~
+
+@900500 = ~Apparence de Viconia~
+@900501 = ~BG1~
+@900502 = ~BG2~
+@900503 = ~SoD~
+
+@900600 = ~Apparence des PNJs effectuant un cameo~
+
+@900700 = ~Voix des PNJs~
+
+@910000 = ~Ajustement de l'experience~
+
+@910100 = ~Limite d'experience totale~
+@910101 = ~2 950 000~
+@910102 = ~8 000 000~
+@910103 = ~Désactivee~
+@910104 = ~Valeur personnalisee~
+
+@910200 = ~Limite d'experience supplementaire pour BG1~
+@910201 = ~ 89 000~
+@910202 = ~161 000~
+@910203 = ~500 000~
+@910204 = ~Valeur personnalisee~
+
+@910300 = ~Limite d'experience supplementaire pour SoD~
+@910301 = ~ 89 000~
+@910302 = ~161 000~
+@910303 = ~500 000~
+@910304 = ~Valeur personnalisee~
+
+@910400 = ~Limite d'experience supplementaire pour SoA~
+@910401 = ~2 500 000~
+@910402 = ~2 950 000~
+@910403 = ~8 000 000~
+@910404 = ~Valeur personnalisee~
+
+@910500 = ~Experience pour les pieges, l'apprentissage de sorts et le vol a la tire~
+@910501 = ~Valeurs de BG1 (par defaut)~
+@910502 = ~Valeurs de BG2~
+@910503 = ~Vanilla friendly progressive~
+@910504 = ~Desactive~
+@910505 = ~Valeur personnalisee~
+
+@910600 = ~Experience des creatures~
+@910601 = ~Augmentation de 150%~
+@910602 = ~Diminution de 75%~
+@910603 = ~Diminution de 50%~
+@910604 = ~Diminution de 25%~
+@910605 = ~Diminution de 10%~
+@910606 = ~Aucune~
+@910607 = ~Valeur personnalisee~
+
+@910700 = ~Experience pour les quetes~
+@910701 = ~Augmentation de 150%~
+@910702 = ~Diminution de 75%~
+@910703 = ~Diminution de 50%~
+@910704 = ~Diminution de 25%~
+@910705 = ~Diminution de 10%~
+@910706 = ~Aucune~
+@910707 = ~Valeur personnalisee~
+
+@910800 = ~L'experience de groupe des quetes est distribuee individuellement~
+
+@910900 = ~L'experience de groupe pour tuer des creatures est distribuee individuellement~
+
+@920000 = ~Gameplay~
+
+@920100 = ~Desactiver la reaction hostile apres un charme~
+
+@920200 = ~Version papier du niveau de lanceur de sorts des parchemins~
+
+@920300 = ~Consequences lors de la mort d'un familier~
+@920301 = ~Perte de constitution et impossibilite d'invoquer pendant 1 semaine~
+@920302 = ~Perte de constitution pendant 1 semaine~
+@920303 = ~Desactive~
+
+@920500 = ~Mode Ironman~
+
+@920600 = ~Points d'apparition uniques (pas de reapparition)~
+
+@930000 = ~Divers~
+
+@930300 = ~Support des taux de rafraichissement eleves~
+
+@930500 = ~Importer les objets du groupe dans SoA~
+
+@930600 = ~Categorisation des livres et des parchemins~
+
+@930700 = ~Etui a baguette~
+
+@930800 = ~Porte-clefs~
+
+@930900 = ~Remplacer les videos de BG1 classique par celles de BG:EE~
+@930901 = ~Remplacer les videos~
+@930902 = ~Aussi desactiver les videos de BG1 qui n'ont pas de variantes BG:EE~
+
+@980000 = ~Saisissez la valeur entiere pour la limite d'experience~
+@980001 = ~Saisissez la valeur entiere du pourcentage~
+@980002 = ~Saisissez le nombre d'images (30-60)~
+
+@990000 = ~Ce composant n'est pas compatible avec votre jeu~
+@990001 = ~Ce composant n'est pas disponible pour votre langue~
+@990002 = ~Un tweak similaire est deja installe~
+@990003 = ~Conflicting BG2 Tweaks component detected: Cast Spells from Scrolls at Character Level~
+@990004 = ~Ce kit est deja dans le jeu~
+@990005 = ~Ce composant dépend de EEex~

@@ -118,6 +118,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Check the Bodies v3.0
   - Correction de l'encodage du fichier wsetup.tra
 
+- EET (Enhanced Edition Trilogy) Tweaks v1.12
+  - Ajout de la traduction
+
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
