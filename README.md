@@ -57,6 +57,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
   - Correction de la suppression excessive de certains effets (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/52)
   - Correction du groupement dans le journal, d'une étape de la quête "L'île mystérieuse" (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/55)
   - Correction de la compétence utilisée par l'objet "dw#kob01" qui était "Epée longue" au lieu de "Dague"
+  - Correction du composant NPC customisation pour EET (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/36487-npc-customization/#comment-326619)
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm

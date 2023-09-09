@@ -1,0 +1,34 @@
+--- stratagems\sfo\general\lib_macro.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\stratagems\\lib_macro.tpa"	
+@@ -1087,18 +1087,19 @@ DEFINE_ACTION_MACRO ~read_in_PCs~ BEGIN
+       PATCH_IF check_for_campaign>1 BEGIN
+           COUNT_2DA_COLS colcount
+           COUNT_2DA_ROWS colcount rowcount_campaign
+-          FOR (i=0;i<rowcount_campaign; i+=1) BEGIN
+-             LPF read_table_entry INT_VAR rownum=i STR_VAR column=PDIALOG RET file=value END
+-             INNER_ACTION BEGIN
+-                COPY_EXISTING "%file%.2da" "%workspace%"
+-	                COUNT_2DA_ROWS 3 ~rowcount~
+-	                FOR (i=0;i<~%rowcount%~;i=i+1) BEGIN
+-		              READ_2DA_ENTRY ~%i%~ 0 3 ~entry~
+-		              TO_LOWER ~entry~
+-		              SPRINT $script_name_pdialog( ~%entry%~) ~~
+-                        END
+-                BUT_ONLY
+-             END
++          FOR (j=0;j<rowcount_campaign; j+=1) BEGIN // swap i to j
++               LPF read_table_entry INT_VAR rownum=j STR_VAR column=PDIALOG RET file=value END // swap i to j
++               INNER_ACTION BEGIN
++                  COPY_EXISTING "%file%.2da" "%workspace%"
++                    COUNT_2DA_ROWS 3 ~rowcount~
++                    FOR (i=0;i<~%rowcount%~;i=i+1) BEGIN
++                      READ_2DA_ENTRY ~%i%~ 0 3 ~entry~
++                      TO_LOWER ~entry~
++                      SPRINT $script_name_pdialog( ~%entry%~) ~~
++                          END
++                  BUT_ONLY
++				  IF_EXISTS // add IF_EXISTS
++               END
+           END
+       END
+      BUT_ONLY
