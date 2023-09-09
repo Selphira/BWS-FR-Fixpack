@@ -1,0 +1,13 @@
+--- bg1re\tra\francais\setup_game.tra
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\bg1re\\setup_game.tra"	
+@@ -985,8 +985,8 @@ Capacit
+ - Connaissances : +5~
+ @291  = ~Dispero~
+ 
+-@292  = ~Ghostly Spirit~
+-@293  = ~Letter to <CHARNAME>~
++@292  = ~Esprit fantomatique~
++@293  = ~Lettre à <CHARNAME>~
+ /*
+ @294  = 
+ @295  =

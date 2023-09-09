@@ -113,6 +113,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Traductions et corrections d'orthographe
 
+- Baldur's Gate Romantic Encounters v10.2
+  - Ajout de traductions manquantes (merci [Le Marquis d'Oghmatique](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=8761) : https://www.baldursgateworld.fr/viewtopic.php?p=508666#p508666)
+
 - BG1 NPC Project v30
   - Correction d'une typo (merci [@Krabator](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=9392))
 

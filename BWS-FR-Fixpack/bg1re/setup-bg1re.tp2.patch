@@ -1,0 +1,11 @@
+--- bg1re\setup-bg1re.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\bg1re\\setup-bg1re.tp2"	
+@@ -7,7 +7,7 @@ BACKUP ~bg1re/backup~
+ AUTHOR ~Please post in the G3 forum for help, refer to readme.~ //for bugreports
+ 
+ //MODDER
+-VERSION ~10.2~
++VERSION ~10.2 BWS-FR Fix~
+ 
+ README ~bg1re/bg1re.readme.%LANGUAGE%.txt~ ~bg1re/bg1re.readme.english.txt~
+ 
