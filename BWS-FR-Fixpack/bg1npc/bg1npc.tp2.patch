@@ -4,8 +4,8 @@
  /* MODDER */
  
  /* WeiDU versions newer than v203 allow tp2 level version listing in the .log for troubleshooting  */
--VERSION ~v30~
-+VERSION ~v30 BWS-FR Fix~
+-VERSION ~v32~
++VERSION ~v32 BWS-FR Fix~
  /* Launch the readme file immediately. */
  /* Isaya : display in native selected language if available, otherwise english */
  README ~bg1npc/readme-bg1npc-%LANGUAGE%.html~ ~bg1npc/readme-bg1npc.html~
