@@ -1,0 +1,11 @@
+--- mnkoverhaul\mnkoverhaul.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\mnkoverhaul\\mnkoverhaul.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~mnkoverhaul/backup~
+ AUTHOR ~henrywinklercoveredinbees@hotmail.com~
+ 
+ ALWAYS
+-	ACTION_IF GAME_IS ~BGEE SOD BG2EE IWDEE EET~ THEN BEGIN
++	ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ OR GAME_INCLUDES ~SOD~ THEN BEGIN
+ 		ACTION_DEFINE_ARRAY px_reload BEGIN
+ 		~mnkoverhaul.tra~
+ 		END

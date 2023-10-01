@@ -37,6 +37,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Made in heaven: Encounters & Quests
   - Le composant @103 "Lycanthropes revises (EXPERIMENTAL)" copiait toutes les créatures !
 
+- Monk Overhaul v1.3
+  - SOD n'était pas correctement détecté
+
 - Severian v0.3.3
   - SOD n'était pas correctement détecté
   
