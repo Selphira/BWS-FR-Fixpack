@@ -5,6 +5,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de bugs
 
+- Artaport v2.0
+  - SOD n'était pas correctement détecté
+
 - BG1 Mini Quests and Encounters v25.6
   - Correction du tooltip des créatures WAGHOUL.CRE et WAFARM.CRE (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG_Quests_And_Encounters/pull/25)
 

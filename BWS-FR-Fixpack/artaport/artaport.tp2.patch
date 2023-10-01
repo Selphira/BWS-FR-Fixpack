@@ -1,0 +1,20 @@
+--- artaport\artaport.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\artaport\\artaport.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~artaport\backup~
+ AUTHOR ~Etamin~
+ README ~artaport/readme.docx~
+-VERSION ~2.0~
++VERSION ~2.0 BWS-FR Fix~
+ 
+ LANGUAGE ~English~
+          ~english~
+@@ -603,7 +603,7 @@ COPY ~artaport\main\yeslicks.bmp~            ~override\yeslicks.bmp~
+ 
+ 
+ BEGIN @50 
+-REQUIRE_PREDICATE GAME_IS ~bgee sod eet~ @25
++REQUIRE_PREDICATE GAME_IS ~bgee eet~ OR GAME_INCLUDES ~sod~ @25
+ 
+ COPY ~artaport\main\angelo.bmp~            ~override\angelo.bmp~
+ COPY ~artaport\main\belt.bmp~            ~override\belt.bmp~
