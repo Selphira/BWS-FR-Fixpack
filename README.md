@@ -73,6 +73,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
     - Correction du type de compétence : "Épée longue" => "Épée à deux mains"
     - Correction du parameter2 de l'opcode 115 : 4 => 0
 
+- Tweaks Anthology v15
+  - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
+
 - Wheels of Prophecy v8.5
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
 
@@ -115,7 +118,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Stratagems v34.3
   - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
 
-- Tweak Antlogoy v15
+- Tweaks Anthology v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
 
 #### Traductions et corrections d'orthographe

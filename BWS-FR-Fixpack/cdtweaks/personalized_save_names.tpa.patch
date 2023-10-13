@@ -1,0 +1,11 @@
+--- cdtweaks\lib\personalized_save_names.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\cdtweaks\\lib\\personalized_save_names.tpa"	
+@@ -9,7 +9,7 @@ STR_VAR
+   charname_string = ~~  // e.g. "(<CHARNAME>)-"
+ RET new_string
+ BEGIN
+-  TEXT_SPRINT new_strig ~~
++  TEXT_SPRINT new_string ~~
+ 
+   PATCH_IF (~%old_string%~ STRING_MATCHES_REGEXP ~[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-.+~ = 0) BEGIN
+     INNER_PATCH_SAVE new_string ~%old_string%~ BEGIN
