@@ -8,6 +8,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Artaport v2.0
   - SOD n'était pas correctement détecté
 
+- Ascension v2.0.24
+  - Déplacement des flèches de Gromnir des objets rapides vers le carquois (merci [@supasillyass](https://github.com/supasillyass) : https://github.com/InfinityMods/Ascension/pull/15)
+
 - BG1 Mini Quests and Encounters v25.6
   - Correction du tooltip des créatures WAGHOUL.CRE et WAFARM.CRE (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG_Quests_And_Encounters/pull/25)
 
@@ -81,7 +84,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 
 #### Corrections de compatibilité
 
-- Ascension v2.0.17
+- Ascension v2.0.24
   - Compatibilité avec EE Fixpack
 
 - aTweaks v4.53
