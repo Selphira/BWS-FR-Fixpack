@@ -127,6 +127,7 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Tweaks Anthology v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
   - Compatibilité avec EET : Correction du script de la zone de Château-Suif (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/55)
+  - Compatibilité avec EET : Suppression d'options de réponse en double (merci [@CamDawg](https://github.com/CamDawg) : https://github.com/Gibberlings3/Tweaks-Anthology/commit/deebc0a7d8a9563cd8f20bf3a7f135aa3fc42301)
 
 #### Traductions et corrections d'orthographe
 
