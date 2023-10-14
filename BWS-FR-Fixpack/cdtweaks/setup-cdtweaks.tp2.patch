@@ -1,5 +1,5 @@
 --- cdtweaks\setup-cdtweaks.tp2
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\cdtweaks\\setup-cdtweaks.tp2"	
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\cdtweaks\\setup-cdtweaks.tp2"	
 @@ -12,7 +12,7 @@ ALWAYS
    
  END
@@ -23,3 +23,12 @@
    LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 1 timing = 1 STR_VAR resource = royo4l END // large portrait
    LPF ADD_SPELL_EFFECT INT_VAR opcode = 107 target = 2 parameter2 = 0 timing = 1 STR_VAR resource = royo4m END // small portrait
  
+@@ -14863,7 +14865,7 @@ COPY_EXISTING ~partyai.2da~ ~override~
+   BUT_ONLY
+ 
+ COPY_EXISTING ~ar0602.bcs~ ~override~ // irenicus's dungeon
+-              ~ar2600.bcs~ ~override~ // candlekeep
++              ~%Candlekeep_BCS%.bcs~ ~override~ // candlekeep
+               ~ar4000.bcs~ ~override~ // tob heads
+   DECOMPILE_AND_PATCH BEGIN
+     REPLACE_TEXTUALLY ~[ %TAB%]Global("BD_DEFAI","\(MYAREA\|GLOBAL\)",0)~ ~ False()~ // nuke block that assigns 'advanced ai' to player1
