@@ -121,6 +121,9 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Stratagems v34.3
   - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
 
+- Thalantyr Item Upgrade v4.2.5
+  - Compatibilté avec EET, en prenant en compte l'objet BOOT02ZH (merc [@BardezAnAvatar](https://github.com/BardezAnAvatar) : https://github.com/CrevsDaak/thalan/pull/11)
+
 - Tweaks Anthology v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
 
