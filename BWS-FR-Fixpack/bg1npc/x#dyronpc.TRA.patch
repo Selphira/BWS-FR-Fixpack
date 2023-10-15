@@ -1,11 +1,11 @@
 --- bg1npc\tra\french\x#dyronpc.TRA
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BiG World Fixpack\\bg1npc\\tra\\french\\x#dyronpc.TRA"	
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\bg1npc\\tra\\french\\x#dyronpc.TRA"	
 @@ -219,7 +219,7 @@
- @185 = ~S'il ne s'agit que d'une affaire de coeur, je n'ai aucune raison de t'ennuyer. Mais si je dÃ©tecte la moindre trace de tromperie, je saurai m'interposer.~
+ @185 = ~S'il ne s'agit que d'une affaire de coeur, je n'ai aucune raison de t'ennuyer. Mais si je détecte la moindre trace de tromperie, je saurai m'interposer.~
  
- //Imoen veut donner des conseils Ã  Charname sur sa relation avec DynahÃ©ir
--@186 = ~<CHARNAME> ! Regarde ce que j'ai... *rigole* Ahah ! Je t'ai ecore surpris en train de mater DynahÃ©ir !~
-+@186 = ~<CHARNAME> ! Regarde ce que j'ai... *rigole* Ahah ! Je t'ai encore surpris en train de mater DynahÃ©ir !~
- @187 = ~Je sais ce que Ã§a cache !~
+ //Imoen veut donner des conseils à Charname sur sa relation avec Dynahéir
+-@186 = ~<CHARNAME> ! Regarde ce que j'ai... *rigole* Ahah ! Je t'ai ecore surpris en train de mater Dynahéir !~
++@186 = ~<CHARNAME> ! Regarde ce que j'ai... *rigole* Ahah ! Je t'ai encore surpris en train de mater Dynahéir !~
+ @187 = ~Je sais ce que ça cache !~
  @188 = ~Il faut absolument que nous ayons cette conversation !~
- @189 = ~LA conversation ? Mais Ã§a fait des annÃ©es que Gorion et moi avons eu CETTE conversation !~
+ @189 = ~LA conversation ? Mais ça fait des années que Gorion et moi avons eu CETTE conversation !~

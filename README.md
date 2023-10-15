@@ -15,9 +15,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Ascension v2.0.24
   - Déplacement des flèches de Gromnir des objets rapides vers le carquois (merci [@supasillyass](https://github.com/supasillyass) : https://github.com/InfinityMods/Ascension/pull/15)
 
-- BG1 Mini Quests and Encounters v25.6
-  - Correction du tooltip des créatures WAGHOUL.CRE et WAFARM.CRE (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG_Quests_And_Encounters/pull/25)
-
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
@@ -135,7 +132,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 #### Traductions et corrections d'orthographe
 
-- Baldur's Gate Romantic Encounters v10.2
+- Baldur's Gate Romantic Encounters v11.0
   - Ajout de traductions manquantes (merci [Le Marquis d'Oghmatique](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=8761) : https://www.baldursgateworld.fr/viewtopic.php?p=508666#p508666)
 
 - BG1 NPC Project v30
@@ -162,9 +159,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Stratagems v34.3
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
   - Mise à jour de la traduction des sorts (merci [@Jazira33](https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
-
-- SubtleDoctor's Random Tweak v1.6
-  - Mise à jour de la traduction (merci [@mleduque]https://github.com/mleduque) : https://github.com/subtledoctor/d5_Random_Tweaks/pull/10)
 
 - Thalantyr Item Upgrade v4.2.5
   - Corrections de la traduction
