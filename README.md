@@ -39,6 +39,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
     Ex: DWCHAN02, DWPLAT01, ISHCHA
 
+- L'interplan, un magasin dedie à la magie v7
+  - Correction du parchemin "Porte vers Linterplan" (merci [@deratiseur](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=8352) : https://www.baldursgateworld.fr/viewtopic.php?f=749&p=509113#p509113)
+
 - Made in heaven: Encounters & Quests
   - Le composant @103 "Lycanthropes revises (EXPERIMENTAL)" copiait toutes les créatures !
 
