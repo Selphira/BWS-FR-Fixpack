@@ -55,7 +55,7 @@
 BACKUP ~weidu_external/backup/bws-fr-fixpack~
 AUTHOR ~agb1 on shsforums.net, gibberlings3.net or forums.beamdog.com~
 
-VERSION ~v3~
+VERSION ~v5~
 
 ALWAYS
 	// special folders and marker file
@@ -495,7 +495,7 @@ ALWAYS
 	END
 END // ALWAYS
 
-BEGIN ~Application des patches sur les mods contenus dans le dossier du jeu~ NO_LOG_RECORD
+BEGIN ~Application des patches sur les mods contenus dans le dossier du jeu~ DESIGNATED 0 NO_LOG_RECORD
 
 LAUNCH_ACTION_FUNCTION ~checks~ END
 LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%header.txt%os_quote%~ END
@@ -503,3 +503,117 @@ LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%M
 LAUNCH_ACTION_FUNCTION ~process_mod_folders~ END
 LAUNCH_ACTION_FUNCTION ~show_message~ STR_VAR msg_file_path = EVAL ~%os_quote%%MESSAGES%%os_slash%end.txt%os_quote%~ END
 
+BEGIN ~Vérification de problèmes connus~ DESIGNATED 1
+
+// Fonction récupérée de la librairie SFO.
+DEFINE_PATCH_FUNCTION read_rest_of_line
+    INT_VAR row=0
+            col=0
+            colmin=0
+    RET list
+BEGIN
+   COUNT_2DA_COLS colcount
+   SET done=0
+   SPRINT list ""
+   WHILE !done & col<colcount BEGIN
+      PATCH_TRY
+          PATCH_SILENT
+          READ_2DA_ENTRY row col colmin temp
+          SPRINT list "%list% %temp%"
+          SET col+=1
+          PATCH_VERBOSE
+      WITH
+          ~Invalid_argument("index out of bounds")~
+      BEGIN
+          SET done=1
+      END
+      DEFAULT
+          PATCH_PRINT "read_rest_of_line generated error %ERROR_MESSAGE% (shouldn't happen)"
+          PATCH_RERAISE
+      END
+   END
+END
+
+DEFINE_PATCH_FUNCTION get_backup_folder
+    INT_VAR component = 0
+	STR_VAR modname = ~~
+	RET folder
+BEGIN
+	SPRINT folder ~~
+	PATCH_IF DIRECTORY_EXISTS ~%modname%/backup/%component%~ BEGIN
+		SPRINT folder ~%modname%/backup/%component%~
+	END
+	ELSE PATCH_IF DIRECTORY_EXISTS ~weidu_external/backup/%modname%/%component%~ BEGIN
+		SPRINT folder ~weidu_external/backup/%modname%/%component%~
+	END
+	ELSE PATCH_IF DIRECTORY_EXISTS ~weidu_external/%modname%/backup/%component%~ BEGIN
+		SPRINT folder ~weidu_external/%modname%/backup/%component%~
+	END
+	ELSE BEGIN
+		PATCH_WARN ~Dossier de backup non trouvé pour %modname% %component%~
+	END
+END
+
+DEFINE_PATCH_FUNCTION get_row_count STR_VAR file = ~~ RET row_count
+BEGIN
+	SET row_count = 0
+	INNER_ACTION BEGIN
+		COPY ~%file%~ ~override~
+			COUNT_2DA_ROWS 1 row_count
+		BUT_ONLY
+	END
+END
+
+DEFINE_PATCH_FUNCTION get_ids_changelog
+    STR_VAR
+        filename = ~~
+        message = ~~
+    RET changelog
+BEGIN
+	SPRINT changelog ~~
+	INNER_ACTION BEGIN
+		OUTER_TEXT_SPRINT CHANGELOG_FILE ~BWS-FR-Fixpack/changelogs/%filename%.txt~
+		OUTER_TEXT_SPRINT CHANGELOG_CMD ~WeiDU.exe --log nul --change-log %filename% > %CHANGELOG_FILE%~
+		AT_NOW ~%CHANGELOG_CMD%~
+		COPY ~%CHANGELOG_FILE%~ ~override~
+			SET idx = 0
+			LPF get_row_count STR_VAR file = ~override/%filename%~ RET total = row_count END
+			COUNT_2DA_ROWS 4 rowcount
+			FOR (row = 0; row <= rowcount; row += 1) BEGIN
+			    LPF read_rest_of_line INT_VAR row col = 1 RET line = list END
+			    INNER_PATCH_SAVE line ~%line%~ BEGIN
+			      REPLACE_TEXTUALLY ~/* created or unbiffed */~ ~~
+			    END
+			    PATCH_IF ("%line%" STRING_MATCHES_REGEXP "^ ~" = 0) BEGIN
+			        SPRINT EVAL ~lines_%idx%~ ~%line%~
+			        SET idx = idx + 1
+				END
+			END
+			FOR (row = idx - 1; row >= 0; row -= 1) BEGIN
+				SPRINT line EVAL ~%lines_%row%%~
+				INNER_PATCH ~%line%~ BEGIN
+					SPRINT regex "~\([^/]+\).*~ [0-9] \([0-9]+\)"
+					REPLACE_EVALUATE CASE_INSENSITIVE ~%regex%~ BEGIN
+						SPRINT modname ~%MATCH1%~
+						SPRINT component ~%MATCH2%~
+					END ~~
+				END
+		        LPF get_backup_folder INT_VAR component STR_VAR modname RET folder END
+				SPRINT file ~%folder%/%filename%~
+				PATCH_IF FILE_EXISTS ~%file%~ BEGIN
+					LPF get_row_count STR_VAR file RET prev_total = row_count END
+					SET diff  = total - prev_total
+					SET total = prev_total
+					PATCH_IF diff > 1 BEGIN
+			            SPRINT changelog ~%changelog%%WNL%%diff% entrees ajoutees par%line%~
+			        END
+			        ELSE BEGIN
+			            SPRINT changelog ~%changelog%%WNL%%diff% entree ajoutee par%line%~
+			        END
+				END
+			END
+		BUT_ONLY
+	END
+END
+
+INCLUDE ~%MOD_FOLDER%/check/splstate.ids.tph~

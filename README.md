@@ -1,7 +1,11 @@
 # BWS-FR Fixpack
 
-BWS-FR Fixpack est une compilation de correctifs destinés au BWS-FR.  
-Il est basé sur le fonctionnement du EE-Mod-Fixpack.  
+BWS-FR Fixpack est une compilation de correctifs, à la base destinés au BWS-FR, mais qui peut aussi être utilisé indépendamment.
+Il suffit de l'exécuter après avoir décompressé vos mods dans le dossier du jeu, et avant de débuter vos installations de mod.   
+
+Un second composant, à exécuter à la toute fin de votre installation, va vérifier divers problèmes connus, et vous suggèrera des corrections si possible
+
+### Corrections
 
 #### Corrections de bugs
 
@@ -181,3 +185,8 @@ Il est basé sur le fonctionnement du EE-Mod-Fixpack.
 - Lolfixer v19022016
 - Severian v0.3.3
 - The Grey Clan Episode I: In Candlelight v1.9
+
+### Vérifications
+
+- Le fichier **splstate.ids**
+  Vérifie si des identifiants supérieurs à 255 existent. Ces identifiants ne sont pas pris en compte par le moteur du jeu par certaines fonctions de script (Ex: CheckSpellState()) et cela peut provoquer divers bugs.
