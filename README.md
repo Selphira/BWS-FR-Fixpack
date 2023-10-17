@@ -9,6 +9,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 #### Corrections de bugs
 
+- Alsaahir kit for BG2 v5.0
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.4 => v1.1.5
+  
 - Artaport v2.0
   - SOD n'était pas correctement détecté
 
@@ -18,12 +21,19 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
+- Chaos Sorcerer Kit v2.7
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
+
+- Check the Bodies v3.0
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
+
 - Ding0's Quest Pack v3.5
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
 
 - Divine Remix v8.1 (TotoR115)
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
   - Le composant @610 n'affectait pas le bon kit à Viconia.
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.4 => v1.1.5
 
 - Expanded Thief Stronghold v3.0.0
   - Correction de la référence d'une créature dans certaines conditions. (merci [@TotoR115](https://github.com/TotoR115) : https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
@@ -51,11 +61,21 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Severian v0.3.3
   - SOD n'était pas correctement détecté
   
-- Refinements v4.35
+- Refinements v4.36
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
   - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
+
+- Rodeur de l'ombre v1.2
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
 
 - Rogue Rebalancing v4.92
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
+
+- Song and Silence v16
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
+
+- Spiritwalker - A Shaman Shapeshifter Kit v1.4
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
 - Stratagems v34.3
   - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
@@ -82,6 +102,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Tweaks Anthology v15
   - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
+  - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
 
 - Wheels of Prophecy v8.5
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
