@@ -22,12 +22,10 @@
          PartyGoldGT(4999)~
        THEN REPLY @36
        DO ~TakePartyGold(5000)    DestroyGold(5000)
-@@ -244,7 +248,21 @@ IF ~~ THEN BEGIN thboot01
-           TakePartyItemNum("%tutu_var%potn14",1)   DestroyItem("%tutu_var%potn14")
+@@ -245,6 +249,19 @@ IF ~~ THEN BEGIN thboot01
            TakePartyItemNum("%tutu_var%potn39",1)   DestroyItem("%tutu_var%potn39")
            GiveItemCreate("thboot01",Player1,1,1,1)
--          CreateVisualEffect("spcrtwpn",[330.230])~ EXIT
-+          CreateVisualEffect("spcrtwpn",[330.230])~
+           CreateVisualEffect("spcrtwpn",[330.230])~ EXIT
 +    IF ~PartyHasItem("%tutu_var%boot01")
 +        PartyHasItem("boot02zh")
 +        PartyHasItem("%tutu_var%potn14")
@@ -40,8 +38,14 @@
 +          TakePartyItemNum("%tutu_var%potn14",1)   DestroyItem("%tutu_var%potn14")
 +          TakePartyItemNum("%tutu_var%potn39",1)   DestroyItem("%tutu_var%potn39")
 +          GiveItemCreate("thboot01",Player1,1,1,1)
-+          CreateVisualEffect("spcrtwpn",[330.230])~
-+    EXIT
++          CreateVisualEffect("spcrtwpn",[330.230])~ EXIT
  END
  
  IF ~~ THEN BEGIN thamul01
+@@ -295,4 +312,4 @@ PartyHasItem("%tutu_var%potn34")
+           CreateVisualEffect("spcrtwpn",[330.230])~ EXIT
+ END
+ 
+-END //APPEND
++END //APPEND
+\ No newline at end of file
