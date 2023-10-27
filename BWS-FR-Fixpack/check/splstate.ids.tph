@@ -2,8 +2,8 @@ COPY_EXISTING splstate.ids ~override~
 	PATCH_PRINT ~Vérification du fichier splstate.ids ... ~
 	SET isError = 0
 
-	COUNT_2DA_ROWS 2 rowcount
-	FOR (row = 0; row <= rowcount; row += 1) BEGIN
+	COUNT_2DA_ROWS 2 rowCount
+	FOR (row = 0; row <= rowCount; row += 1) BEGIN
 		READ_2DA_ENTRY row 0 2 value
 		PATCH_IF value > 255 BEGIN
 			SET isError = 1
@@ -12,7 +12,7 @@ COPY_EXISTING splstate.ids ~override~
 	END
 
 	PATCH_IF isError BEGIN
-		SPRINT message ~Votre installation génère trop d'identifiants dans le fichier splstate.ids (%rowcount%).%WNL%Les identifiants plus grand que 255 ne sont pas pris en compte par le moteur du jeu lors de l'exécution des scripts.%WNL%Il est conseillé de refaire une installation en supprimant un ou plusieurs des composants listés ci-dessous.~
+		SPRINT message ~Votre installation génère trop d'identifiants dans le fichier splstate.ids (%rowCount%).%WNL%Les identifiants plus grand que 255 ne sont pas pris en compte par le moteur du jeu lors de l'exécution des scripts.%WNL%Il est conseillé de refaire une installation en supprimant un ou plusieurs des composants listés ci-dessous.~
 		LPF get_ids_changelog STR_VAR filename = ~splstate.ids~ RET changelog END
 		PATCH_WARN ~%message%%WNL%%WNL%Changelog :%changelog%~
 	END
