@@ -57,9 +57,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Monk Overhaul v1.3
   - SOD n'était pas correctement détecté
-
-- Severian v0.3.3
-  - SOD n'était pas correctement détecté
   
 - Refinements v4.36
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
@@ -172,9 +169,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
-- NPCs Enhanced... um, for Everyone! v5.9.6
-  - Ajout et adaptation de la traduction effectuée par [mickabouille](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=12954) pour la version 5.6 : https://github.com/mleduque/NPC_EE
-
 - Olvyn Tweaks
   - Corrections de caractères majuscules accentués qui fonctionnent sans problème avec EE
 
@@ -202,7 +196,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Animal Companions v1.6
 - Homeward bound v8
 - Lolfixer v19022016
-- Severian v0.3.3
 - The Grey Clan Episode I: In Candlelight v1.9
 
 ### Vérifications
