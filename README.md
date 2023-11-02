@@ -117,9 +117,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
   - Compatibilité avec EET en déplaçant la zone du Cercle Druidique pour qu'il ne chevauche plus la zone de Bois Manteau (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/SpellholdStudios/Check_the_Bodies/pull/17)
 
-- EET master
-  - Compatibilité avec CorrectFrBG1EE
-
 - Gerri's BGT NPC Portraits v3.1
   - Le composant "Portraits for BG1 Romantic Encounters" se basait sur le composant 0 de "BG1 Romantics Encounters" qui n'existe plus et est remplacé par les composants 100 à 105.
 
