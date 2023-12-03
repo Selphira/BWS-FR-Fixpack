@@ -1,0 +1,10 @@
+--- SubtleD_Spell_Tweaks\SubtleD_Spell_Tweaks.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~weidu_external/backup/SubtleD_Spell_Tweaks~
+ AUTHOR ~subtledoctor~
+-VERSION ~2.6.3~
++VERSION ~2.6.3 BWS-FR Fix~
+ 
+ ALWAYS
+ 

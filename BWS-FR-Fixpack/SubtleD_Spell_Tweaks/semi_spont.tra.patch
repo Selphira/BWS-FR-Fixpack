@@ -1,0 +1,9 @@
+--- SubtleD_Spell_Tweaks\lib\semi_spont\fr_FR\semi_spont.tra
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\SubtleD_Spell_Tweaks\\lib\\semi_spont\\fr_FR\\semi_spont.tra"	
+@@ -83,3 +83,6 @@ Capacités d'équipement :
+ 
+ Poids : 0~
+ //
++
++// identify UI
++@1000 = ~Identifications restantes : ~
