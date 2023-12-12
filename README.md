@@ -98,6 +98,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
     - Correction du type de compétence : "Épée longue" => "Épée à deux mains"
     - Correction du parameter2 de l'opcode 115 : 4 => 0
 
+- Themed Tweaks v0.4
+  - Correction de la référence d'une custscene : #LCWBQ030 => #LCWBQ03
+
 - Tweaks Anthology v15
   - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
