@@ -1,0 +1,20 @@
+--- Hanna\d\hanna.D
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Hanna\\d\\hanna.D"	
+@@ -531,7 +531,7 @@ Global("HannaEdwin1","LOCALS",0)~ THEN BEDWIN HCHAIN114
+ == BKORGAN IF ~IsValidForPartyDialog("Korgan")~ THEN @215 /* ~Antes de fiarme de un mago rojo de Zhay. Me cortaría la barba y me vestiría de mujer.~ */
+ == BCERND IF ~IsValidForPartyDialog("Cernd")~ THEN @216 /* ~Jamás confiaría en alguien como tu. Las personas malvadas destrozan el equilibrio.~ */
+ == BMAZZY IF ~IsValidForPartyDialog("Mazzy")~ THEN @217 /* ~Sinceramente eres la ultima persona en la quien confiaria.~ */
+-== BKELDOR IF ~IsValidForPartyDialog("Keldor")~ THEN @218 /* ~Jamás confiaría en alguien con tampoco sentido de la justicia.~ */
++== BKELDOR IF ~IsValidForPartyDialog("Keldorn")~ THEN @218 /* ~Jamás confiaría en alguien con tampoco sentido de la justicia.~ */
+ == BHAERDA IF ~IsValidForPartyDialog("HaerDalis")~ THEN @219 /* ~Creo que serias la ultima persona en quien confiaría en este plano.~ */
+ == BANOMEN IF ~IsValidForPartyDialog("Anomen")~ THEN @220 /* ~Que los dioses me castiguen si es verdad que confió en vos.~ */
+ == BAERIE IF ~IsValidForPartyDialog("Aerie")~ THEN @221 /* ~Normalmente confió en todo el mundo. Pero… desconfió mucho de ti Edwin.~ */
+@@ -540,7 +540,7 @@ Global("HannaEdwin1","LOCALS",0)~ THEN BEDWIN HCHAIN114
+ == BJAHEIR IF ~IsValidForPartyDialog("Jaheira")~ THEN @224 /* ~Creo que eres el humano mas indeseable que conozco.~ */
+ == BNALIA IF ~IsValidForPartyDialog("Nalia")~ THEN @225 /* ~Nunca confiare en un mago rojo, son personas malvadas.~ */
+ == BJAN IF ~IsValidForPartyDialog("Jan")~ THEN @226 /* ~Preferiría antes limpiarle los dientes a un dragón. Os he contado alguna vez cuando trabaje de dentista, tenia pacientes de todas las partes de los reinos y de todas las razas enanos, elfos, ogros… Tuve que dejar el trabajo, pues una vez le saque a un gigante una muela que no era y encima olvide ponerle anestesia. El gigante se enfado mucho y me estuvo persiguiendo durante un año con intención de comerme.~ */
+-== BYOSHIM IF ~IsValidForPartyDialog("Yhosimo")~ THEN @227 /* ~Después de verte vender a Mae'Var… No se si eres de confianza.~ */
++== BYOSHIM IF ~IsValidForPartyDialog("Yoshimo")~ THEN @227 /* ~Después de verte vender a Mae'Var… No se si eres de confianza.~ */
+ == BHANNA @228 /* ~Ves Edwin la gente no tiene muy buena opinión de ti.~ */
+ == BEDWIN @229 /* ~Eso me pasa por viajar con incultos descerebrados, a veces no se que hago perdiendo el tiempo con vosotros.~ */ 
+ EXIT

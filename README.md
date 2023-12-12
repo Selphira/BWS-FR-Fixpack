@@ -47,6 +47,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Hanna NPC v2.5
   - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
   - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.
+  - Correction de références à Keldorn et Yoshimo dans un dialogue
 
 - Item Revision v4beta10sd16
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
