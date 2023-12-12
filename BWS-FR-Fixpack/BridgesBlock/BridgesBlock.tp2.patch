@@ -1,0 +1,11 @@
+--- BridgesBlock\BridgesBlock.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\BridgesBlock\\BridgesBlock.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~BridgesBlock/backup~
+ SUPPORT ~Lava Del'Vortel~
+ README ~BridgesBlock/readme.txt~
+ 
+-VERSION ~1.6~
++VERSION ~1.6 BWS-FR Fix~
+ 
+ // Translations
+ 
