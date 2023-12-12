@@ -1,0 +1,11 @@
+--- TheBeaurinLegacy\TheBeaurinLegacy.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\TheBeaurinLegacy\\TheBeaurinLegacy.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~TheBeaurinLegacy/backup~
+ SUPPORT ~https://www.gibberlings3.net/forums/forum/200-the-beaurin-legacy/~
+ README ~%MOD_FOLDER%/TheBeaurinLegacy-ReadMe.html~
+-VERSION ~v5.3~
++VERSION ~v5.3 BWS-FR Fix~
+ 
+ AUTO_EVAL_STRINGS
+ ALWAYS

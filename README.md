@@ -91,6 +91,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction de la compétence utilisée par l'objet "dw#kob01" qui était "Epée longue" au lieu de "Dague"
   - Correction du composant NPC customisation pour EET (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/36487-npc-customization/#comment-326619)
 
+- The Beaurin Legacy v5.3
+  - Correction de références à Haer'Dalis dans un dialogue
+
 - The Stone of Askavar v2.2
   - SOAITM27.itm
     - Correction du parameter2 de l'opcode 115 : 4 => 0

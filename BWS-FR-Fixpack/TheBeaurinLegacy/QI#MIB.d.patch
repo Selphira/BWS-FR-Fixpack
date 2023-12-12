@@ -1,0 +1,14 @@
+--- TheBeaurinLegacy\Dialogue\SoA\QI#MIB.d
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\TheBeaurinLegacy\\Dialogue\\SoA\\QI#MIB.d"	
+@@ -2,9 +2,9 @@ BEGIN QI#MIB
+ 
+ //Haer'Dalis
+ CHAIN
+-IF ~InParty("Haer'Dalis")
++IF ~InParty("HaerDalis")
+ InParty("QI#Mi")
+-See("Haer'Dalis")
++See("HaerDalis")
+ !StateCheck("HaerDalis",CD_STATE_NOTVALID)
+ !StateCheck("QI#Mi",CD_STATE_NOTVALID)
+ CombatCounter(0)
