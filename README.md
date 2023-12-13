@@ -47,7 +47,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Hanna NPC v2.5
   - Le code de gestion de la transition du PNJ était inclu dans le composant 6 au lieu du composant 0.
   - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.
-  - Correction de références à Keldorn et Yoshimo dans un dialogue
+  - Correction de références à Keldorn et Yoshimo dans un dialogue : Keldor => Keldorn, Yhosimo => Yoshimo
 
 - Item Revision v4beta10sd16
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
@@ -73,6 +73,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Song and Silence v16
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
 
+- Southern Edge v4.2
+  - Correction de références à un objet dans un dialogue : BOOK9C => MISC9C
+
 - Spiritwalker - A Shaman Shapeshifter Kit v1.4
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
@@ -93,7 +96,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction du composant NPC customisation pour EET (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/36487-npc-customization/#comment-326619)
 
 - The Beaurin Legacy v5.3
-  - Correction de références à Haer'Dalis dans un dialogue
+  - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm

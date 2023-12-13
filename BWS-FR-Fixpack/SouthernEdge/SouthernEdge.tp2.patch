@@ -1,0 +1,11 @@
+--- SouthernEdge\SouthernEdge.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\SouthernEdge\\SouthernEdge.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~SouthernEdge/backup~
+ AUTHOR ~Lava Del'Vortel~
+ README ~SouthernEdge/readme.txt~
+ 
+-VERSION ~4.2~
++VERSION ~4.2 BWS-FR Fix~
+ 
+ AUTO_TRA ~SouthernEdge\Translations\%s~
+ 
