@@ -1,0 +1,11 @@
+--- c#endlessbg1\c#endlessbg1.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\c#endlessbg1\\c#endlessbg1.tp2"	
+@@ -8,7 +8,7 @@
+ BACKUP ~c#endlessbg1/backup~
+ AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
+ 
+-VERSION ~18.1~
++VERSION ~18.1 BWS-FR Fix~
+ 
+ README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
+ 

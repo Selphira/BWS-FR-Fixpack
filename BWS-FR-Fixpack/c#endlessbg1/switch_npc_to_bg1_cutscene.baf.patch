@@ -1,0 +1,14 @@
+--- c#endlessbg1\korlasz_dungeon_bg1\switch_dlgs\switch_npc_to_bg1_cutscene.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\c#endlessbg1\\korlasz_dungeon_bg1\\switch_dlgs\\switch_npc_to_bg1_cutscene.baf"	
+@@ -264,9 +264,9 @@ IF
+ THEN
+ 	RESPONSE #100
+ 		CutSceneId(Player1)
+-		ActionOverride("Shar-Teel",SetDialog("%HARTEEL_JOINED%"))
++		ActionOverride("Shar-Teel",SetDialog("%SHARTEEL_JOINED%"))
+ 		ActionOverride("Shar-Teel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
+-		ActionOverride("SharTeel",SetDialog("%HARTEEL_JOINED%"))
++		ActionOverride("SharTeel",SetDialog("%SHARTEEL_JOINED%"))
+ 		ActionOverride("SharTeel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
+ END
+ 
