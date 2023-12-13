@@ -29,6 +29,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Check the Bodies v3.0
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
+  - Correction de la référence au kit Barbare dans divers scripts
 
 - Ding0's Quest Pack v3.5
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1

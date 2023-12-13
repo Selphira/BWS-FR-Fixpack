@@ -1,0 +1,11 @@
+--- CtB\scripts\append\aptp0500.BAF
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\CtB\\scripts\\append\\aptp0500.BAF"	
+@@ -51,7 +51,7 @@ IF
+ 		GlobalGT("BodhiJob","GLOBAL",0)
+ 	Global("CbBarbarianIntroGuy","GLOBAL",0)
+ 	Class(Player1,FIGHTER)
+-	Kit(Player1,0)
++	Kit(Player1,BARBARIAN)
+ 	!Exists("CBNRT010")
+ 	AreaCheck("AR0500")
+ THEN
