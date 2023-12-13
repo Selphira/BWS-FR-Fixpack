@@ -1,0 +1,11 @@
+--- mih_eq\sod\bridgefort\false_priest.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\mih_eq\\sod\\bridgefort\\false_priest.tpa"	
+@@ -11,7 +11,7 @@ BEGIN
+     DECOMPILE_AND_PATCH
+     BEGIN
+       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+-       ~bdwight~ ~bdmumm01~
++       ~bdwightj~ ~bdmumm01~
+     END
+ END	// false_priest
+ 
