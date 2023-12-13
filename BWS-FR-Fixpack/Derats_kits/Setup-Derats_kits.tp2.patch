@@ -1,0 +1,39 @@
+--- Derats_kits\Setup-Derats_kits.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Derats_kits\\Setup-Derats_kits.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~Derats_kits/backup~
+ AUTHOR ~Deratiseur[at]gmail.com
+ 		Forum : http://www.baldursgateworld.fr/lacouronne/derats-unused-kits-pack/~
+-VERSION ~v18~
++VERSION ~v18 BWS-FR Fix~
+ 
+ ALWAYS
+ 
+@@ -1906,13 +1906,6 @@ ACTION_IF GAME_IS ~IWDEE~ THEN BEGIN
+ 	COPY_EXISTING ~hobart.sto~								~override~	ADD_STORE_ITEM ~pxstapai~	AFTER  ~braceip~ #1 #1 #1 ~IDENTIFIED~ #1
+ END
+ 
+-ACTION_IF GAME_IS ~TOB BG2EE EET~ THEN BEGIN
+-	COPY	~Derats_kits/Sorcelier/Items/pxsogi.itm~		~override~	SAY NAME2 @1003	SAY DESC @1004
+-	SILENT
+-	EXTEND_TOP "AR0201.bcs" "Derats_kits/Codes/pxsitem.baf"
+-	VERBOSE
+-END
+-
+ ACTION_IF GAME_IS ~TOB BGT~ THEN BEGIN
+ 	COPY	~Derats_kits/Sorcelier/EE patch/K_S_H.2da~	~override~
+ 	COPY_EXISTING	~K_S_H.2da~				~override/K_S_E.2da~
+@@ -1994,6 +1987,13 @@ ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ THEN BEGIN
+ 	LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCELIERD	hpclass = ~hprog~	clswpbon = ~1 0 2~	END
+ END
+ 
++ACTION_IF GAME_IS ~TOB BG2EE EET~ THEN BEGIN
++	COPY	~Derats_kits/Sorcelier/Items/pxsogi.itm~		~override~	SAY NAME2 @1003	SAY DESC @1004
++	SILENT
++	EXTEND_TOP "AR0201.bcs" "Derats_kits/Codes/pxsitem.baf"
++	VERBOSE
++END
++
+ SILENT
+ COMPILE	~Derats_kits/Codes/pxProfil.baf~
+ COPY_EXISTING	~pxProfil.bcs~					~scripts/pxProfil.bs~
