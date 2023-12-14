@@ -1,0 +1,90 @@
+--- Sheena\Scripts\K#Sheena.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Sheena\\Scripts\\K#Sheena.baf"	
+@@ -147,7 +147,7 @@ IF
+  RESPONSE #100
+  ActionOverride(Myself,ApplySpellRES("K#DSABLE",Myself))//Disable ability button
+  ActionOverride(Myself,ApplySpellRES("K#POLYB", Myself))//Change into a human form
+- ActionOverride(Myself,RemoveSpellRES("K#REDDRA",Myself))
++ ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+  END
+ 
+ IF
+@@ -156,7 +156,7 @@ IF
+ THEN
+ RESPONSE #100
+  SetGlobal("SheenABI","GLOBAL",0)
+- ActionOverride(Myself,RemoveSpellRES("K#REDDRA",Myself))
++ ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+ END
+ 
+ //DISABLE POLYMORPH IF LOOK LIKE DROW - KEEP THE ILLUSION GOING
+@@ -175,9 +175,9 @@ Global("SheenRHD","GLOBAL",1)//HD form
+ PartyRested()
+ THEN
+ RESPONSE #100
+-RemoveSpellRES("K#POLYS",Myself)
+-RemoveSpellRES("K#POLYS",Myself)
+-RemoveSpellRES("K#REDDRA",Myself)
++ActionOverride(Myself,RemoveSpellRES("K#POLYS"))
++ActionOverride(Myself,RemoveSpellRES("K#POLYS"))
++ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+ END
+ 
+ //Arrival in Hell counts as rest
+@@ -188,9 +188,9 @@ Global("k#HellBugFix","GLOBAL",0)
+ THEN
+ RESPONSE #100
+ SetGlobal("k#HellBugFix","GLOBAL",1)
+-RemoveSpellRES("K#POLYS",Myself)
+-RemoveSpellRES("K#POLYS",Myself)
+-RemoveSpellRES("K#REDDRA",Myself)
++ActionOverride(Myself,RemoveSpellRES("K#POLYS"))
++ActionOverride(Myself,RemoveSpellRES("K#POLYS"))
++ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+ END
+ 
+ //Remove spell ability: change into human if I am a human already
+@@ -199,9 +199,9 @@ Global("SheenRHD","GLOBAL",0)//Human form
+ PartyRested()
+ THEN
+ RESPONSE #100
+-RemoveSpellRES("K#POLYB",Myself)
+-RemoveSpellRES("K#POLYB",Myself)
+-RemoveSpellRES("K#REDDRA",Myself)
++ActionOverride(Myself,RemoveSpellRES("K#POLYB"))
++ActionOverride(Myself,RemoveSpellRES("K#POLYB"))
++ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+ END
+ 
+ IF
+@@ -211,9 +211,9 @@ Global("k#HellBugFix","GLOBAL",0)
+ THEN
+ RESPONSE #100
+ SetGlobal("k#HellBugFix","GLOBAL",1)
+-RemoveSpellRES("K#POLYB",Myself)
+-RemoveSpellRES("K#POLYB",Myself)
+-RemoveSpellRES("K#REDDRA",Myself)
++ActionOverride(Myself,RemoveSpellRES("K#POLYB"))
++ActionOverride(Myself,RemoveSpellRES("K#POLYB"))
++ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+ END
+ 
+ 
+@@ -253,7 +253,7 @@ IF
+  THEN
+  RESPONSE #100
+  Wait(2)
+- ActionOverride(Myself,RemoveSpellRES("K#REDDRA",Myself))
++ ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))
+  ActionOverride(Myself,ApplySpellRES("K#DSABLE",Myself))//Disable ability button
+  ActionOverride(Myself,ApplySpellRES("K#POLYB", Myself))//Change into a human form
+  END
+@@ -290,7 +290,7 @@ IF
+  RESPONSE #100
+  //ENABLE INNATE ABBILITY BUTTON
+  ActionOverride(Myself,ApplySpellRES("K#ENABLE",Myself))//Enable ability button
+- ActionOverride(Myself,RemoveSpellRES("K#REDDRA",Myself))//Remove the ability
++ ActionOverride(Myself,RemoveSpellRES("K#REDDRA"))//Remove the ability
+  END
+ 
+ 

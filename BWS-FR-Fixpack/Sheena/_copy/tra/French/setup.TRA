@@ -1,0 +1,55 @@
+@0    = ~Installer "Une Histoire de Demi Dragon"~
+@1    = ~Sheena~
+@2    = ~Lorsque l'on lui demande de raconter son passé, Sheena mentionne que son beau-père est le seul père qui ait jamais compté pour elle.~
+@3    = ~Transformation dans sa forme naturelle~
+@4    = ~Transformation en humain~
+@5    = ~Souffle de demi dragon~
+@6    = ~Le Vengeur de Sheena~
+@7    = ~Cette épée à 2 mains extrêmement large a été crée par le beau-père de Sheena, un forgeron renommé dans tout Féérune. Selon Sheena, la lame a été enchantée avec la tentacule d'un Illithid et le cœur d'un géant du feu, mais comment son beau père s'est procuré des artefacts si rares et précieux reste un mystère.
+
+PARAMÈTRES :
+
+Capacités de combat :
+
+- À chaque coup :
+	- Inflige 2 points de dégâts au feu à la cible.
+	- Diminue la résistance au feu de la cible de 5 % si un jet de sauvegarde contre les souffles avec une pénalité de 6 échoue.
+	- 10 % de chance d'étourdir la cible pour un tour et demi (pas de jet de sauvegarde).
+
+TAC0 : bonus 3
+Dégâts :  1D12 +3
+Type de dégâts : tranchant
+Facteur de vitesse : 2
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Nécessite : 
+- 16 en force
+
+Poids :  10~
+
+/*
+Inutilisable par:
+ Nain
+ Humain
+ Elf
+ Gnome
+ Demi-Elf
+ Demi-Orque
+*/
+
+@8    = ~L'armure de Sheena~
+@9    = ~Cette armure appartient à Sheena. Elle est faite d'un cuir particulièrement robuste et offrirait certainement une protection remarquable, si Sheena cessait d'enlever la partie qui recouvre sa poitrine. Cependant, cet ajustement améliore sa mobilité et lui permet d'incanter des sortilèges.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+
+– Permet de lancer des sorts profanes
+
+Classe d'armure : 2
+
+Nécessite :
+- 6 en Force
+
+Poids : 10~

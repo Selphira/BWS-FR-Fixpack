@@ -1,0 +1,25 @@
+--- Sheena\Setup-Sheena.TP2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Sheena\\Setup-Sheena.TP2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~Sheena\backup~
+ AUTHOR ~edvin@seznam.cz~
+ 
+-VERSION ~v2.6~
++VERSION ~v2.6 BWS-FR Fix~
+ 
+ //For those without TOB
+ ALWAYS
+@@ -85,12 +85,9 @@ ACTION_IF (NOT ENGINE_IS ~bgee bg2ee iwdee~) BEGIN
+   END
+ END
+ 
+-APPEND ~Action.ids~
+-~147 RemoveSpellRES(S:RES*,O:Target)~
+-UNLESS ~147 RemoveSpellRES(S:RES*,O:Target)~
+ APPEND ~Trigger.ids~
+ ~0x4031 HaveSpellRES(S:RES*)~
+-UNLESS ~0x4031 HaveSpellRES(S:RES*)~
++UNLESS ~0x4031 HaveSpellRES(S:RES\*)~
+ 
+ 
+ //Portraits

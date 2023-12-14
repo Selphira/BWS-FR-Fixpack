@@ -56,7 +56,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - L'identifiant IC_LICH était toujours ajouté, même s'il existait déjà.
   - Correction de références à Keldorn et Yoshimo dans un dialogue : Keldor => Keldorn, Yhosimo => Yoshimo
 
-- Item Revision v4beta10sd16
+- Item Revision v4beta10sd19
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
     Ex: DWCHAN02, DWPLAT01, ISHCHA
 
@@ -79,6 +79,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Rogue Rebalancing v4.92
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
+
+- Sheena, a Half Dragon Tale NPC v2.6
+  - Correction de la vérification de la présence de HaveSpellRES(S:RES*) dans le fichier Trigger.ids
 
 - Song and Silence v16
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
@@ -143,7 +146,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Gerri's BGT NPC Portraits v3.1
   - Le composant "Portraits for BG1 Romantic Encounters" se basait sur le composant 0 de "BG1 Romantics Encounters" qui n'existe plus et est remplacé par les composants 100 à 105.
 
-- Item Revision v4beta10sd16
+- Item Revision v4beta10sd19
   - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).
 
 - Olvyn Tweaks
@@ -156,6 +159,10 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - La description du Maître-lames, couplée au composant "4250 - Changer les sequenceurs de sorts et les contingences en capacites speciales" de Stratagems, générait une description de plus de 4096 caractères, ce qui faisait crasher le jeu lorsque l'on tentait de sélectionner ce kit.
     La description de la capacité "Démonstration Martiale" a été diminuée.
   - Compatibilité avec Iwdification (merci [@CamDawg](https://github.com/CamDawg) : https://github.com/FredrikLindgren/rr/pull/11)
+
+- Sheena, a Half Dragon Tale NPC v2.6
+  - Remplacement des RemoveSpellRES(S:RES*,O:Target) par ActionOverride(O:Actor*,RemoveSpellRES(S:RES*))
+    La nouvelle signature de RemoveSpellRES() provoque des erreurs pour les mods installés après
 
 - Stratagems v34.3
   - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
@@ -190,6 +197,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - RelieveWizardSlayer.tp2 v1.7
   - Mini traduction pour la partie qui remplace la description du kit du tueur de magiciens de "Wizard Slayer Rebalancing"
+
+- Sheena, a Half Dragon Tale NPC v2.6
+  - Correction de l'encodage des fichiers de traduction
 
 - Stratagems v34.3
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
