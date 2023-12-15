@@ -1,0 +1,11 @@
+--- Sheena\Dialogues\k#bsheen.D
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Sheena\\Dialogues\\k#bsheen.D"	
+@@ -1941,7 +1941,7 @@ EXIT
+ APPEND BJAHEIR
+ IF ~InParty("K#Sheena") 
+ See("K#Sheena")
+-!StateCheck("Sheena",STATE_SLEEPING)  
++!StateCheck("K#Sheena",STATE_SLEEPING)
+ Global("JahTalkSheena","GLOBAL",1)
+ CombatCounter(0)~ THEN BEGIN JahTalkSheena2
+ SAY @2716 

@@ -82,6 +82,8 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Sheena, a Half Dragon Tale NPC v2.6
   - Correction de la vérification de la présence de HaveSpellRES(S:RES*) dans le fichier Trigger.ids
+  - Correction d'une référence dans un script : "Myself" => Myself
+  - Correction d'une référence dans un dialogue : Sheena => K#Sheena
 
 - Song and Silence v16
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5

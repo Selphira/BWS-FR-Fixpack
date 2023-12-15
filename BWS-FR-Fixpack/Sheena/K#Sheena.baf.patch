@@ -88,3 +88,12 @@
   END
  
  
+@@ -610,7 +610,7 @@ RealGlobalTimerExpired("SheTalkSlayer","LOCALS")
+ Global("SlayerTalkReady","LOCALS",1)
+ CombatCounter(0)
+ InParty(Myself)
+-!Dead("Myself")
++!Dead(Myself)
+ THEN
+ RESPONSE #100
+ SetGlobal("SlayerTalkReady","LOCALS",2)
