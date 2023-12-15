@@ -83,6 +83,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Rogue Rebalancing v4.92
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
 
+- Secret of Bone Hill (EET) v34
+  - Correction d'une référence dans un dialogue : Mincs => Minsc
+
 - Sheena, a Half Dragon Tale NPC v2.6
   - Correction de la vérification de la présence de HaveSpellRES(S:RES*) dans le fichier Trigger.ids
   - Correction d'une référence dans un script : "Myself" => Myself

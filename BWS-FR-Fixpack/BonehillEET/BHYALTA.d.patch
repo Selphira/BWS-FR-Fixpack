@@ -1,0 +1,11 @@
+--- BonehillEET\BGT\D\BHYALTA.d
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\BonehillEET\\BGT\\D\\BHYALTA.d"	
+@@ -64,7 +64,7 @@ END
+ 
+ IF ~~ THEN BEGIN 9
+   SAY @31
+-  IF ~IfValidForPartyDialogue("Mincs")~ THEN EXTERN ~MINSCJ~ YALTAMINSC
++  IF ~IfValidForPartyDialogue("Minsc")~ THEN EXTERN ~MINSCJ~ YALTAMINSC
+   IF ~~ THEN DO ~SetGlobal("BHYaltaPissed","GLOBAL",1) ReputationInc(-1)~ EXIT
+ END
+ 
