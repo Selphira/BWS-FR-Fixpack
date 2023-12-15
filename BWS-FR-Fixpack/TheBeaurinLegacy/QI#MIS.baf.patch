@@ -1,0 +1,11 @@
+--- TheBeaurinLegacy\Scripts\SoA\QI#MIS.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\TheBeaurinLegacy\\Scripts\\SoA\\QI#MIS.baf"	
+@@ -58,7 +58,7 @@ See(Player1)
+ CombatCounter(0)
+ !See([ENEMY])
+ !AreaType(DUNGEON)
+-OR(10)      //If there is an issue, change this to 9                            
++OR(9)      //If there is an issue, change this to 9
+ Global("QI#MiFriendshipTalk","GLOBAL",2)
+ Global("QI#MiFriendshipTalk","GLOBAL",4)
+ Global("QI#MiFriendshipTalk","GLOBAL",6)

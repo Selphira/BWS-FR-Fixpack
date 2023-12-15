@@ -110,6 +110,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - The Beaurin Legacy v5.3
   - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
+  - Correction d'un OR nécessitant 10 triggers alors qu'il n'y en a que 9
 
 - The Stone of Askavar v2.2
   - SOAITM27.itm
