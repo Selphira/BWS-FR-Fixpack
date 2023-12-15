@@ -1,0 +1,11 @@
+--- c#sodtweaks\setup-c#sodtweaks.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\c#sodtweaks\\setup-c#sodtweaks.tp2"	
+@@ -3,7 +3,7 @@ BACKUP ~c#sodtweaks/backup~
+ AUTHOR ~https://www.gibberlings3.net/forums/topic/30427-jasteys-sod-tweakpack/~ 
+ 
+ 
+-VERSION ~v11.1~
++VERSION ~v11.1 BWS-FR Fix~
+ 
+ 
+ README ~c#sodtweaks/readme.c#sodtweaks.%LANGUAGE%.txt~ ~c#sodtweaks/readme.c#sodtweaks.english.txt~
