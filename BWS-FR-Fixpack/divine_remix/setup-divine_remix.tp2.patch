@@ -9,7 +9,7 @@
  
  README   ~divine_remix/readme-divine_remix.html~
  
-@@ -2367,9 +2367,8 @@ COPY_EXISTING ~nmrnwr4.spl~ ~override/nmrnwr5.spl~ // +5% set snares
+@@ -2388,9 +2388,8 @@ COPY_EXISTING ~nmrnwr4.spl~ ~override/nmrnwr5.spl~ // +5% set snares
  
  BEGIN @60000 DESIGNATED 600 // component 600
  GROUP @10
@@ -20,12 +20,3 @@
  
  // find tempus kit in kitlist
  COPY_EXISTING ~kitlist.2da~ ~override~
-@@ -2457,7 +2456,7 @@ COPY_EXISTING ~kitlist.2da~ ~override~
-   FOR ( index = 31 ; index <= rows ; index = index + 1 ) BEGIN
-     READ_2DA_ENTRY "%index%" 5 9 "clab"
-     PATCH_IF ("%clab%" STRING_COMPARE_CASE "A#SHAR" = 0) BEGIN
--      SET "A#SHAR" = "%index%"
-+      READ_2DA_ENTRY "%index%" 0 9 "A#SHAR"
-       SET "rows" = 0
-     END
-   END

@@ -39,7 +39,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Divine Remix v8.1 (TotoR115)
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
-  - Le composant @610 n'affectait pas le bon kit à Viconia.
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.4 => v1.1.5
 
 - Endless BG1 v18.1
