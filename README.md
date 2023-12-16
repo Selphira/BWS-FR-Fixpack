@@ -186,6 +186,10 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 #### Traductions et corrections d'orthographe
 
+- 5E-style spellcasting v2.5.1
+  - Traductions des quelques lignes manquantes
+  - Correction de l'altération des descriptions de certains kits de barde ajoutés par Might & Guile 
+
 - Baldur's Gate Romantic Encounters v11.0
   - Ajout de traductions manquantes (merci [Le Marquis d'Oghmatique](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=8761) : https://www.baldursgateworld.fr/viewtopic.php?p=508666#p508666)
 

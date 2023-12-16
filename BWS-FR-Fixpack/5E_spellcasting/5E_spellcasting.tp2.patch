@@ -1,0 +1,11 @@
+--- 5E_spellcasting\5E_spellcasting.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\5E_spellcasting\\5E_spellcasting.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~weidu_external/backup/5E_spellcasting~
+ AUTHOR ~SubtleD~
+ 
+-VERSION ~2.5.1~
++VERSION ~2.5.1 BWS-FR Fix~
+ 
+ ALWAYS
+ 

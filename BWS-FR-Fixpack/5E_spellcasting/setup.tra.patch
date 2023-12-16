@@ -1,0 +1,24 @@
+--- 5E_spellcasting\lang\french\setup.tra
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\5E_spellcasting\\lang\\french\\setup.tra"	
+@@ -18,12 +18,16 @@
+ @902 = ~Bonus seulement aux emplacements de lancer de sorts~
+ @950 = ~Donner aux lanceurs de sorts 5E des emplacements de sorts bonus en fonction de leurs caractéristiques~
+ //
+-@10006  = ~Advantages:~
+-@10007  = ~Abilities:~
+-@10008  = ~Disadvantages:~
+-@10009  = ~Restrictions:~
++@10006  = ~^Avantages[^:]*:~
++@10007  = ~^CAPACITÉS :~
++@10008  = ~^Inconvénients[^:]*:~
++@10009  = ~^Restrictions :~
++@10016  = ~Avantages :~
++@10017  = ~CAPACITÉS :~
++@10018  = ~Inconvénients :~
++@10019  = ~Restrictions :~
+ @10010 = ~
+-- While bards memorize spells like a wizard, they can cast them spontaneously, like a sorcerer.~
++- Les bardes mémorisent les sorts comme les magiciens, mais ils peuvent les lancer spontanément, comme les sorciers.~
+ //
+ @10989 = ~Emplacement de sort de niveau huit supplémentaire~
+ @10990 = ~Emplacement de sort de niveau neuf supplémentaire~

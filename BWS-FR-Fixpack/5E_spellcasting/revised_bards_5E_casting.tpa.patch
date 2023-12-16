@@ -1,0 +1,24 @@
+--- 5E_spellcasting\comp\revised_bards_5E_casting.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\5E_spellcasting\\comp\\revised_bards_5E_casting.tpa"	
+@@ -934,6 +934,10 @@ OUTER_SPRINT advantages @10006
+ OUTER_SPRINT abilities @10007
+ OUTER_SPRINT disadvantages @10008
+ OUTER_SPRINT restrictions @10009
++OUTER_SPRINT replaceAdvantages @10016
++OUTER_SPRINT replaceAbilities @10017
++OUTER_SPRINT replaceDisadvantages @10018
++OUTER_SPRINT replaceRrestrictions @10019
+ OUTER_SPRINT tra_5E_casting @10010
+ 
+ COPY_EXISTING ~kitlist.2da~ ~override~
+@@ -948,8 +952,8 @@ COPY_EXISTING ~kitlist.2da~ ~override~
+ 		  PATCH_IF (IS_AN_INT %desc%) BEGIN
+ 		    GET_STRREF %desc% kit_description
+ 		    INNER_PATCH_SAVE kit_description ~%kit_description%~ BEGIN
+-			  REPLACE_TEXTUALLY ~%advantages%~ ~%tra_5E_casting%~
+-			  REPLACE_TEXTUALLY ~%abilities%~ ~%tra_5E_casting%~
++			  REPLACE_TEXTUALLY ~%advantages%~ ~%replaceAdvantages%%tra_5E_casting%~
++			  REPLACE_TEXTUALLY ~%abilities%~ ~%replaceAbilities%%tra_5E_casting%~
+ 		    END
+ 		    INNER_ACTION BEGIN
+ 			  STRING_SET_EVALUATE %kit_desc% ~%kit_description%~
