@@ -213,6 +213,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Sheena, a Half Dragon Tale NPC v2.6
   - Correction de l'encodage des fichiers de traduction
 
+- Skills-and-Abilities v2.3
+  - Ajout de la traduction (merci [@JohnBob](https://github.com/11jo))
+
 - Stratagems v34.3
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
   - Mise à jour de la traduction des sorts (merci [@Jazira33](https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
