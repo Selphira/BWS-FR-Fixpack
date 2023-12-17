@@ -229,6 +229,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - SubtleD's Stat Overhauls v1.3
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Stat_Overhauls/pull/1)
 
+- Tactics-Remix v0.6.2-beta
+  - Mise à jour de la traduction (merci [@JohnBob](https://github.com/11jo))
+
 - Thalantyr Item Upgrade v4.2.5
   - Corrections de la traduction
 
