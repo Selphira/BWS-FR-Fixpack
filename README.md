@@ -204,6 +204,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
+- Magic Store of Vergadain v3.0
+  - Mise à jour de la traduction (merci [@JohnBob](https://github.com/11jo) : https://github.com/Argent77/A7-MagicStore/commit/139d94c2d0ba1f6858f3afb28aef13e3c6531a31)
+
 - Olvyn Tweaks
   - Corrections de caractères majuscules accentués qui fonctionnent sans problème avec EE
 
