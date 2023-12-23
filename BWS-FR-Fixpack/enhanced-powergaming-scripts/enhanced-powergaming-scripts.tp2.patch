@@ -1,0 +1,27 @@
+--- enhanced-powergaming-scripts\enhanced-powergaming-scripts.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\enhanced-powergaming-scripts\\enhanced-powergaming-scripts.tp2"	
+@@ -7,7 +7,7 @@
+ BACKUP ~enhanced-powergaming-scripts/backup~
+ AUTHOR ~morpheus562~
+ 
+-VERSION ~v12.5~
++VERSION ~v12.5 BWS-FR Fix~
+ README ~enhanced-powergaming-scripts/readme.%LANGUAGE%.html~ ~enhanced-powergaming-scripts/readme.html~
+ AUTO_EVAL_STRINGS
+ 
+@@ -24,6 +24,15 @@ LANGUAGE ~English~
+          ~enhanced-powergaming-scripts/languages/english/script_descriptions.tra~
+          ~enhanced-powergaming-scripts/languages/english/script_dialog.tra~
+ 
++LANGUAGE ~French (by JohnBob)~
++         ~french~
++         ~enhanced-powergaming-scripts/languages/english/setup.tra~
++         ~enhanced-powergaming-scripts/languages/english/script_descriptions.tra~
++         ~enhanced-powergaming-scripts/languages/english/script_dialog.tra~
++         ~enhanced-powergaming-scripts/languages/french/setup.tra~
++         ~enhanced-powergaming-scripts/languages/french/script_descriptions.tra~
++         ~enhanced-powergaming-scripts/languages/french/script_dialog.tra~
++
+ LANGUAGE ~German (by Morywen)~
+ 		 ~german~
+ 		 ~enhanced-powergaming-scripts/languages/english/setup.tra~

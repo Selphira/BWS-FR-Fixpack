@@ -198,6 +198,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - EET (Enhanced Edition Trilogy) Tweaks v1.12
   - Ajout de la traduction
 
+- Enhanced Powergaming Scripts v12.5
+  - Ajout de la traduction (merci [@JohnBob](https://github.com/11jo))
+
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
