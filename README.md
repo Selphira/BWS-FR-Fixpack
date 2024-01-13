@@ -175,9 +175,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Stratagems v34.3
   - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
 
-- Thalantyr Item Upgrade v4.2.5
-  - Compatibilté avec EET, en prenant en compte l'objet BOOT02ZH (merc [@BardezAnAvatar](https://github.com/BardezAnAvatar) : https://github.com/CrevsDaak/thalan/pull/11)
-
 - Tweaks Anthology v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
   - Compatibilité avec EET : Correction du script de la zone de Château-Suif (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/55)
@@ -237,9 +234,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Tactics-Remix v0.6.2-beta
   - Mise à jour de la traduction (merci [@JohnBob](https://github.com/11jo))
-
-- Thalantyr Item Upgrade v4.2.5
-  - Corrections de la traduction
 
 - The Enhanced Edition Fixpack vBeta 1
   - Ajout de la traduction
