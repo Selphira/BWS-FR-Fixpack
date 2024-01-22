@@ -223,7 +223,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - SubtleD's Spell Tweaks v2.6
   - Mise à jour de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Spell_Tweaks/pull/15)
 
-- SubtleD's Stat Overhauls v1.3
+- SubtleD's Stat Overhauls v1.5.1
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Stat_Overhauls/pull/1)
 
 - Tactics-Remix v0.6.2-beta
