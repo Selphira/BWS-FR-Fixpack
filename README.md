@@ -217,7 +217,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
   - Mise à jour de la traduction des sorts (merci [@Jazira33](https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
 
-- SubtleD's Item Tweaks v1.3.1
+- SubtleD's Item Tweaks v1.3.2
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Item_Tweaks/pull/1)
 
 - SubtleD's Spell Tweaks v2.6
