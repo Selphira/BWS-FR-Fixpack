@@ -220,7 +220,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - SubtleD's Item Tweaks v1.3.2
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Item_Tweaks/pull/1)
 
-- SubtleD's Spell Tweaks v2.6
+- SubtleD's Spell Tweaks v2.7
   - Mise à jour de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Spell_Tweaks/pull/15)
 
 - SubtleD's Stat Overhauls v1.5.1

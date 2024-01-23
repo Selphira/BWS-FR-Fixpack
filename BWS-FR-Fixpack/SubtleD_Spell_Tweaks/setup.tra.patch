@@ -23,14 +23,16 @@
  //
  @10 = ~Re-equilibrage des ecoles de magie~
  @20 = ~Re-equilibrage des ecoles profanes opposees~
-@@ -20,13 +20,13 @@
+@@ -20,15 +20,15 @@
  @26 = ~ecoles opposees papier (PnP)~
  @27 = ~ecoles opposees papier (PnP), permettre les sorts mineurs~
  //
 -@30 = ~High-Level Spells Penetrate Magic Resistance~
 +@30 = ~Les sorts de haut niveau penetrent la resistance a la magie~
  //
- @35 = ~Ajouter un jet de sauvegarde pour les effets d'absorption de niveau~
+ @35 = ~Les effets d'absorption de niveau~
+ @36 = ~Ajouter un jet de sauvegarde pour les effets d'absorption de niveau~
+ @37 = ~Ajouter la durée des effets d'absorption de niveau~
  @40 = ~Revision des clones illusoires~
 -@45 = ~Revision d'Invisibilite et de Vision veritable~
 -@50  = ~Modifier Rapidité et Lenteur pour qu'ils s'annulent l'un l'autre~
@@ -41,7 +43,7 @@
  @60 = ~Tours de magie~
  @61 = ~Tours de magie innes~
  @62 = ~Tours de magie de niveau 1~
-@@ -35,63 +35,63 @@
+@@ -37,63 +37,63 @@
  @82 = ~Le mod de Pooky : Infuser les familiers~
  @83 = ~Tours de magie pour les familiers~
  @1010 = ~Modifier les sorts de soin et similaires pour ignorer les protections contre les sorts~
@@ -161,7 +163,7 @@
  //
  //
  @11511 = ~Soleil ardent~
-@@ -103,10 +103,10 @@ Sphère : Soleil
+@@ -105,10 +105,10 @@ Sphère : Soleil
  Portée : longue
  Durée : instantanée
  Temps d'incantation : 5
@@ -174,7 +176,7 @@
  ~
  @12022 = ~Peau d'écorce
  
-@@ -114,12 +114,12 @@ Niveau : 2
+@@ -116,12 +116,12 @@ Niveau : 2
  École : Transmutation
  Sphère : Végétale
  Portée : toucher
@@ -191,7 +193,7 @@
  ~
  @12071 = ~Baie Magique~
  @12072 = ~Baie Magique
-@@ -128,11 +128,11 @@ Niveau : 2
+@@ -130,11 +130,11 @@ Niveau : 2
  École : Transmutation
  Sphère : Flore
  Portée : 5 m
@@ -206,7 +208,7 @@
  
  Quand il lance ce sort, le lanceur amène une poignée de baies enchantée à grossir jusqu'à une taille surnaturelle et les distribue à ses alliés. Chaque part est aussi nourrissant qu'un repas ordinaire et l'enchantement les rend anormalement réparatrices : consommer les baies supprime l'ivresse, réduit la fatigue et le bénéficiaire régénère 2 points de vie par round, pendant un nombre de rounds égal au niveau du lanceur de sorts (jusqu'à un maximum de 20 points de vies soignés en 10 rounds).
  
-@@ -146,16 +146,16 @@ Sphère : Guérison
+@@ -148,16 +148,16 @@ Sphère : Guérison
  Portée : toucher
  Durée : 4 rounds
  Temps d'incantation : 1
@@ -226,7 +228,7 @@
  Portée : jeteur du sort
  Durée : 4 heures
  Temps d'incantation : 5
-@@ -172,10 +172,10 @@ Sphère : Combat
+@@ -174,10 +174,10 @@ Sphère : Combat
  Portée : champ visuel du lanceur
  Durée : instantanée
  Temps d'incantation : 5
@@ -239,7 +241,7 @@
  ~
  @13232 = ~Exaltation
  
-@@ -185,7 +185,7 @@ Sphère : Guérison
+@@ -187,7 +187,7 @@ Sphère : Guérison
  Portée : contact
  Durée : 1 tour
  Temps d'incantation : 4
@@ -248,7 +250,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort permet au prêtre d'aider et de protéger un compagnon (mais pas lui-même). D'un simple contact, le prêtre fait disparaître les effets de la peur, de la fatigue, de la débilité, de l'inconscience, de l'ébriété, de la confusion et de la rage sanguinaire. De plus, le sujet est protégé contre les sorts et attaques provoquant ces effets jusqu'au terme de la durée indiquée.
-@@ -199,7 +199,7 @@ Sphère : Guérison
+@@ -201,7 +201,7 @@ Sphère : Guérison
  Portée : Contact
  Durée : Instantanée
  Temps d'incantation : 4
@@ -257,7 +259,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort fait disparaître toute substance toxique, maladie et fatigue du corps de la cible, aussi bien d'origine naturelle que magique. Quand ce sort est lancé sur un individu, il neutralise immédiatement tout poison, guérit toute maladie, fait disparaître toute paralysie et élimine toute fatigue. Il guérit aussi la cible de la cécité et de la surdité.
-@@ -210,9 +210,9 @@ Niveau : 4
+@@ -212,9 +212,9 @@ Niveau : 4
  École : Nécromancie
  Sphère : Guérison
  Portée : Contact
@@ -269,7 +271,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort fait disparaître toute substance toxique, maladie et fatigue du corps de la cible, aussi bien d'origine naturelle que magique. Quand ce sort est lancé sur un individu, il neutralise immédiatement tout poison, guérit toute maladie, fait disparaître toute paralysie et élimine toute fatigue. De plus, pendant la durée du sort, le bénéficiaire est immunisé contre tout poison et toute maladie auxquels il est exposé, et les sorts comme Poison et Nuage mortel n'auront aucun effet sur la créature protégée.
-@@ -226,7 +226,7 @@ Sphère : Protection
+@@ -228,7 +228,7 @@ Sphère : Protection
  Portée : Champ de vision du lanceur de sort
  Durée : Instantanée
  Temps d'incantation : 9
@@ -278,7 +280,7 @@
  Jet de sauvegarde : Aucun
  
  Avec ce sort, le lanceur de sorts renforce la détermination spirituelle d'une créature et purge l'esprit de la créature des influences négatives. Le sort supprime les effets de peur, de sommeil, de débilité, l'inconscience et l'ivresse, ainsi que les états de rage et de confusion sur une seule créature. De plus, le bénéficiaire est protégé contre les sorts et attaques qui provoquent ces effets pour toute la durée du sort.
-@@ -237,7 +237,7 @@ Niveau : 3
+@@ -239,7 +239,7 @@ Niveau : 3
  École : Invocation
  Sphère : Combat, Soleil
  Portée : personnelle
@@ -287,7 +289,7 @@
  Temps d'incantation : 6
  Zone d'effet : le lanceur
  Jet de sauvegarde : aucun
-@@ -250,11 +250,11 @@ La lame de lune absorbe l'énergie de la cible, ce qui se traduit par un total d
+@@ -252,11 +252,11 @@ La lame de lune absorbe l'énergie de la cible, ce qui se traduit par un total d
  
  Niveau :6
  École : Transmutation
@@ -301,7 +303,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort permet au lanceur de rappeler à sa mémoire tous les sorts de niveau 1 et 2 qui ont déjà été lancés. Si aucun de ces sorts n'a été lancé, rien ne se produit.
-@@ -267,9 +267,9 @@ Ce sort permet au lanceur de rappeler à sa mémoire tous les sorts de niveau 1
+@@ -269,9 +269,9 @@ Ce sort permet au lanceur de rappeler à sa mémoire tous les sorts de niveau 1
  Niveau : 1
  École : Altération
  Portée : toucher
@@ -313,7 +315,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort confère à la cible une résistance aux attaques de regard, qui incluent le regard des basilics et des méduses, le charme des vampires, ainsi que d'autres effets. Quand il subit un tel effet, le bénéficiaire peut tenter un jet de sauvegarde contre les sorts en plus de tout jet de sauvegarde ordinairement autorisé par l'attaque. Si le jet de sauvegarde additionnel contre les sorts est réussi, l'effet causé par le regard est entièrement évité.
-@@ -279,10 +279,10 @@ Ce sort confère à la cible une résistance aux attaques de regard, qui incluen
+@@ -281,10 +281,10 @@ Ce sort confère à la cible une résistance aux attaques de regard, qui incluen
  Niveau : 1
  École : Enchantement
  Portée : 9 m
@@ -328,7 +330,7 @@
  
  Le bénéficiaire de ce sort est chanceux dans tout ce qu'il entreprend. Il reçoit 5 % ou 1 point de bonus pour chacun de ses actes, y compris les jets de sauvegarde, les chances d'atteindre une cible, les jets de dés pour les dégâts causés, les talents de voleur, etc.
  ~
-@@ -290,20 +290,20 @@ Le bénéficiaire de ce sort est chanceux dans tout ce qu'il entreprend. Il reç
+@@ -292,20 +292,20 @@ Le bénéficiaire de ce sort est chanceux dans tout ce qu'il entreprend. Il reç
  Niveau : 2
  École : Conjuration
  Portée : longue
@@ -353,7 +355,7 @@
  Jet de sauvegarde contre le souffle : annule
  
  Le sort de Toile d'araignée crée une masse à plusieurs couches de fils épais et gluants semblables à ceux d'une toile d'araignée, mais beaucoup plus gros et résistants. La toile couvre une zone d'un rayon de 5 mètres. Les créatures prises dans ces toiles d'araignée ou qui les frôlent simplement restent collées aux fibres gluantes. Les créatures réussissant leur jet de sauvegarde contre les souffles peuvent se déplacer dans la zone à une vitesse diminuée de moitié, mais doivent réussir un nouveau jet de sauvegarde à chaque round passé dans la zone d'effet. Dans le cas contraire, elles subissent un effet semblable à un sort de lenteur. Leur vitesse de déplacement est réduite de moitié elles subissent un malus à la CA de 4 et en plus ne peuvent attaquer. Cet effet de lenteur s'additionne avec la pénalité au mouvement, donc les créatures qui échouent à leur jet de sauvegarde ne peuvent se déplacent à un quart de leur vitesse normale pour sortir de la zone d'effet.
-@@ -312,11 +312,11 @@ Le sort de Toile d'araignée crée une masse à plusieurs couches de fils épais
+@@ -314,11 +314,11 @@ Le sort de Toile d'araignée crée une masse à plusieurs couches de fils épais
  @22172 = ~Projectiles ardents de Melf
  
  Niveau : 2
@@ -369,7 +371,7 @@
  Jet de sauvegarde : souffles
  
  De la même façon que la variante 'Projectiles de Force de Mordenkainen', ce sort est une tentative d'amélioration du sort de base Projectiles magiques. Cette version créer deux projectiles de magie crépitante qui se dirigent et frappent sans faillir leur cible, qui doit être une créature quelle qu'elle soit. Chaque projectile inflige 1d4 points de dégâts magiques, plus 1d4 points de dégâts de feu (la cible peut réussir un jet de sauvegarde contre les souffles pour éviter les dégâts de feu). Ce sort crée trois projectiles au niveau 4, quatre projectiles au niveau 6, cinq projectiles au niveau 8 et six au niveau 10.
-@@ -328,53 +328,52 @@ Le sort Bouclier bloque Projectiles ardents de Melf, de la même manière qu'il
+@@ -330,53 +330,52 @@ Le sort Bouclier bloque Projectiles ardents de Melf, de la même manière qu'il
  Niveau : 2
  École : Invocation
  Portée : 0
@@ -455,7 +457,7 @@
  ~
  @25233 = ~Tempête de projectiles~
  @25234 = ~Tempête de projectiles
-@@ -399,21 +398,21 @@ Temps d'incantation : 3
+@@ -401,21 +400,21 @@ Temps d'incantation : 3
  Zone d'effet : Les ennemis à portée
  Jet de sauvegarde : aucun
  
@@ -484,7 +486,7 @@
  @27081 = ~Peau de fer~
  @27082 = ~Peau de fer
  
-@@ -438,7 +437,7 @@ Temps d'incantation : 1
+@@ -440,7 +439,7 @@ Temps d'incantation : 1
  Zone d'effet : cône
  Jet de sauvegarde : spécial
  
@@ -493,7 +495,7 @@
  
  Rouge - 10d6 points de dégâts de feu (jet de sauvegarde contre le souffle pour réduire de moitié)
  Orange - 10d6 points de dégâts d'acide (jet de sauvegarde contre le souffle pour réduire de moitié)
-@@ -466,7 +465,7 @@ Niveau : 8
+@@ -468,7 +467,7 @@ Niveau : 8
  Portée : contact
  Durée : permanente
  Temps d'incantation : 3
@@ -502,7 +504,7 @@
  Jet de sauvegarde : aucun
  
  Ce sort ouvre un canal entre le plan du mage et le plan de l'Énergie Négative. Le lanceur du sort agit comme un conduit entre les deux plans, absorbant la vie d'une créature vivante et la transférant dans le plan de l'Énergie Négative, ce qui en pratique draine 4 niveaux d'expérience de la victime. La cible perd définitivement ses niveaux, dés de vie, points de vie, et capacités. Seul le sort de prêtre Restauration peut les lui faire récupérer. Il n'y a aucun jet de sauvegarde pour résister aux effets de ce sort. De plus, le contrecoup de l'effet est si intense que la victime doit réussir un jet de sauvegarde avec une pénalité de 2 ou mourir sur le coup.
-@@ -478,7 +477,7 @@ Niveau : 8
+@@ -480,7 +479,7 @@ Niveau : 8
  Portée : contact
  Durée : permanente
  Temps d'incantation : 3
