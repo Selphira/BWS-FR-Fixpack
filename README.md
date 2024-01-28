@@ -90,9 +90,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Song and Silence v16
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
 
-- Southern Edge v4.2
-  - Correction de références à un objet dans un dialogue : BOOK9C => MISC9C
-
 - Spiritwalker - A Shaman Shapeshifter Kit v1.4
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
