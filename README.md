@@ -21,9 +21,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
-- Bridge's Block v1.6
-  - Correction d'une typo lors de la vérification de la présence de Keldorn dans le groupe
-
 - Check the Bodies v3.0
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
   - Correction de la référence au kit Barbare dans divers scripts
