@@ -223,6 +223,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Tactics-Remix v0.6.2-beta
   - Mise à jour de la traduction (merci [@JohnBob](https://github.com/11jo))
 
+- The Darkest Day 1.3.1
+  - Suppression des voix anglaises
+
 - The Enhanced Edition Fixpack vBeta 1
   - Ajout de la traduction
 
