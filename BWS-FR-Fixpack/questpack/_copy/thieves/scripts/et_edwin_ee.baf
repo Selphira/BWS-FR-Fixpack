@@ -1,0 +1,29 @@
+IF
+  Global("D0EdMae","LOCALS",1)
+  AreaCheck("ar0300")
+  !Dead("Maevar")
+  InParty(Myself)
+  Global("D0Maevar","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("D0EdMae","LOCALS",2)
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  BeenInParty("Edwin")
+  Global("D0GiveEdwinRing","GLOBAL",1)
+  !HasItem("d0qprayi",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("D0GiveEdwinRing","GLOBAL",2)
+    CreateItem("d0qprayi",1,0,0)
+END
+
+IF
+  Global("D0GiveEdwinRing","GLOBAL",1)
+  HasItem("d0qprayi",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("D0GiveEdwinRing","GLOBAL",2)
+END

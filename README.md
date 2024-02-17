@@ -30,6 +30,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Ding0's Quest Pack v3.5
   - Mise à jour de la librairie Detectable Spells v3-20180512 => v4.0.1
+  - Correction du contenu additionnel concernant les Voleurs de l'Ombre (merci @Argent77 : https://forums.pocketplane.net/index.php?topic=30064.msg340933#msg340933)
 
 - Divine Remix v8.1 (TotoR115)
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.

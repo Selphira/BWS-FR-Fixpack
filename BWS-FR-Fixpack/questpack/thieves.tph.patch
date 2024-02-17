@@ -1,0 +1,15 @@
+--- questpack\tp2\quest\thieves.tph
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\questpack\\tp2\\quest\\thieves.tph"	
+@@ -167,7 +167,11 @@ COMPILE EVALUATE_BUFFER ~questpack/thieves/scripts/shouts/stdeath.baf~
+         ~questpack/thieves/scripts/shouts/mvally.baf~
+         ~questpack/thieves/scripts/shouts/mvally2.baf~
+ 
+-EXTEND_TOP ~edwin.bcs~ ~questpack/thieves/scripts/et_edwin.baf~ EVALUATE_BUFFER
++ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
++  EXTEND_TOP ~edwin.bcs~ ~questpack/thieves/scripts/et_edwin_ee.baf~ EVALUATE_BUFFER
++END ELSE BEGIN
++  EXTEND_TOP ~edwin.bcs~ ~questpack/thieves/scripts/et_edwin.baf~ EVALUATE_BUFFER
++END
+ 
+ COPY_EXISTING ~ar0301.are~ ~override~
+               ~ar0302.are~ ~override~
