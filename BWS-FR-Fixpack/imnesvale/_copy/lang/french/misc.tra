@@ -1,0 +1,152 @@
+
+/* ----------- *
+ *  Creatures  *
+ * ----------- */
+@101 = ~Guerrier~
+@102 = ~Mage~
+@103 = ~Clerc~
+@104 = ~Archer~
+@105 = ~Guerrier/Voleur~
+@106 = ~Barbare~
+@107 = ~Druide~
+@108 = ~Guerrier/Mage~
+@109 = ~Rakshasa~
+@110 = ~Démon~
+@111 = ~Démon du puit~
+@112 = ~Arimayus~
+@113 = ~Maia~
+@114 = ~Jugend~
+@115 = ~Ayrus~
+@116 = ~Esprit de la forêt~
+@117 = ~Madulf~
+@118 = ~Ministre Lloyd~
+@119 = ~Ogre~
+@120 = ~Minotaure~
+@121 = ~Gnoll~
+@122 = ~Orque~
+@123 = ~Maîtresse Eina~
+@124 = ~Protecteur de la Forêt~
+@125 = ~Apparition1~
+@126 = ~Apparition2~
+
+/* ------- *
+ *  Items  *
+ * ------- */
+@201 = ~Anneau~
+@202 = ~Anneau d'amphétamines~
+@203 = ~C'est un anneau, qu'est-ce qu'il vous faut savoir de plus ?~
+@204 = ~Anneau d'amphétamines
+Vrooooooooouuuuuuuuummmmmmm !
+Vous permet d'attaquer rapidement !
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- 1/2 attaque supplémentaire par round
+- Dextérité : +2
+
+Poids : 0~
+
+@211 = ~Cape~
+@212 = ~Miroir Miroir sur le mur~
+@213 = ~Qui lit les descriptions non identifiées de toute façon ?~
+@214 = ~Miroir Miroir sur le mur
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Renvoi toutes les attaques à distance
+- Classe d'armure : +1
+
+Poids : 3~
+
+@221 = ~Robe~
+@222 = ~Robe du Mage de guerre~
+@223 = ~Identifiez-le.~
+@224 = ~Robe du Mage de guerre
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Classe d'armure : 1
+- Augmente la vitesse d'incantation des sorts de 2
+- 1/2 attaque supplémentaire par round
+- Résistance aux dégâts contondants : +40%
+- Régénère 1 point de vie toutes les 3 secondes
+
+- Résistance aux dégâts tranchants : -10%
+- Résistance aux dégâts perçants  : -25%
+- Mémorise un sort de moins des niveaux 1 à 6
+
+Poids : 4~
+
+@231 = ~Casque~
+@232 = ~Cagoule de mortalité~
+@233 = ~Ouille !~
+@234 = ~Cagoule de mortalité
+Ce casque incroyablement puissant confère à son porteur des protections impressionnantes.
+L'inconvénient est que pour protéger son porteur, le casque doit puiser dans sa vitalité.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Immunité à l'arrêt du temps
+- Immunité à l'emprisonnement
+- Résistance à la magie : +50%
+
+- Maximum de points de vie : -2 CHAQUE fois qu'il est équipé (l'effet est permanent)
+- Points de vie maximum : -20 lorsqu'il est équipé
+- Constitution : fixée à 5
+- Spécial : maudit, ne peut être enlevé que par un sort de délivrance de la malédiction
+
+Poids : 2~
+
+@241 = ~Bracelets~
+@242 = ~Plus vite ! Plus vite !~
+@243 = ~Quoi ?~
+@244 = ~Plus vite ! Plus vite !
+Oooohhh, bel effet. Dommage qu'on ne puisse pas toucher une cible grosse comme un éléphant.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Hâte améliorée
+- TAC0 : -5
+
+Poids : 2~
+
+@251 = ~Pacificateur de guerriers~
+@252 = ~Pacificateur de guerriers
+Si vous avez trouvé cet objet, sentez-vous spécial, il est TRÈS difficile à obtenir.
+Si vous avez triché, allez vous faire renverser par un camion.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Protection contre toutes les classes de combattants.
+- Classe d'armure : +4
+- Résistance aux dégâts physiques : +25%
+
+Poids : 0~
+
+
+@261 = ~Pacificateur de mages~
+@262 = ~Pacificateur de mages
+Si vous avez trouvé cet objet, sentez-vous spécial, il est TRÈS difficile à obtenir.
+Si vous avez triché, allez vous faire renverser par un camion.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+- Protection contre toutes les classes de mages.
+- Résistance à la magie : +80%
+- Immunité à l'arrêt du temps
+
+Poids : 0~
+
+
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~

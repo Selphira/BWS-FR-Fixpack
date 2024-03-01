@@ -187,6 +187,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Check the Bodies v3.0
   - Correction de l'encodage du fichier wsetup.tra
 
+- Duality's Odd Quest Mod (or simply Imnesvale) v2.1
+  - Ajout de la traduction (merci [@Deratiseur](https://github.com/Deratiseur))
+
 - EET (Enhanced Edition Trilogy) Tweaks v1.12
   - Ajout de la traduction
 
