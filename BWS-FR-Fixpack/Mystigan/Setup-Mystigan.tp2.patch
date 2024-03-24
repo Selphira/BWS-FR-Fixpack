@@ -1,0 +1,11 @@
+--- Mystigan\\Setup-Mystigan.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\Mystigan\\Setup-Mystigan.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~Mystigan/backup~
+ AUTHOR ~akadis@free.fr~
+ 
+ ALWAYS
+-	ACTION_IF GAME_IS ~BGEE BG2EE IWDEE~ THEN BEGIN
++	ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ THEN BEGIN
+ 		ACTION_DEFINE_ARRAY E_B_reload BEGIN
+ 		~wsetup.tra~
+ 		END

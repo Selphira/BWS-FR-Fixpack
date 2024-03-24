@@ -199,6 +199,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
+- Mystigan v1.62
+  - Correction de l'encodage sous EET
+
 - Olvyn Tweaks
   - Corrections de caractères majuscules accentués qui fonctionnent sans problème avec EE
 
