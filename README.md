@@ -137,7 +137,8 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
 - BG1 Unfinished Business v16.4
-  - Compatibilité avec EET : Correction d'un dialogue avecv Arkion (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Pocket-Plane-Group/bg1ub/pull/2)
+  - Compatibilité avec EET : Correction d'un dialogue avec Arkion (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Pocket-Plane-Group/bg1ub/pull/2)
+  - Compatibilité avec EET : Correction d'un dialogue avec Ivanne (merci [@Frenzgyn](https://github.com/Frenzgyn) : https://github.com/Pocket-Plane-Group/bg1ub/pull/5)
 
 - Check the Bodies v3.0
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
