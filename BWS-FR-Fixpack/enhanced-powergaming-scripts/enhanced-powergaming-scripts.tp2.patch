@@ -4,8 +4,8 @@
  BACKUP ~enhanced-powergaming-scripts/backup~
  AUTHOR ~morpheus562~
  
--VERSION ~v12.7~
-+VERSION ~v12.7 BWS-FR Fix~
+-VERSION ~v13.0~
++VERSION ~v13.0 BWS-FR Fix~
  README ~enhanced-powergaming-scripts/readme.%LANGUAGE%.html~ ~enhanced-powergaming-scripts/readme.html~
  AUTO_EVAL_STRINGS
  
