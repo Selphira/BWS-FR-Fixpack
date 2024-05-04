@@ -91,21 +91,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Spiritwalker - A Shaman Shapeshifter Kit v1.4
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
-- Stratagems v34.3
-  - Erreur de syntaxe qui empêche le script /priest/spellchoices_defensive/demivrgvs/druid.tph de s'exécuter.
-  - Correction d'un problème où les items rndtre01 et rndtre02 étaient remplacés par null.
+- Stratagems v35.15
   - Correction d'un problème où un item WIZARD_S.itm était ajouté dans certains magasins.
-  - Correction du prix demandé par Gaelan Bayle qui n'était pas mis à jour dans les textes à cause de l'espace insécable non géré.
-  - Correction de divers appels à la fonction RandomNum() (merci [@supasillyass](https://github.com/supasillyass) et [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/44)
-  - Correction du lancement du sort "BURNING_MAN_KEENING" qui était lancé en boucle (merci [@mleduque](https://github.com/mleduque))
-  - Correction de typo avec les capacités de haut niveau innées (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/48)
-  - Correction d'un texte erroné de Château-Suif dans EET (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/49)
-  - Correction d'un texte erroné sur l'écran de TotSC dans EET (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/50)
-  - Correction du spawning de certains bandits (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/51)
-  - Correction de la suppression excessive de certains effets (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/52)
-  - Correction du groupement dans le journal, d'une étape de la quête "L'île mystérieuse" (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/55)
   - Correction de la compétence utilisée par l'objet "dw#kob01" qui était "Epée longue" au lieu de "Dague"
-  - Correction du composant NPC customisation pour EET (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/36487-npc-customization/#comment-326619)
 
 - The Beaurin Legacy v5.3
   - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
@@ -165,9 +153,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Remplacement des RemoveSpellRES(S:RES*,O:Target) par ActionOverride(O:Actor*,RemoveSpellRES(S:RES*))
     La nouvelle signature de RemoveSpellRES() provoque des erreurs pour les mods installés après
 
-- Stratagems v34.3
-  - Compatibilité avec EET, en corrigeant la vérification des chapitres dans divers scripts ssl.
-
 - Tweaks Anthology v15
   - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
   - Compatibilité avec EET : Correction du script de la zone de Château-Suif (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/55)
@@ -214,10 +199,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Skills-and-Abilities v2.3
   - Ajout de la traduction (merci [@JohnBob](https://github.com/11jo))
-
-- Stratagems v34.3
-  - Mise à jour de la traduction du fichier difficulty.tra (merci [@Krabator](https://github.com/Krabator) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/47)
-  - Mise à jour de la traduction des sorts (merci [@Jazira33](https://github.com/Jazira33) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/43)
 
 - SubtleD's Item Tweaks v1.3.2
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Item_Tweaks/pull/1)
