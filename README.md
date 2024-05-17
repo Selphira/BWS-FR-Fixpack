@@ -182,9 +182,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - EET (Enhanced Edition Trilogy) Tweaks v1.12
   - Ajout de la traduction
 
-- Enhanced Powergaming Scripts v12.5
-  - Ajout de la traduction (merci [@JohnBob](https://github.com/11jo))
-
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 
@@ -200,9 +197,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Sheena, a Half Dragon Tale NPC v2.6
   - Correction de l'encodage des fichiers de traduction
 
-- Skills-and-Abilities v2.3
-  - Ajout de la traduction (merci [@JohnBob](https://github.com/11jo))
-
 - SubtleD's Item Tweaks v1.3.2
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Item_Tweaks/pull/1)
 
@@ -211,9 +205,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - SubtleD's Stat Overhauls v1.5.1
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Stat_Overhauls/pull/1)
-
-- Tactics-Remix v0.6.2-beta
-  - Mise à jour de la traduction (merci [@JohnBob](https://github.com/11jo))
 
 - The Darkest Day 1.3.1
   - Suppression des voix anglaises
