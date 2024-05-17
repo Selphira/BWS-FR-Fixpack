@@ -1,11 +1,2 @@
---- tactics-remix\tactics-remix.tp2
-+++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\tactics-remix\\tactics-remix.tp2"	
-@@ -7,7 +7,7 @@
- BACKUP ~tactics-remix/backup~
- AUTHOR ~morpheus562~
- 
--VERSION ~v0.6.2-beta~
-+VERSION ~v0.6.2-beta BWS-FR Fix~
- README ~tactics-remix/readme.%LANGUAGE%.html~ ~tactics-remix/readme.html~
- AUTO_EVAL_STRINGS
+
  
