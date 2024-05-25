@@ -1,0 +1,95 @@
+// Skills and Abilities, American English
+//Spells range: @5501 to @6000
+
+@5501 = ~Coup vorpal !~
+
+@5502 = ~Protection contre les dégâts physiques~
+@5503 = ~Protection contre les dégâts physiques
+(Abjuration)
+
+Niveau : 6
+Portée : personnelle
+Durée : 4 rounds
+Temps d'incantation : 1
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort porte à 90 % la résistance aux dégâts physique contre les armes tranchantes, contondantes et perforantes, ainsi que les dégâts des projectiles. Il convient également de noter qu'il remplacera les protections précédemment lancées de Protection mineure contre les dégâts physiques et Protection contre les dégâts physiques. La puissance de ce sort et son temps d'incantation très court sont compensée par une durée très limitée qui permet au magicien de souffler seulement quelques rounds au milieu d'un combat intense. Ses effets se prolongent jusqu'à leur expiration naturelle ou qu'ils soient dissipés par une source extérieure.~
+
+@5504 = ~Immunité Absolue
+(Abjuration) 
+
+Niveau : 9
+Portée : personnelle
+Durée : 4 rounds 
+Temps d'incantation : 1
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun 
+
+Ce sort confère une invulnérabilité totale contre toutes les armes enchantées ayant un bonus inférieur ou égal à +6 et augmente de 40% la résistance à n'importe quel type de dégâts. Ce sort étant incroyablement puissant, sa durée est très limitée dans le temps. Le temps d'incantation est par contre très court, permettant ainsi de gagner quelques précieuses secondes de répit pendant un combat intense. Ses effets se prolongent jusqu'à leur expiration naturelle ou qu'ils soient dissipés par une source extérieure.~
+
+@5505 = ~Protection mineure contre les dégâts physiques~
+@5506 = ~Protection mineure contre les dégâts physiques
+(Abjuration)
+
+Niveau : 5
+Portée : personnelle
+Durée : 1 round par niveau
+Temps d'incantation : 2
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort porte à 40 % la résistance aux dégâts physique contre les armes tranchantes, contondantes et perforantes, ainsi que les dégâts des projectiles. Il convient également de noter qu'il remplacera les protections précédemment lancées de Protection mineure contre les dégâts physiques, Protection contre les dégâts physiques, Manteau, Manteau amélioré ou même Immunité Absolue. Ses effets se prolongent jusqu'à leur expiration naturelle ou qu'ils soient dissipés par une source extérieure.~
+
+@5507 = ~Manteau
+(Abjuration)
+
+Niveau : 7
+Portée : personnelle
+Durée : 4 rounds 
+Temps d'incantation : 1
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun 
+
+Ce sort confère une invulnérabilité totale contre toutes les armes enchantées ayant un bonus inférieur ou égal à +4 et augmente de 40% la résistance à n'importe quel type de dégâts. Ce sort étant incroyablement puissant, sa durée est très limitée dans le temps. Le temps d'incantation est par contre très court, permettant ainsi de gagner quelques précieuses secondes de répit pendant un combat intense. Ses effets se prolongent jusqu'à leur expiration naturelle ou qu'ils soient dissipés par une source extérieure.~
+
+@5508 = ~Manteau amélioré
+(Abjuration)
+
+Niveau : 8
+Portée : personnelle
+Durée : 4 rounds 
+Temps d'incantation : 1
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort confère une invulnérabilité totale contre toutes les armes enchantées ayant un bonus inférieur ou égal à +5 et augmente de 40% la résistance à n'importe quel type de dégâts. Ce sort étant incroyablement puissant, sa durée est très limitée dans le temps. Le temps d'incantation est par contre très court, permettant ainsi de gagner quelques précieuses secondes de répit pendant un combat intense. Ses effets se prolongent jusqu'à leur expiration naturelle ou qu'ils soient dissipés par une source extérieure.~
+
+@5509 = ~Cinq niveaux drainés~
+@5510 = ~Quatre niveaux drainés~
+@5511 = ~Trois niveaux drainés~
+@5512 = ~Deux niveaux drainés~
+@5513 = ~Un niveau drainé~
+
+@5514 = ~Si vous obtenez un parchemin de Protection contre les armes non-magiques~
+@5515 = ~Si vous obtenez un parchemin de Protection mineure contre les dégâts physiques~
+@5516 = ~J'utilise votre parchemin de parchemin de Protection contre les armes non-magiques~
+@5517 = ~J'utilise votre parchemin de parchemin de Protection mineure contre les dégâts physiques~
+
+@5518 = ~Pétrifié~
+@5519 = ~Étourdissement~
+@5520 = ~Étourdi~
+@5521 = ~Sommeil~
+@5522 = ~Dominé~
+@5523 = ~Sous l'emprise d'un charme néfaste~
+@5524 = ~Charmé~
+@5525 = ~Immobilisé~
+@5526 = ~Obstination bornée~
+@5527 = ~Confus~
+
+@5528 = ~Protégé contre l'interruption des sorts~
+
+@5529 = ~Furie
+Cet état dure 1 tour. Sous Furie, le berserker gagne un bonus de 10 % à ses jets de dégâts, et devient immunisé aux charmes, à l'immobilisation, à la terreur, à la confusion, à la débilité mentale, au labyrinthe, à l'absorption de niveaux, à l'emprisonnement, à l'étourdissement et au sommeil. Il reçoit également une pénalité de 2 à la classe d'armure, subit 1 point de dégâts par round lorsqu'il est en furie (si cela entraîne une réduction de ses points de vie à 0, le personnage tombe inconscient), ainsi que 10 % de dégâts physiques supplémentaires.
+
+Une fois les effets terminés, le personnage est essoufflé et subit une une pénalité de 2 à sa vitesse de déplacement, ainsi qu'à ses jets de toucher et de dégâts.~

@@ -1,0 +1,109 @@
+// Spells and Magic, American English
+//Craft scroll Range: @115003 to @116000
+//Craft Wand Range: @116001 to @117000
+//
+
+
+///////////////////////////////////////////////////////////////////////////
+// Craft Scroll @115003 to @116000                                                              //
+///////////////////////////////////////////////////////////////////////////
+@115003 = ~Écrire un parchemin~
+@115004 = ~Vous devez avoir mémorisé un sort pour pouvoir rédiger un parchemin. Essayez à nouveau lorsque vous aurez mémorisé au moins un sort.~
+@115005 = ~Vous devez disposer d'au moins 100 pièces d'or pour écrire un sort sur un parchemin. Réessayez quand vous aurez 100 pièces d'or ou plus.~
+									
+@115006 = ~Parchemins de sorts profanes de niveau 1~
+@115007 = ~Parchemins de sorts profanes de niveau 2~
+@115008 = ~Parchemins de sorts profanes de niveau 3~
+@115009 = ~Parchemins de sorts profanes de niveau 4~
+@115010 = ~Parchemins de sorts profanes de niveau 5~
+@115011 = ~Parchemins de sorts profanes de niveau 6~
+@115012 = ~Parchemins de sorts profanes de niveau 7~
+@115013 = ~Parchemins de sorts profanes de niveau 8~
+@115014 = ~Parchemins de sorts profanes de niveau 9~
+@115015 = ~J'en ai fini.~
+@115016 = ~Sélectionner des sorts d'un autre niveau~
+@115017 = ~Écrire un parchemin
+Cette aptitude vous permet de rédiger un parchemin à partir d'un sort mémorisé et d'une certaine quantité d'or.~
+@115018 = ~Vous devez disposer d'au moins 100 points d'expérience pour écrire un sort sur un parchemin. Essayez à nouveau lorsque vous aurez atteint l'expérience requise.~
+@115019 = ~Sélectionner le niveau des sorts~
+
+//TRANSLATOR NOTE: Do not translate "%lowest_arcane_gold_x%"
+@115020 = ~Parchemins de sorts profanes de 1er niveau (nécessite un minimum de %lowest_arcane_1% pièces d'or)~
+@115021 = ~Parchemins de sorts profanes de 2ème niveau (nécessite un minimum de %lowest_arcane_2% pièces d'or)~
+@115022 = ~Parchemins de sorts profanes de 3ème niveau (nécessite un minimum de %lowest_arcane_3% pièces d'or)~
+@115023 = ~Parchemins de sorts profanes de 4ème niveau (nécessite un minimum de %lowest_arcane_4% pièces d'or)~
+@115024 = ~Parchemins de sorts profanes de 5ème niveau (nécessite un minimum de %lowest_arcane_5% pièces d'or)~
+@115025 = ~Parchemins de sorts profanes de 6ème niveau (nécessite un minimum de %lowest_arcane_6% pièces d'or)~
+@115026 = ~Parchemins de sorts profanes de 7ème niveau (nécessite un minimum de %lowest_arcane_7% pièces d'or)~
+@115027 = ~Parchemins de sorts profanes de 8ème niveau (nécessite un minimum de %lowest_arcane_8% pièces d'or)~
+@115028 = ~Parchemins de sorts profanes de 9ème niveau (nécessite un minimum de %lowest_arcane_9% pièces d'or)~
+
+//create scroll innate
+@115100 = ~Créer un parchemin~
+@115101 = ~Créer un parchemin
+Cette aptitude vous permet de rédiger un parchemin à partir d'un sort mémorisé et d'une certaine quantité d'or.~
+//create scroll kit
+@115102 = ~Nécessaire à parchemin~
+
+@115103 = ~Nécessaire à parchemin
+Ce paquet contient une plume fine, des encres diverses et une grande quantité de parchemin.
+
+Lorsque vous vous procurez un Nécessaire à parchemin, il est accompagné de 100 « matériaux », un ensemble abstrait de composants nécessaires à la création d'un parchemin. Il vous faut 1 « matériau » pour chaque niveau du sort que vous souhaitez retranscrire.
+
+Bien que ce Nécessaire à parchemin soit fourni avec des matériaux standard, vous pouvez le réapprovisionner avec des matériaux de n'importe quelle qualité.
+
+PARAMÈTRES :
+
+'Matériaux' : 100
+Poids : 6
+
+Remarque importante : Ne gardez pas plus de « matériaux » que ceux dont vous avez besoin pour créer un seul parchemin dans votre inventaire (gardez les éléments supplémentaires dans votre Nécessaire à parchemin). Cela préviendra la perte de tout matériau excédentaire présent dans votre inventaire.~
+@115104 = ~Matériaux standard pour la création de parchemins~
+
+@115105 = ~Matériaux standard pour la création de parchemins
+Utilisez ces matériaux pour créer un parchemin. Le niveau de qualité de ces matériaux vous permet de créer des parchemins jusqu'au niveau 3.
+Vous avez besoin d'un de ces matériaux pour chaque niveau de sort du parchemin que vous envisagez de créer. Ainsi, si vous créez un parchemin pour un sort de 5ème niveau, vous devez disposer de 5 de ces matériaux.
+
+Remarque importante : Ne gardez pas plus de matériaux que ceux dont vous avez besoin pour créer un seul parchemin dans votre inventaire (gardez les éléments supplémentaires dans votre Nécessaire à parchemin). Cela préviendra la perte de tout matériau excédentaire présent dans votre inventaire.~
+@115106 = ~Matériaux de qualité pour la création de parchemins~
+
+@115107 = ~Matériaux de qualité pour la création de parchemins
+Utilisez ces matériaux pour créer un parchemin. Le niveau de qualité supérieur de ces matériaux vous permet de créer des parchemins jusqu'au niveau 6.
+Vous avez besoin d'un de ces matériaux pour chaque niveau de sort du parchemin que vous envisagez de créer. Ainsi, si vous créez un parchemin pour un sort de 5ème niveau, vous devez disposer de 5 de ces matériaux.
+
+Remarque importante : Ne gardez pas plus de matériaux que ceux dont vous avez besoin pour créer un seul parchemin dans votre inventaire (gardez les éléments supplémentaires dans votre Nécessaire à parchemin). Cela préviendra la perte de tout matériau excédentaire présent dans votre inventaire.~
+@115108 = ~Matériaux de premier ordre pour la création de parchemins~
+
+@115109 = ~Matériaux de premier ordre pour la création de parchemins
+Utilisez ces matériaux pour créer un parchemin. Ces matériaux sont de premier ordre et vous permettent de créer des parchemins de n'importe quel niveau.
+Vous avez besoin d'un de ces matériaux pour chaque niveau de sort du parchemin que vous envisagez de créer. Ainsi, si vous créez un parchemin pour un sort de 5ème niveau, vous devez disposer de 5 de ces matériaux.
+
+Remarque importante : Ne gardez pas plus de matériaux que ceux dont vous avez besoin pour créer un seul parchemin dans votre inventaire (gardez les éléments supplémentaires dans votre Nécessaire à parchemin). Cela préviendra la perte de tout matériau excédentaire présent dans votre inventaire.~
+
+//TRANSLATION NOTE: Do Not Translate "%s_name%" below.
+@115110 = ~Créer un parchemin de %s_name%~
+
+//TRANSLATION NOTE: Do Not Translate "%x_divine_gold%" below.
+@115111 = ~Parchemins de sorts divins de 1er niveau (nécessite un minimum de %lowest_divine_1% pièces d'or)~
+@115112 = ~Parchemins de sorts divins de 2ème niveau (nécessite un minimum de %lowest_divine_2% pièces d'or)~
+@115113 = ~Parchemins de sorts divins de 3ème niveau (nécessite un minimum de %lowest_divine_3% pièces d'or)~
+@115114 = ~Parchemins de sorts divins de 4ème niveau (nécessite un minimum de %lowest_divine_4% pièces d'or)~
+@115115 = ~Parchemins de sorts divins de 5ème niveau (nécessite un minimum de %lowest_divine_5% pièces d'or)~
+@115116 = ~Parchemins de sorts divins de 6ème niveau (nécessite un minimum de %lowest_divine_6% pièces d'or)~
+@115117 = ~Parchemins de sorts divins de 7ème niveau (nécessite un minimum de %lowest_divine_7% pièces d'or)~
+
+@115118 = ~Parchemins de sorts divins de niveau 1~
+@115119 = ~Parchemins de sorts divins de niveau 2~
+@115120 = ~Parchemins de sorts divins de niveau 3~
+@115121 = ~Parchemins de sorts divins de niveau 4~
+@115122 = ~Parchemins de sorts divins de niveau 5~
+@115123 = ~Parchemins de sorts divins de niveau 6~
+@115124 = ~Parchemins de sorts divins de niveau 7~
+
+@116000 = ~[LAST SCROLL]~
+
+///////////////////////////////////////////////////////////////////////////
+// Craft Wand @116001 to @117000                                                             //
+///////////////////////////////////////////////////////////////////////////
+
+@499999 = ~[LAST TRA HERE]~
