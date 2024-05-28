@@ -197,9 +197,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Sheena, a Half Dragon Tale NPC v2.6
   - Correction de l'encodage des fichiers de traduction
 
-- SubtleD's Item Tweaks v1.3.2
-  - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Item_Tweaks/pull/1)
-
 - SubtleD's Spell Tweaks v2.7.2
   - Mise à jour de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/subtledoctor/SubtleD_Spell_Tweaks/pull/15)
 
