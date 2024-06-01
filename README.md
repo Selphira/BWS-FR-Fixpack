@@ -39,9 +39,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Le composant @600 ne pouvait pas s'installer sur une version EE sans le composant @109.
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.4 => v1.1.5
 
-- Endless BG1 v18.1
-  - Correction d'une variable dans un script : HARTEEL_JOINED => SHARTEEL_JOINED
-
 - Expanded Thief Stronghold v3.0.0
   - Correction de la référence d'une créature dans certaines conditions. (merci [@TotoR115](https://github.com/TotoR115) : https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2)
 
