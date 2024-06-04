@@ -4,17 +4,9 @@
  AUTHOR ~Please post in the G3 forum for help, refer to readme.~ //for bugreports
  
  //MODDER
--VERSION ~11.0~
-+VERSION ~11.0 BWS-FR Fix~
- 
+-VERSION ~11.1~
++VERSION ~11.1 BWS-FR Fix~
+
  README ~bg1re/bg1re.readme.%LANGUAGE%.txt~ ~bg1re/bg1re.readme.english.txt~
  
-@@ -4152,7 +4152,7 @@ SAY NAME2 @202
- /* Give Silence a script name and override script */
- COPY_EXISTING ~%tutu_var%SILENC.cre~ ~override/%tutu_var%SILENC.cre~
- WRITE_EVALUATED_ASCII 0x248 ~%tutu_var%SILENC~ #8   // Override script
--WRITE_EVALUATED_ASCII 0x280 ~Silence~ #32   // script name / DV
-+WRITE_EVALUATED_ASCII 0x280 ~silenc~ #32   // script name / DV
- BUT_ONLY
- 
- /* Create Barkis */
+

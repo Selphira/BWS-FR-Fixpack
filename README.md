@@ -18,9 +18,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Ascension v2.0.24
   - Déplacement des flèches de Gromnir des objets rapides vers le carquois (merci [@supasillyass](https://github.com/supasillyass) : https://github.com/InfinityMods/Ascension/pull/15)
 
-- Baldur's Gate Romantic Encounters v11.0
-  - Correction de la death variable du pnj Silence (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG1_Romantic_Encounters/pull/23)
-
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
