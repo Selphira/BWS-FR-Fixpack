@@ -154,9 +154,6 @@ ALWAYS
 					LAF ~recursive_deep_copy~ INT_VAR second_pass = 1 STR_VAR current_dir = EVAL ~%fixpack_subfolder%~ target_dir = ~.~ END
 				END
 				OUTER_SET skip = 1
-			END ELSE ACTION_IF (~%folder%~ STRING_CONTAINS_REGEXP ~ ~ == 0) THEN BEGIN
-				//PRINT ~Skipping "%folder%" because it contains a space in the path...~
-				OUTER_SET skip = 1
 			END ELSE ACTION_IF (FILE_CONTAINS_EVALUATED (~%INSTALL_MARKER%~ ~Processed '%fixpack_folder_name%'~)) THEN BEGIN
 				PRINT ~Skipping "%fixpack_folder_name%" because it was already patched (according to "%INSTALL_MARKER%")...~
 				OUTER_SET skip = 1
@@ -616,4 +613,4 @@ BEGIN
 	END
 END
 
-INCLUDE ~%MOD_FOLDER%/check/splstate.ids.tph~
+INCLUDE ~%MOD_FOLDER%/lib/check_splstate.ids.tph~
