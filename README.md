@@ -132,6 +132,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Gerri's BGT NPC Portraits v3.1
   - Le composant "Portraits for BG1 Romantic Encounters" se basait sur le composant 0 de "BG1 Romantics Encounters" qui n'existe plus et est remplacé par les composants 100 à 105.
+  - Le composant "Portraits for Stone of Askavar" se basait sur le fichier aranor.cre qui est copié sous le nom R8CRE06.cre par Stone of Askavar
 
 - Item Revision v4beta10sd19
   - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).

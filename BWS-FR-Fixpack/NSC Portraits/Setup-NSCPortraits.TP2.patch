@@ -1,16 +1,35 @@
---- Setup-NSCPortraits.TP2	
-+++ "b/e:\\Jeux modd\303\251s\\Baldur's Gate 2\\BigWorldSetupFR\\OverwriteFiles\\BWP\\Setup-NSCPortraits.TP2"	
-@@ -551,7 +551,12 @@ COPY - ~NSC Portraits/tbl/re.tbl~  ~NSC Portraits/tbl/re.tbl~
+--- Setup-NSCPortraits.TP2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\NSC Portraits\\Setup-NSCPortraits.TP2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~NSC Portraits/backup~
+ AUTHOR ~Gerri~ 
+-VERSION ~v3.0 BWP Fix 3~ 
++VERSION ~v3.0 BWP Fix 3 BWS-FR Fix~
+ 
+ DEFINE_ACTION_MACRO ~Addpic~ BEGIN
+ ACTION_IF FILE_EXISTS_IN_GAME ~%Crename%~
+@@ -192,7 +192,7 @@ COPY - ~NSC Portraits/tbl/drizztsaga.tbl~  ~NSC Portraits/tbl/drizztsaga.tbl~
+ 
+ 
+ BEGIN ~Portraits for Stone of Askavar~ 
+-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~aranor.cre~ ~You haven't installed Stone of Askavar, skipping this component~ 
++REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~R8CRE06.cre~ ~You haven't installed Stone of Askavar, skipping this component~
+ DESIGNATED 50
+ 
+ OUTER_SPRINT ~folder~ ~Aska~
+@@ -550,8 +550,13 @@ COPY - ~NSC Portraits/tbl/re.tbl~  ~NSC Portraits/tbl/re.tbl~
+ 	END
    END
  
- BEGIN ~Portraits for BG1 Romantic Encounters~ 
+-BEGIN ~Portraits for BG1 Romantic Encounters~ 
 -REQUIRE_COMPONENT ~setup-bg1re.tp2~ ~0~ ~You haven't installed BG1 Romantic Encounters, skipping this component~ 
++BEGIN ~Portraits for BG1 Romantic Encounters~
 +REQUIRE_PREDICATE ((MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~100~)
 +				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~101~)
 +				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~102~)
 +				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~103~)
 +				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~104~)
-+				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~105~)) ~You haven't installed BG1 Romantic Encounters, skipping this component~ 
++				OR (MOD_IS_INSTALLED ~setup-bg1re.tp2~ ~105~)) ~You haven't installed BG1 Romantic Encounters, skipping this component~
  DESIGNATED 1780
  
  OUTER_SPRINT ~folder~ ~REBG1~
