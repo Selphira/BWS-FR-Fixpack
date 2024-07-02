@@ -127,6 +127,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Check the Bodies v3.0
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
+  - Compatibilité avec EET en supprimant, dans les scripts, les références aux sorts qui n'existent pas.
   - Compatibilité avec EET en déplaçant la zone du Cercle Druidique pour qu'il ne chevauche plus la zone de Bois Manteau (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/SpellholdStudios/Check_the_Bodies/pull/17)
 
 - Gerri's BGT NPC Portraits v3.1
