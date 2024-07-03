@@ -1,0 +1,19 @@
+--- remastered_spell_icons\remastered_spell_icons.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\remastered_spell_icons\\remastered_spell_icons.tp2"	
+@@ -1,6 +1,6 @@
+ BACKUP ~remastered_spell_icons/backup~
+ AUTHOR ~Pecca~
+-VERSION ~v1.0~
++VERSION ~v1.0 BWS-FR Fix~
+ 
+ LANGUAGE
+ 	~English~ ~remastered_spell_icons/tra~ ~remastered_spell_icons/tra/english.tra~
+@@ -72,7 +72,7 @@ REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+ 
+ COPY_EXISTING ~UI.MENU~ ~override~
+ REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+-~"preparedSpells[rowNumber].spells[3].icon"~ ~"preparedSpells[rowNumber].spells[3.icon" scaleToClip text~
++~"preparedSpells[rowNumber].spells[3].icon"~ ~"preparedSpells[rowNumber].spells[3].icon" scaleToClip text~
+ 
+ COPY_EXISTING ~UI.MENU~ ~override~
+ REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH

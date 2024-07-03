@@ -68,6 +68,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - zpwi606.spl: L'opcode 31 des niveaux 19 et 20 augmentaient la résistance de 100% au lieu d'écraser la valeur comme le fait les niveaux inférieurs.
   - Correction de l'installation du composant "Angelame : Nouveau kit de guerrier"
 
+- Remastered Spell Icons v1.2
+  - Correction d'une erreur empêchant le menu de se charger
+
 - Rodeur de l'ombre v1.2
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
 
