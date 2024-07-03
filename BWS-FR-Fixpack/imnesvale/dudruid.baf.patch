@@ -1,0 +1,10 @@
+--- imnesvale\scripts\easy\dudruid.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\imnesvale\\scripts\\easy\\dudruid.baf"	
+@@ -8,7 +8,6 @@ THEN
+ 		SetGlobal("duCastingTimer","LOCALS",6)
+ 		ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		MoveToObject("dumayor")
+ 		Wait(6)		

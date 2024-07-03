@@ -1,0 +1,18 @@
+--- imnesvale\scripts\easy\dumaia.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\imnesvale\\scripts\\easy\\dumaia.baf"	
+@@ -15,7 +15,6 @@ THEN
+ 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ 		ReallyForceSpell(Myself,WIZARD_BLUR)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+@@ -65,7 +64,6 @@ THEN
+ 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ 		ReallyForceSpell(Myself,WIZARD_BLUR)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)

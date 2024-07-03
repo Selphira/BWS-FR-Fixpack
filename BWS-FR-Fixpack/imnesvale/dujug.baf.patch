@@ -1,0 +1,26 @@
+--- imnesvale\scripts\easy\dujug.baf
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\imnesvale\\scripts\\easy\\dujug.baf"	
+@@ -14,7 +14,6 @@ THEN
+ 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ 		ReallyForceSpell(Myself,WIZARD_BLUR)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+@@ -40,7 +39,6 @@ THEN
+ 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ 		ReallyForceSpell(Myself,WIZARD_BLUR)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+@@ -95,7 +93,6 @@ THEN
+ 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ 		ReallyForceSpell(Myself,WIZARD_BLUR)
+-		ReallyForceSpell(Myself,CLERIC_RESIST_COLD)
+ 		ReallyForceSpell(Myself,CLERIC_RESIST_FIRE)
+ 		ReallyForceSpell(Myself,CLERIC_CHAOTIC_COMMANDS)
+ 		ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
