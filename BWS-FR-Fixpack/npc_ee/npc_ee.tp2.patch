@@ -1,0 +1,11 @@
+--- npc_ee\npc_ee.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\npc_ee\\npc_ee.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~weidu_external/backup/npc_ee~
+ AUTHOR ~SubtleD~
+ 
+-VERSION ~6.5.1~
++VERSION ~6.5.1 BWS-FR Fix~
+ //README ~npc_ee/readme-NPC_EE.html~
+ 
+ ALWAYS

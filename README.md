@@ -143,6 +143,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Item Revision v4beta10sd19
   - Le mod vérifie si le composant "Services etendus des temples" de Atweaks est installé, mais le numéro du composant est incorrect (600 au lieu de 510).
 
+- NPCs Enhanced... um, for Everyone! v6.5.1
+  - Compatibilité avec EEeex en corrigeant la syntaxe du code lua du menu du séquenceur de sorts.
+
 - Olvyn Tweaks
   - La description des compétences d'arme n'était pas modifiée sous EET
 
