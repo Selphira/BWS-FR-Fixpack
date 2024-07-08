@@ -54,9 +54,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Kiara-Zaiya NPCs v2.0.1
   - Correction de l'effet de diminution du temps d'incantation de l'Epée divine qui avait 1% de chance d'être effectif, au lieu de 100%
 
-- L'interplan, un magasin dedie à la magie v7
-  - Correction du parchemin "Porte vers Linterplan" (merci [@deratiseur](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=8352) : https://www.baldursgateworld.fr/viewtopic.php?f=749&p=509113#p509113)
- 
 - Made in heaven: Encounters & Quests
   - Correction du remplacement des références de bdwightj dans le script bdjunia.dlg
 
