@@ -1,0 +1,59 @@
+--- AC_QUEST\ac_quest.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\AC_QUEST\\ac_quest.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~AC_QUEST/backup~
+ //AUTHOR ~whiteagnus@baldursgatemods.de~ 
+ SUPPORT ~https://baldurs-gate.de/index.php?threads/ascalons-questpack.39286/~
+ 
+-VERSION ~5.2~  
++VERSION ~5.2 BWS-FR Fix~
+ 
+ AUTO_TRA "AC_QUEST/TRA/autotra/%s"//%"
+ 
+@@ -376,32 +376,30 @@ SAY SELECT_COMMON3 @80015
+ COPY ~AC_QUEST/cre/ACGNOLL1.CRE~ ~override~
+ SAY NAME1 @18
+ SAY NAME2 @18
+-/*PATCH_IF GAME_IS ~bgt~ THEN BEGIN
++PATCH_IF GAME_IS ~bgt eet~ THEN BEGIN
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ END
+-*/
+-//PATCH_IF GAME_IS ~bgee eet tutu_totsc~ THEN BEGIN
++PATCH_IF GAME_IS ~bgee tutu_totsc~ THEN BEGIN
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+-//END
++END
+ 
+ COPY ~AC_QUEST/cre/ACGNOLL2.CRE~ ~override~
+ SAY NAME1 @19
+ SAY NAME2 @19
+-/*PATCH_IF GAME_IS ~bgt~ THEN BEGIN
++PATCH_IF GAME_IS ~bgt eet~ THEN BEGIN
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE08~ #1 #0 #0 ~NONE~ ~INV~
+ END
+-*/
+-//PATCH_IF GAME_IS ~bgee eet tutu_totsc~ THEN BEGIN
++PATCH_IF GAME_IS ~bgee tutu_totsc~ THEN BEGIN
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+ ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~NONE~ ~INV~
+-//END
++END
+ 
+ COPY_EXISTING ~%Nashkel_TempleofHelm%.are~ ~OVERRIDE~
+ LPF fj_are_structure
+@@ -470,6 +468,8 @@ SAY NAME2 @20
+ SAY UNIDENTIFIED_DESC #17054
+ SAY DESC @21
+ 
++APPEND ~itemexcl.2da~ ~ACQ12000 1~
++
+ ////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////																			////////////
