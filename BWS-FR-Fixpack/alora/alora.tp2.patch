@@ -1,0 +1,18 @@
+--- alora\alora.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\alora\\alora.tp2"	
+@@ -1,7 +1,7 @@
+ BACKUP ~alora/backup~
+ //AUTHOR ~Raven~
+ SUPPORT ~CoM at http://www.baldursgatemods.com/forums/index.php?board=13.0~
+-VERSION ~2.0~
++VERSION ~2.0 BWS-FR Fix~
+ 
+ README ~alora/readme/alora-readme-%LANGUAGE%.html~ ~alora/readme/alora-readme.html~
+ 
+@@ -186,3 +186,6 @@ COPY ~alora/cre/alora09.cre~ ~override~
+ APPEND ~pdialog.2da~ ~CMALORA      CMALORAP           CMALORAJ          CMALORAD       CMALO25P           CMALO25J              CMALO25D              CMALO25~ UNLESS ~CMALORA~
+ 
+ APPEND ~interdia.2da~ ~CMALORA     BCMALOR   BCMALO25~ UNLESS ~CMALORA~
++APPEND ~item_use.2da~ ~MISC88     CMALORA    10219      1          270~ UNLESS ~CMALORA~
++
++

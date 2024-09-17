@@ -9,6 +9,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 #### Corrections de bugs
 
+- Alora v2.0.0
+  - Correction de la patte de lapin qui pouvait être retirée du personnage
+
 - Alsaahir kit for BG2 v5.0
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.4 => v1.1.5
   
