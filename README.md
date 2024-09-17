@@ -190,7 +190,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Ajout de la traduction (merci [@Deratiseur](https://github.com/Deratiseur))
 
 - EET (Enhanced Edition Trilogy) Tweaks v1.12
-  - Ajout de la traduction
+  - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/K4thos/EET_Tweaks/pull/14)
 
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges

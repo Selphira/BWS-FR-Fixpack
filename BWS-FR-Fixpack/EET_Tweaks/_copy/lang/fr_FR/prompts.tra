@@ -1,3 +1,4 @@
+// WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"
 @-1001= "composants optionnels distincts.
 Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
@@ -93,4 +94,4 @@ Utilisation de"
 
 @-1063= "INSTALLATION ABANDONNEE"
 @-1064= "Abandon de l'installation de ["
-@-1065= "], retour à l'etat anterieur"
+@-1065= "], retour a l'etat anterieur"
