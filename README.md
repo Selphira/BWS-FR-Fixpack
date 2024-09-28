@@ -25,6 +25,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Ascension v2.0.24
   - Déplacement des flèches de Gromnir des objets rapides vers le carquois (merci [@supasillyass](https://github.com/supasillyass) : https://github.com/InfinityMods/Ascension/pull/15)
 
+- BG1 NPC Project v32
+  - Correction d'un problème avec un dialogue : (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG1NPC/pull/128)
+
 - BG1 Unfinished Business v16.4
   - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
 
@@ -131,6 +134,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
+- BG1 NPC Project v32
+  - Compatibilité avec EET : Correction d'entrées du journal non fermées (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Gibberlings3/BG1NPC/pull/127)
+
 - BG1 Unfinished Business v16.4
   - Compatibilité avec EET : Correction d'un dialogue avec Arkion (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Pocket-Plane-Group/bg1ub/pull/2)
   - Compatibilité avec EET : Correction d'un dialogue avec Ivanne (merci [@Frenzgyn](https://github.com/Frenzgyn) : https://github.com/Pocket-Plane-Group/bg1ub/pull/5)
@@ -180,7 +186,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Traductions des quelques lignes manquantes
   - Correction de l'altération des descriptions de certains kits de barde ajoutés par Might & Guile 
 
-- BG1 NPC Project v30
+- BG1 NPC Project v32
   - Correction d'une typo (merci [@Krabator](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=9392))
 
 - Check the Bodies v3.0
