@@ -106,6 +106,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
   - Correction d'un OR nécessitant 10 triggers alors qu'il n'y en a que 9
 
+- The Enhanced Edition Fixpack vBeta 1
+  - Correction de la pénalité aux jets de sauvegarde. Elle était exprimée en pourcentage plutôt qu'en cumul.
+
 - The Stone of Askavar v2.2
   - SOAITM27.itm
     - Correction du parameter2 de l'opcode 115 : 4 => 0
