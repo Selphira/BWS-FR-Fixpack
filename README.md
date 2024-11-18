@@ -9,10 +9,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 #### Corrections de bugs
 
-- Ascalons Questpack v5.2
-  - Correction d'un problème où Anneau de protection d'Aaron n'était pas considéré comme un objet de protection magique (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gitjas/Ascalons_Questpack/pull/14)
-  - Correction d'un problème où aucune réponse valide n'était présente pour les personnages de réputation 12 ou 13 (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gitjas/Ascalons_Questpack/pull/16)
-
 - Alora v2.0.0
   - Correction de la patte de lapin qui pouvait être retirée du personnage
 
@@ -127,9 +123,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
 
 #### Corrections de compatibilité
-
-- Ascalons Questpack v5.2
-  - Compatibilité avec EET : Correction de trésors aléatoires trop puissants (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gitjas/Ascalons_Questpack/pull/12)
 
 - Ascension v2.0.24
   - Compatibilité avec EE Fixpack
