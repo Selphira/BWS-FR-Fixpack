@@ -215,6 +215,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - The Darkest Day 1.3.1
   - Suppression des voix anglaises
 
+- Thalantyr Item Upgrade v4.5.1
+  - Corrections de la traduction
+
 - The Enhanced Edition Fixpack vBeta 1
   - Ajout de la traduction
 
