@@ -1954,7 +1954,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       // Type Fixer
       READ_SHORT 0x1c "type"
 
-      PATCH_IF ("%type%" = 39) OR ("%type%" = 40) OR ("%type%" = 42) OR ("%type%" = 50) OR ("%type%" = 55) OR ("%type%" = 59) BEGIN
+      PATCH_IF ("%type%" = 40) OR ("%type%" = 42) OR ("%type%" = 50) OR ("%type%" = 55) OR ("%type%" = 59) BEGIN
         WRITE_SHORT 0x1c 0
         PATCH_PRINT "%SOURCE_FILE% issue: Invalid Item Type (%type%)! Setting to Misc type..."
       END
