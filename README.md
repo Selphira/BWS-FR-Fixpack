@@ -114,6 +114,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - Themed Tweaks v0.4
   - Correction de la référence d'une custscene : #LCWBQ030 => #LCWBQ03
+  - Correction du dialogue d'Ellesime qui ne lance plus la transition (merci [@JohnBob](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=16284) https://www.baldursgateworld.fr/viewtopic.php?p=518781#p518781)
 
 - Tweaks Anthology v15
   - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
