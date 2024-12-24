@@ -179,7 +179,7 @@ ALWAYS
 			END
 			// check for invalid target folder names
 			ACTION_IF (skip == 0) THEN BEGIN
-				ACTION_FOR_EACH reserved IN ~data~ ~lang~ ~Manuals~ ~movies~ ~mpsave~ ~music~ ~override~ ~save~ ~scripts~ ~%MOD_FOLDER%~ ~%FIXPACK%~ BEGIN
+				ACTION_FOR_EACH reserved IN ~data~ ~lang~ ~Manuals~ ~movies~ ~mpsave~ ~music~ ~save~ ~scripts~ ~%MOD_FOLDER%~ ~%FIXPACK%~ BEGIN
 					ACTION_IF (~%reserved%~ STR_EQ ~%target_mod_folder%~) THEN BEGIN
 						OUTER_SET skip = 1
 					END
