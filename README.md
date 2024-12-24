@@ -123,6 +123,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Wheels of Prophecy v8.5
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
 
+- Divers
+  - Correction de l'animation du souffle des dragons (merci [@Hefaistos](https://forums.beamdog.com/profile/Hefaistos) : https://forums.beamdog.com/discussion/88856/mod-fix-dragon-breath-visual-animation-fix)
+
 #### Corrections de compatibilité
 
 - Ascension v2.0.24
