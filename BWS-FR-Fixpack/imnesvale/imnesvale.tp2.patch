@@ -4,20 +4,8 @@
  //AUTHOR ~Duality (Dualities.Shadow@gmail.com)~
  SUPPORT ~Spellhold Studios at http://www.shsforums.net/topic/32419-ds-odd-quest-mod/~
  
--VERSION ~v2.1~
-+VERSION ~v2.1 BWS-FR Fix~
+-VERSION ~v2.2~
++VERSION ~v2.2 BWS-FR Fix~
  
  README ~imnesvale/readme/imnesvale-readme.txt~
- 
-@@ -70,6 +70,11 @@ LANGUAGE ~Italiano (traduzione di ilot)~
- 		 ~imnesvale/lang/italian/setup.tra~
- 		 ~imnesvale/lang/italian/misc.tra~
- 
-+LANGUAGE ~Français (traduit par Deratiseur)~
-+         ~french~
-+		 ~imnesvale/lang/french/setup.tra~
-+		 ~imnesvale/lang/french/misc.tra~
-+
- 
- /* ====================== *
-  *  Imnesvale Mod : Easy  *
+
