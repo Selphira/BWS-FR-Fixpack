@@ -1,0 +1,11 @@
+--- ub\setup-ub.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\ub\\setup-ub.tp2"	
+@@ -8,7 +8,7 @@ BACKUP ~weidu_external/backup/ub~
+ 
+ SUPPORT ~http://forums.pocketplane.net~
+ 
+-VERSION ~v29~
++VERSION ~v29 BWS-FR Fix~
+ README ~ub/docs/readme-ub.html~
+ 
+ ASK_EVERY_COMPONENT

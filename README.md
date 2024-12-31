@@ -120,6 +120,10 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
 
+- Unfinished Business v29
+  - Correction d'un problème avec la quête de l'Illithium (merci [@cnieuweboer](https://github.com/cnieuweboer) : https://github.com/Pocket-Plane-Group/UnfinishedBusiness/issues/50)
+  - Correction d'un problème avec la quête du kidnapping de Boo (merci [@https://github.com/Frenzgyn](https://github.com/Frenzgyn) : https://github.com/Pocket-Plane-Group/UnfinishedBusiness/issues/44)
+
 - Wheels of Prophecy v8.5
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
 
@@ -224,6 +228,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - The Enhanced Edition Fixpack vBeta 1
   - Ajout de la traduction
+
+- Unfinished Business v29
+  - Mise à jour de la traduction
 
 - Unique Artifacts v7.13
   - Ajout de la traduction

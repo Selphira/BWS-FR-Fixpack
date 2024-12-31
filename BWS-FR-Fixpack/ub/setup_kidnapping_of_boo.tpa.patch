@@ -1,0 +1,10 @@
+--- ub\minsc\setup_kidnapping_of_boo.tpa
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\ub\\minsc\\setup_kidnapping_of_boo.tpa"	
+@@ -127,6 +127,7 @@ BEGIN
+         parameter1	= ~-1~
+         parameter2	= 0
+         STR_VAR
++        insert    = ~last~
+         resource	= ~%SOURCE_RES%~
+       END
+ END	// setup_kidnapping_of_boo
