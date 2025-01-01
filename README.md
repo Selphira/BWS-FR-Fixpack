@@ -202,6 +202,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - EET (Enhanced Edition Trilogy) Tweaks v1.12
   - Ajout de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/K4thos/EET_Tweaks/pull/14)
 
+- Faiths & Powers: Gods of the Realms v0.91.3
+  - Mise à jour de la traduction (merci [@mleduque](https://github.com/mleduque) : https://github.com/UnearthedArcana/Faiths_and_Powers/pull/170)
+
 - Made in heaven: Encounters & Quests
   - Correction de la tournure anglaise lors du renommage de certains sortilèges
 

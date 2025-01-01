@@ -1,0 +1,11 @@
+--- faiths_and_powers\Faiths_and_Powers.tp2
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\faiths_and_powers\\Faiths_and_Powers.tp2"	
+@@ -2,7 +2,7 @@ BACKUP ~weidu_external/backup/faiths_and_powers~
+ AUTHOR ~SubtleD and Grammarsalad~
+ 
+ 
+-VERSION ~0.91.3~
++VERSION ~0.91.3 BWS-FR Fix~
+ 
+ 
+ //README ~faiths_and_powers/readme-pnp.html~
