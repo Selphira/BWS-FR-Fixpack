@@ -1,0 +1,16 @@
+--- CtB\dialogs\translate\CBSPKDED.D
++++ "b/E:\\Modding\\Baldur's Gate 2\\BWS-FR-Fixpack\\BWS-FR-Fixpack\\CtB\\dialogs\\translate\\CBSPKDED.D"	
+@@ -4,11 +4,11 @@ IF ~True()~ THEN BEGIN 0
+   SAY @1
+   IF ~CheckStatGT(LastTalkedToBy(Myself),9,STR)
+ CheckStatGT(LastTalkedToBy(Myself),14,INT)~ THEN REPLY @2 GOTO 1
+-  IF ~CheckStatLT(LastTalkedToBy(Myself),10,STR)
++  IF ~OR(2) CheckStatLT(LastTalkedToBy(Myself),10,STR)
+ CheckStatLT(LastTalkedToBy(Myself),15,INT)~ THEN REPLY @2 GOTO 12
+   IF ~CheckStatGT(LastTalkedToBy(Myself),9,STR)
+ CheckStatGT(LastTalkedToBy(Myself),14,INT)~ THEN REPLY @3 GOTO 11
+-  IF ~CheckStatLT(LastTalkedToBy(Myself),10,STR)
++  IF ~OR(2) CheckStatLT(LastTalkedToBy(Myself),10,STR)
+ CheckStatLT(LastTalkedToBy(Myself),15,INT)~ THEN REPLY @3 GOTO 15
+   IF ~False()~ THEN REPLY @3 GOTO 15
+ END
