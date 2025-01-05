@@ -57,6 +57,7 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Item Revision v4beta10sd19
   - Dans certains cas, si une armure possédait déjà de la résistance à un dégât physique, cette dernière était augmentée du double que prévu.
     Ex: DWCHAN02, DWPLAT01, ISHCHA
+  - Correction de la mise à jour de la description du kit du Kensai (merci [@valandil](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=14031))
 
 - Kiara-Zaiya NPCs v2.0.1
   - Correction de l'effet de diminution du temps d'incantation de l'Epée divine qui avait 1% de chance d'être effectif, au lieu de 100%
