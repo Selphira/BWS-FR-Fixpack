@@ -30,9 +30,12 @@
 -@30 = ~High-Level Spells Penetrate Magic Resistance~
 +@30 = ~Les sorts de haut niveau penetrent la resistance a la magie~
  //
- @35 = ~Les effets d'absorption de niveau~
- @36 = ~Ajouter un jet de sauvegarde pour les effets d'absorption de niveau~
- @37 = ~Ajouter la durée des effets d'absorption de niveau~
+-@35 = ~Les effets d'absorption de niveau~
+-@36 = ~Ajouter un jet de sauvegarde pour les effets d'absorption de niveau~
+-@37 = ~Ajouter la durée des effets d'absorption de niveau~
++@35 = ~Effets d'absorption de niveau~
++@36 = ~Ajouter un jet de sauvegarde pour l'absorption de niveau~
++@37 = ~Rendre l'absorption de niveau temporaire~
  @40 = ~Revision des clones illusoires~
 -@45 = ~Revision d'Invisibilite et de Vision veritable~
 -@50  = ~Modifier Rapidité et Lenteur pour qu'ils s'annulent l'un l'autre~
@@ -513,3 +516,10 @@
  Jet de sauvegarde : aucun
  
  Ce sort ouvre un canal entre le plan du mage et le plan de l'Énergie Négative. Le lanceur du sort agit comme un conduit entre les deux plans, absorbant la vie d'une créature vivante et la transférant dans le plan de l'Énergie Négative, ce qui en pratique draine 4 niveaux d'expérience de la victime. La cible perd définitivement ses niveaux, dés de vie, points de vie, et capacités. Seul le sort de prêtre Restauration peut les lui faire récupérer. En passant au travers du mage, la force vitale le revigore provisoirement, lui accordant 20 points de vie supplémentaires, un bonus de +4 aux jets d'attaque et aux jets de sauvegarde, et un bonus de +20 % à toutes ses compétences. Ces effets durent 1 heure. La résistance à la magie de la cible, si elle en a une, est ignorée, et aucun jet de sauvegarde n'est accordé pour éviter l'absorption. De plus, le contrecoup de l'effet est si intense que la victime doit réussir un jet de sauvegarde avec une pénalité de 2 ou mourir sur le coup.
+@@ -514,4 +513,4 @@ Quand les mages et autres lanceurs de sorts du même genre deviennent très puis
+ 
+ Même s'il semble que le génie arrive par un Portail, en réalité il ne fait que créer un réceptacle temporaire pour intervenir dans ce monde. Ses aptitudes sont celles d'un puissant guerrier/clerc, et il est armé d'une épée enflammée. Si l'Éfrit subit assez de dégâts dans le plan matériel primaire pour que son enveloppe corporelle temporaire soit détruite, son esprit retournera dans son plan d'origine.
+ ~
+-@29243 = ~Éfrit noble~
++@29243 = ~Éfrit noble~
+\ No newline at end of file

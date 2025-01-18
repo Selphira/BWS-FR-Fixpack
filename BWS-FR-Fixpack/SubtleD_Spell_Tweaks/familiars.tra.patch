@@ -54,3 +54,10 @@
  ~
  //
  // familiars (tra refs = BG2 str refs)
+@@ -154,4 +154,4 @@ Une fois que le familier est infusé avec la capacité à lancer un sort il peut
+ @59810 = ~Le petit animal remue sa queue en méditant. « Bon... peut-être... Mais j'espère que vous tiendrez parole. *soupire* Oh après tout. J'aime bien me faire prier. »~
+ @59811 = ~« Bon, je l'ai bien mérité, après tout ! »~
+ @59813 = ~*soupire* « Très bien. Mais ne va pas croire que quelques caresses suffiront, la prochaine fois ! »~
+-@58359 = ~Le familier inspecte votre sac, puis se faufile à l'intérieur à contrecœur. « Très bien. Il vaut mieux que vous me portiez. Mais évitez de me cogner partout, cette fois. »~
++@58359 = ~Le familier inspecte votre sac, puis se faufile à l'intérieur à contrecœur. « Très bien. Il vaut mieux que vous me portiez. Mais évitez de me cogner partout, cette fois. »~
+\ No newline at end of file

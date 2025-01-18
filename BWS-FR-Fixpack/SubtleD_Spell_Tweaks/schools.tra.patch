@@ -35,3 +35,10 @@
  @160016 = ~(Illusion)~
  @160017 = ~(Invocation)~
  @160018 = ~(Transmutation, Invocation)~
+@@ -55,4 +55,4 @@
+ @160145 = ~(Enchantement/Charme)~
+ @160146 = ~(Invocation/Évocation)~
+ @160147 = ~(Illusion/Fantasme)~
+-@160148 = ~(Nécromancie)~
++@160148 = ~(Nécromancie)~
+\ No newline at end of file

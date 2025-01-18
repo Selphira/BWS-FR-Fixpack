@@ -203,11 +203,22 @@
 +Jet de sauvegarde : sorts annule
 +
 +Ce tour de magique crée une lumière intense et scintillante devant les yeux de la cible. Il subit une pénalité de 2 point au TAC0 pendant 3 rounds. Si la cible échoue à un jet de sauvegarde contre les sorts, elle est aveuglée pendant 2 ronds.
++~
++@6023   = ~Illusion mineure~
++@6024   = ~Illusion mineure
++
++Niveau : 0
++Portée : 6 mètres
++Durée : 3 rounds
++Zone d'effet : spéciale
++Jet de sauvegarde : aucun
++
++Ce tour de magie projette l'image d'un ogre terrifiant à l'endroit désigné par le lanceur. En réalité, cet ogre ne peut faire aucun mal à qui que ce soit et tout contact avec lui fera disparaître l'illusion. Dans les bonne conditions, ce sort peut être très utile comme distraction momentanée.
  ~
 -@6027   = ~Deflective shell~
 -@6028   = ~Deflective shell
-+@6023   = ~Illusion mineure~
-+@6024   = ~Illusion mineure
++@6025   = ~Image Réfléchie~
++@6026   = ~Image Réfléchie
  
 -Level: 0
 -Range: 0
@@ -215,60 +226,33 @@
 -Area of Effect: caster
 -Saving Throw: none
 +Niveau : 0
-+Portée : 6 mètres
-+Durée : 3 rounds
-+Zone d'effet : spéciale
-+Jet de sauvegarde : aucun
- 
--This cantrip raises a fragile magical barrier around the caster. This thin shell of energy will absorb the effects of a single spell of up to 3rd level that is directed at the caster.
-+Ce tour de magie projette l'image d'un ogre terrifiant à l'endroit désigné par le lanceur. En réalité, cet ogre ne peut faire aucun mal à qui que ce soit et tout contact avec lui fera disparaître l'illusion. Dans les bonne conditions, ce sort peut être très utile comme distraction momentanée.
- ~
--@6029   = ~Spell Thrust~
--@6030   = ~Spell Thrust
-+@6025   = ~Image Réfléchie~
-+@6026   = ~Image Réfléchie
- 
--Level: 0
--Range: 30 ft.
--Duration: instant
--Area of Effect: one target
--Saving Throw: none
-+Niveau : 0
 +Portée : le lanceur
 +Durée : 4 rounds
 +Zone d'effet : le lanceur
 +Jet de sauvegarde : aucun
- 
--This cantrip will dispel spell protections of 5th level and lower. This includes: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Immunity, and Minor Spell Turning.
++
 +Ce tour de magie crée une image du jeteur de sorts qui se déplace à ses côté. Un attaquant qui réussit une attaque a 50 % de chances de toucher l'image (qui disparaît alors) et 50 % de chance de tuocher le lanceur.
- ~
--@6031   = ~Rigor  Mortis~
--@6032   = ~Rigor  Mortis
++~
 +@6027   = ~Coquille de déflexion~
 +@6028   = ~Coquille de déflexion
- 
--Level: 0
--Range: 20 feet
--Duration: 3 rounds
--Area of Effect: one target
--Saving Throw: vs. Death
++
 +Niveau : 0
 +Portée : le lanceur
 +Durée : 5 rounds
 +Zone d'effet : le lanceur
 +Jet de sauvegarde : aucun
  
--This cantrip the target's body to ache and stiffen, Slowing the target for 1 round and, on a failed saving throw vs Death, also causing 3-point penalties to Strength, Dexterity, thac0, and AC for 3 rounds.
+-This cantrip raises a fragile magical barrier around the caster. This thin shell of energy will absorb the effects of a single spell of up to 3rd level that is directed at the caster.
 +Ce tour de magie érige une fragile barrière magique autour du jeteur de sorts. Cette fine coquille d'énergie absorbera les effets d'un unique sort de niveau 3 au plus qui prend le lanceur pour cible.
  ~
--@6033   = ~Wisplight~
--@6034   = ~Wisplight
+-@6029   = ~Spell Thrust~
+-@6030   = ~Spell Thrust
 +@6029   = ~Annulation des protections~
 +@6030   = ~Annulation des protections
  
 -Level: 0
--Range: 30 feet
--Duration: 3 rounds
+-Range: 30 ft.
+-Duration: instant
 -Area of Effect: one target
 -Saving Throw: none
 +Niveau : 0
@@ -277,13 +261,51 @@
 +Zone d'effet: 1 cible
 +Jet de sauvegarde : aucun
  
--This cantrip causes tiny motes of light to coalesce and swirl around the target. This makes <PRO_HIMHER> easier to strike (2-point penalty to AC) and prevents <PRO_HIMHER> from turning invisible for 3 rounds.
+-This cantrip will dispel spell protections of 5th level and lower. This includes: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Immunity, and Minor Spell Turning.
 +Ce tour de magie dissipe les protections de sort de niveau 5 au plus. Ceci inclut : Déviation de sorts mineure, Globe mineur d'invulnérabilité, Immunité contre les sorts et Renvoi des sorts mineurs
+ ~
+-@6031   = ~Rigor  Mortis~
+-@6032   = ~Rigor  Mortis
++@6031   = ~Rigidité cadavérique~
++@6032   = ~Rigidité cadavérique
+ 
+-Level: 0
+-Range: 20 feet
+-Duration: 3 rounds
+-Area of Effect: one target
+-Saving Throw: vs. Death
++Niveau : 0
++Portée : 6 mètres
++Durée : 3 rounds
++Zone d'effet : 1 créature
++Jet de sauvegarde : mort, partiel
+ 
+-This cantrip the target's body to ache and stiffen, Slowing the target for 1 round and, on a failed saving throw vs Death, also causing 3-point penalties to Strength, Dexterity, thac0, and AC for 3 rounds.
++Ce tour de magie raidit et endolorit le corps de la cible pendant 1 round. Sur un échec à un jet de sauvegarde contre la mort, la cible subit de plus des pénalités de 3 points à la force, à la dextérité, au TAC0 et à la classe d'armure pendant 3 rounds.
+ ~
+-@6033   = ~Wisplight~
+-@6034   = ~Wisplight
++@6033   = ~Feu follet~
++@6034   = ~Feu follet
+ 
+-Level: 0
+-Range: 30 feet
+-Duration: 3 rounds
+-Area of Effect: one target
+-Saving Throw: none
++Niveau : 0
++Portée : 9 mètres
++Durée : 3 rounds
++Zone d'effet : 1 créature
++Jet de sauvegarde : Aucun
+ 
+-This cantrip causes tiny motes of light to coalesce and swirl around the target. This makes <PRO_HIMHER> easier to strike (2-point penalty to AC) and prevents <PRO_HIMHER> from turning invisible for 3 rounds.
++Ce tur de magie réunit plusieurs minuscules particules lumineuses qui tourbillonnent autour de la cible, ce qui la rend plus facile à toucher (malus de 2 points à la classe d'armure) et l'empêche de devenir invisible pendant 3 rounds.
  ~
 -@6035   = ~Conjure Rabbit~
 -@6036   = ~Conjure Rabbit
-+@6031   = ~Rigidité cadavérique~
-+@6032   = ~Rigidité cadavérique
++@6035   = ~Convocation de lapin~
++@6036   = ~Convocation de lapin
  
 -Level: 0
 -Range: 20 feet
@@ -293,16 +315,16 @@
 +Niveau : 0
 +Portée : 6 mètres
 +Durée : 3 rounds
-+Zone d'effet : 1 créature
-+Jet de sauvegarde : mort, partiel
++Zone d'effet : le lanceur
++Jet de sauvegarde : Aucun
  
 -This cantrip conjures a medium-sized bunny in the location of the caster's choosing.
-+Ce tour de magie raidit et endolorit le corps de la cible pendant 1 round. Sur un échec à un jet de sauvegarde contre la mort, la cible subit de plus des pénalités de 3 points à la force, à la dextérité, au TAC0 et à la classe d'armure pendant 3 rounds.
++Ce tour de magie convoque un rongeur de taille moyenne à l'endroit indiqué par le lanceur.
  ~
 -@6037   = ~Armor~
 -@6038   = ~Armor
-+@6033   = ~Feu follet~
-+@6034   = ~Feu follet
++@6037   = ~Armure~
++@6038   = ~Armure
  
 -Level: 0
 -Range: 0
@@ -310,18 +332,18 @@
 -Area of Effect: caster
 -Saving Throw: none
 +Niveau : 0
-+Portée : 9 mètres
-+Durée : 3 rounds
-+Zone d'effet : 1 créature
-+Jet de sauvegarde : Aucun
++Portée : personnelle
++Durée : 9 heures
++Zone d'effet : le lanceur
++Jet de sauvegarde : aucun
  
 -This cantrip creates a magical protection that is something like scale mail armor (AC 6). The magical Armor does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
-+Ce tur de magie réunit plusieurs minuscules particules lumineuses qui tourbillonnent autour de la cible, ce qui la rend plus facile à toucher (malus de 2 points à la classe d'armure) et l'empêche de devenir invisible pendant 3 rounds.
++Ce tour de magie crée une protection magique qui protège comme une armure d'écailles (CA 6). L'armure ne pèse rien, n'encombre pas l'utilisateur et n'exclut pas non plus la possibilité de lancer des sorts.
  ~
 -@6039   = ~Magic Bolt~
 -@6040   = ~Magic Bolt
-+@6035   = ~Convocation de lapin~
-+@6036   = ~Convocation de lapin
++@6039   = ~Carreau magique~
++@6040   = ~Carreau magique
  
 -Level: 0
 -Range: 30 feet
@@ -329,18 +351,18 @@
 -Area of Effect: one target
 -Saving Throw: none
 +Niveau : 0
-+Portée : 6 mètres
-+Durée : 3 rounds
-+Zone d'effet : le lanceur
-+Jet de sauvegarde : Aucun
++Portée : 9 mètres
++Durée : instantanée
++Zone d'effet : 1 cible
++Jet de sauvegarde : aucun
  
 -This cantrip allows the caster to direct a small ball of magical energy at a target, functioning as a once-per round ranged attack that almost never misses. The energy will cause 1d4+1 damage each time it strikes someone. However, it is completely blocked the Shield spell as well as by any magical protection such as Globe of Invulnerability or Spell Deflection.
-+Ce tour de magie convoque un rongeur de taille moyenne à l'endroit indiqué par le lanceur.
++Ce tour de magie crée un petit carreau d'énergie magique que le lanceur peut diriger et qui se comporte comme une arme à distance avec une attaque par round qui n'échoue presque jamais. Le carreau d'énergie inflige 1d4+1 points de dégâts à la cible pour chaque attaque réussie. Par contre, elle est complètement interceptée par le sort Bouclier, mais aussi par toute protection magique comme un Globe d'invulnérabilité ou une Déviation des sorts.
  ~
 -@6041   = ~Glimpse~
 -@6042   = ~Glimpse
-+@6037   = ~Armure~
-+@6038   = ~Armure
++@6041   = ~Aperçu~
++@6042   = ~Aperçu
  
 -Level: 0
 -Range: map
@@ -348,18 +370,18 @@
 -Area of Effect: special
 -Saving Throw: none
 +Niveau : 0
-+Portée : personnelle
-+Durée : 9 heures
-+Zone d'effet : le lanceur
++Portée : spécial
++Durée : 2 secondes
++Zone d'effet : spécial
 +Jet de sauvegarde : aucun
  
 -This cantrip gives the caster a brief (2-second) look at what is happening in another area of the local map.
-+Ce tour de magie crée une protection magique qui protège comme une armure d'écailles (CA 6). L'armure ne pèse rien, n'encombre pas l'utilisateur et n'exclut pas non plus la possibilité de lancer des sorts.
++Ce tour de magie donne au jeteur du sort un bref (2 secondes) aperçu de ce qui se passe dans une autre partie de la zone dans laquelle il se trouve.
  ~
 -@6043   = ~Diviner's Eyes~
 -@6044   = ~Diviner's Eyes
-+@6039   = ~Carreau magique~
-+@6040   = ~Carreau magique
++@6043   = ~Regard du devin~
++@6044   = ~Regard du devin
  
 -Level: 0
 -Range: 20 feet
@@ -367,52 +389,30 @@
 -Area of Effect: one ally
 -Saving Throw: none
 +Niveau : 0
-+Portée : 9 mètres
-+Durée : instantanée
-+Zone d'effet : 1 cible
-+Jet de sauvegarde : aucun
- 
--This cantrip allows the caster to share <PRO_HISHER> perspective with an ally - literally. Able to evaluate and process the battlefield from both the caster's perspective and their own, the recipient of this cantrip gains a 2-point bonus on to-hit rolls for 5 rounds.
-+Ce tour de magie crée un petit carreau d'énergie magique que le lanceur peut diriger et qui se comporte comme une arme à distance avec une attaque par round qui n'échoue presque jamais. Le carreau d'énergie inflige 1d4+1 points de dégâts à la cible pour chaque attaque réussie. Par contre, elle est complètement interceptée par le sort Bouclier, mais aussi par toute protection magique comme un Globe d'invulnérabilité ou une Déviation des sorts.
- ~
--@6045   = ~Chaos Orb~
--@6046   = ~Chaos Orb
-+@6041   = ~Aperçu~
-+@6042   = ~Aperçu
-+
-+Niveau : 0
-+Portée : spécial
-+Durée : 2 secondes
-+Zone d'effet : spécial
-+Jet de sauvegarde : aucun
-+
-+Ce tour de magie donne au jeteur du sort un bref (2 secondes) aperçu de ce qui se passe dans une autre partie de la zone dans laquelle il se trouve.
-+~
-+@6043   = ~Regard du devin~
-+@6044   = ~Regard du devin
-+
-+Niveau : 0
 +Portée : 6 mètres
 +Durée : 5 rounds
 +Zone d'effet : 1 allié
 +Jet de sauvegarde : aucun
-+
+ 
+-This cantrip allows the caster to share <PRO_HISHER> perspective with an ally - literally. Able to evaluate and process the battlefield from both the caster's perspective and their own, the recipient of this cantrip gains a 2-point bonus on to-hit rolls for 5 rounds.
 +Ce tour de magie permet au jeteur de sorts de partager son point de vue avec un allié... littéralement. Avec la capacité d'évaluer et de gérer le champ de bataille de sa propre perspective et de celle du lanceur en même temps, le bénéficiaire de ce tour obtient un bonus de 2 points aux jets d'attaque pendant 5 rounds.
-+~
+ ~
+-@6045   = ~Chaos Orb~
+-@6046   = ~Chaos Orb
 +@6045   = ~Orbe chaotique~
 +@6046   = ~Orbe chaotique
-+
-+Niveau : 0
-+Portée : 9 mètres
-+Durée : spéciale
-+Zone d'effet : 1 créature
-+Jet de sauvegarde : spécial
  
 -Level: 0
 -Range: 30 ft.
 -Duration: Special
 -Area of Effect: 1 creature
 -Saving Throw: Special
++Niveau : 0
++Portée : 9 mètres
++Durée : spéciale
++Zone d'effet : 1 créature
++Jet de sauvegarde : spécial
++
 +Ce tour de magie crée uen sphère colorée qui fuse vers sa cible. Autant la couleur de la sphère que les effets sur la cible sont imprévisibles. Au contact, la sphère cause des dégâts avec en supplément un effet secondaire en cas d'échec à un jet de sauvegarde contre les sorts avec un bonus de 2 points.
  
 -This spell causes a colorful sphere to speed unerringly to its target. The color and effect as it flies through the air; the effects on the target are unpredictable and include damage as well as a secondary effect which occurs on a failed save vs. Spella with a +2 bonus
@@ -455,5 +455,7 @@
  Un sort de hantise permet au magicien de jouer avec les peurs naturelles pour provoquer chez une créature la vision de quelqu'un ou de quelque chose d'inamical avançant vers elle d'une manière menaçante. Si la créature ne réussit pas un jet de sauvegarde contre les sorts, elle s'enfuit le plus vite et le plus loin possible du magicien. La créature a une pénalité de jet de 1 point par tranche de 2 niveaux d'expérience du lanceur du sort, avec un maximum de 6 points au niveau 12. Ce n'est pas le magicien qui poursuit effectivement la créature en fuite, mais un fantasme issu de son esprit. Dans tous les cas, le sort n'est efficace que contre les créatures d'intelligence 2 et plus, et les morts-vivants ne sont pas affectés.
  
 -Toute personne qui a été ciblée par ce sort, qu'elle ai ou non réussi le jet de sauvegarde, se méfiera pendant un certain temps, et ne pourra être affectée par ce sort pendant les 8 prochaines heures.
+-~
 +Toute personne qui a été ciblée par ce sort, qu'elle ait ou non réussi le jet de sauvegarde, se méfiera pendant un certain temps, et ne pourra être affectée par ce sort pendant les 8 prochaines heures.
- ~
++~
+\ No newline at end of file
