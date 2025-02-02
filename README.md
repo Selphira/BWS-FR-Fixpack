@@ -137,9 +137,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
 
-- BG1 Mini Quests and Encounters v27
-  - Compatibilité avec EET : Correction de butin non approprié (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG_Quests_And_Encounters/pull/34)
-
 - BG1 NPC Project v32
   - Compatibilité avec EET : Correction d'entrées du journal non fermées (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Gibberlings3/BG1NPC/pull/127)
 
