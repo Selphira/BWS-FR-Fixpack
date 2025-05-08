@@ -18,9 +18,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Artaport v2.0
   - SOD n'était pas correctement détecté
 
-- Ascension v2.0.24
-  - Déplacement des flèches de Gromnir des objets rapides vers le carquois (merci [@supasillyass](https://github.com/supasillyass) : https://github.com/InfinityMods/Ascension/pull/15)
-
 - BG1 NPC Project v32
   - Correction d'un problème avec un dialogue : (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG1NPC/pull/128)
 
@@ -127,9 +124,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Corrections (merci [@abalabokhin](https://github.com/abalabokhin) : https://github.com/abalabokhin/WheelsOfProphecy/commit/4266f3f5e6e6b11f7f16d5f2bcd4dca17c3f382d et https://github.com/abalabokhin/WheelsOfProphecy/commit/701bb3b91ace1582939e4704a0a3b4921c68790d)
 
 #### Corrections de compatibilité
-
-- Ascension v2.0.24
-  - Compatibilité avec EE Fixpack
 
 - aTweaks v4.53
   - Compatibilité avec EE Fixpack qui supprime des entrées dans le fichier object.ids
