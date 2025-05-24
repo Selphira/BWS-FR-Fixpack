@@ -21,9 +21,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - BG1 NPC Project v32
   - Correction d'un problème avec un dialogue : (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/BG1NPC/pull/128)
 
-- BG1 Unfinished Business v16.4
-  - Correction d'une typo (merci [@Ychap](https://github.com/Ychap) : https://github.com/Pocket-Plane-Group/bg1ub/pull/3)
-
 - Check the Bodies v3.0
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
   - Correction de la référence au kit Barbare dans divers scripts
@@ -130,10 +127,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 
 - BG1 NPC Project v32
   - Compatibilité avec EET : Correction d'entrées du journal non fermées (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Gibberlings3/BG1NPC/pull/127)
-
-- BG1 Unfinished Business v16.4
-  - Compatibilité avec EET : Correction d'un dialogue avec Arkion (merci [@GraionDilach](https://github.com/GraionDilach) : https://github.com/Pocket-Plane-Group/bg1ub/pull/2)
-  - Compatibilité avec EET : Correction d'un dialogue avec Ivanne (merci [@Frenzgyn](https://github.com/Frenzgyn) : https://github.com/Pocket-Plane-Group/bg1ub/pull/5)
 
 - Check the Bodies v3.0
   - Compatibilité avec EET pour que les zones s'ajoutent dans le menu de triche.
