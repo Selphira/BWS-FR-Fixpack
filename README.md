@@ -158,6 +158,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Remplacement des RemoveSpellRES(S:RES*,O:Target) par ActionOverride(O:Actor*,RemoveSpellRES(S:RES*))
     La nouvelle signature de RemoveSpellRES() provoque des erreurs pour les mods installés après
 
+- Stratagems v35.21
+  - Compatibilité avec "The Enhanced Edition Fixpack" alpha 2 (merci [@CamDawg](https://github.com/CamDawg) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/86)
+  
 - The Darkest Day (EE-compatible) v1.3.1
   - Compatibilité avec "BP-BGT-Worldmap" v13 : Mise à jour du postionnement des icônes sur la carte (merci [@Roberciiik](https://github.com/Roberciiik) : https://github.com/Roberciiik/TDDz/commit/db853da7808527edfbccefc8e0ed28bbfdbc3154)
   - Compatibilité avec "BGGO" : Ajout d'un nouveau composant pour utiliser les cartes de BGGO (merci [@weigo87](https://github.com/weigo87/TDDz/commits?author=weigo87) : https://github.com/weigo87/TDDz/commit/317de92cdbfdeb64219d076789dd6023f5b346c8)
