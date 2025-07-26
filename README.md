@@ -87,9 +87,10 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Spiritwalker - A Shaman Shapeshifter Kit v1.4
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
-- Stratagems v35.15
+- Stratagems v35.21
   - Correction d'un problème où un item WIZARD_S.itm était ajouté dans certains magasins.
   - Correction de la compétence utilisée par l'objet "dw#kob01" qui était "Epée longue" au lieu de "Dague"
+  - Correction d'un problème où certains parchemins aléatoires pouvaient lancer un sort incorrect (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/38932-possible-unintentional-behavior-with-the-wider-selection-of-random-scrolls-component-for-bg2ee/#findComment-345817)
 
 - The Beaurin Legacy v5.3
   - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
