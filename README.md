@@ -84,6 +84,9 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - Song and Silence v16
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.3 => v1.1.5
 
+- Spell Revision v4.19rc5
+  - Correction d'un crash lorsqu'un piège touche une créature immunisée (merci [@Person](https://www.gibberlings3.net/profile/13649-person/) : https://www.gibberlings3.net/forums/topic/38508-bug-in-sr-v4-beta-in-watchers-keep/#findComment-349423)
+
 - Spiritwalker - A Shaman Shapeshifter Kit v1.4
   - Mise à jour du fichier fl#add_kit_ee.tpa v1.1.2 => v1.1.5
 
@@ -91,8 +94,8 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction d'un problème où un item WIZARD_S.itm était ajouté dans certains magasins.
   - Correction de la compétence utilisée par l'objet "dw#kob01" qui était "Epée longue" au lieu de "Dague"
   - Correction d'un problème où certains parchemins aléatoires pouvaient lancer un sort incorrect (merci [@DavidW](https://www.gibberlings3.net/profile/1067-davidw/) : https://www.gibberlings3.net/forums/topic/38932-possible-unintentional-behavior-with-the-wider-selection-of-random-scrolls-component-for-bg2ee/#findComment-345817)
-  - Correction d'une référence à une chaîne dans use_iwd_chromatic_orb et use_iwd_color_spray (Merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/87)
-  - Correction de la distribution des projectiles dans use_iwd_call_lightning (Merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/88)
+  - Correction d'une référence à une chaîne dans use_iwd_chromatic_orb et use_iwd_color_spray (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/87)
+  - Correction de la distribution des projectiles dans use_iwd_call_lightning (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/SwordCoastStratagems/pull/88)
 
 - The Beaurin Legacy v5.3
   - Correction de références à Haer'Dalis dans un dialogue : Haer'Dalis => HaerDalis
