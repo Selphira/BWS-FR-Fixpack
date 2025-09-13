@@ -112,10 +112,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
   - Correction de la référence d'une custscene : #LCWBQ030 => #LCWBQ03
   - Correction du dialogue d'Ellesime qui ne lance plus la transition (merci [@JohnBob](https://www.baldursgateworld.fr/memberlist.php?mode=viewprofile&u=16284) https://www.baldursgateworld.fr/viewtopic.php?p=518781#p518781)
 
-- Tweaks Anthology v15
-  - Correction d'un problème de typo dans le composant "Personnaliser le nom des sauvegardes automatiques" (merci [@Argent77](https://github.com/Argent77) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/61)
-  - Mise à jour du fichier fl#add_kit_ee.tpa v1.0.5 => v1.1.5
-
 - Unfinished Business v29
   - Correction d'un problème avec la quête de l'Illithium (merci [@cnieuweboer](https://github.com/cnieuweboer) : https://github.com/Pocket-Plane-Group/UnfinishedBusiness/issues/50)
   - Correction d'un problème avec la quête du kidnapping de Boo (merci [@https://github.com/Frenzgyn](https://github.com/Frenzgyn) : https://github.com/Pocket-Plane-Group/UnfinishedBusiness/issues/44)
@@ -167,11 +163,6 @@ Un second composant, à exécuter à la toute fin de votre installation, va vér
 - The Darkest Day (EE-compatible) v1.3.1
   - Compatibilité avec "BP-BGT-Worldmap" v13 : Mise à jour du postionnement des icônes sur la carte (merci [@Roberciiik](https://github.com/Roberciiik) : https://github.com/Roberciiik/TDDz/commit/db853da7808527edfbccefc8e0ed28bbfdbc3154)
   - Compatibilité avec "BGGO" : Ajout d'un nouveau composant pour utiliser les cartes de BGGO (merci [@weigo87](https://github.com/weigo87/TDDz/commits?author=weigo87) : https://github.com/weigo87/TDDz/commit/317de92cdbfdeb64219d076789dd6023f5b346c8)
-
-- Tweaks Anthology v15
-  - Compatibilité avec Edwin Romance afin de pouvoir sélectionner le portrait d'Edwina
-  - Compatibilité avec EET : Correction du script de la zone de Château-Suif (merci [@Ychap](https://github.com/Ychap) : https://github.com/Gibberlings3/Tweaks-Anthology/pull/55)
-  - Compatibilité avec EET : Suppression d'options de réponse en double (merci [@CamDawg](https://github.com/CamDawg) : https://github.com/Gibberlings3/Tweaks-Anthology/commit/deebc0a7d8a9563cd8f20bf3a7f135aa3fc42301)
 
 #### Traductions et corrections d'orthographe
 
